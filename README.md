@@ -1,23 +1,18 @@
-# smartupdate
+# SmartUpdate Guide
 
-An Electron application with React
-
-## Recommended IDE Setup
-
-- [VSCode](https://code.visualstudio.com/) + [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) + [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+SmartUpdate is an interactive public display application designed to educate users on how to update their smartphone and enable automatic update function. This guide aims to help users keep their devices secure and running the latest software version by walking them through a step-by-step tutorial.
 
 ## Project Setup
-
 ### Install
 
 ```bash
 $ npm install
 ```
 
-### Development
+### Start
 
 ```bash
-$ npm run dev
+$ npm run start
 ```
 
 ### Build

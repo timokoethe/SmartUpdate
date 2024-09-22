@@ -1,7 +1,7 @@
 {
   "name": "smartupdate",
   "version": "1.0.0",
-  "description": "An Electron application with React",
+  "description": "SmartUpdate is an interactive public display application that guides users through updating their smartphone and enabling automatic updates.",
   "main": "./out/main/index.js",
   "author": "example.com",
   "homepage": "https://electron-vite.org",
