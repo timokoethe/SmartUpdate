@@ -1,6 +1,34 @@
-# SmartUpdate
-SmartUpdate is an electron-based application designed to run on public displays, providing a step-by-step tutorial guide on how to enable automatic updates on smartphones and how to manually search for and install updates. Built with JavaScript using the Electron framework, this application is optimized for kiosk mode and user-friendly interaction.
+# smartupdate
 
-## License
-SmartUpdate is released under the [MIT License](https://opensource.org/license/mit).
+An Electron application with React
 
+## Recommended IDE Setup
+
+- [VSCode](https://code.visualstudio.com/) + [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) + [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+
+## Project Setup
+
+### Install
+
+```bash
+$ npm install
+```
+
+### Development
+
+```bash
+$ npm run dev
+```
+
+### Build
+
+```bash
+# For windows
+$ npm run build:win
+
+# For macOS
+$ npm run build:mac
+
+# For Linux
+$ npm run build:linux
+```
