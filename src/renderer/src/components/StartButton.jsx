@@ -2,7 +2,9 @@ import { useState } from 'react'
 
 function StartButton() {
   return (
-    <button >Tap to </button>
+    <button className='startButton'>
+      <p>TAP <br/>TO START</p>
+    </button>
   )
 }
 

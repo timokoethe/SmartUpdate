@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Ropa Sans';
+    src: local('Ropa Sans'), url('./fonts/RopaSans-Regular.ttf') format('truetype');
+  }
+
+.startButton {
+    font-family: 'Ropa Sans';
+    font-size: 90px;
+    height: 500px;
+    width: 1000px;
+    color: white;
+    border-radius: 50%;
+    background-image: radial-gradient(circle, #FF00D6E6, #8F00FFE6);
+    border: 0px;
+    animation: endless-in infinite 2s ease-in-out;
+}
+  
+@keyframes endless-in {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.08);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+  
+.continueButton {
+    font-family: 'Ropa Sans';
+    font-size: 82px;
+    height: 150px;
+    width: 450px;
+    color: white;
+    background-color: black;
+    border: 10px #FF00D6 solid;
+    border-radius: 20px;
+}
