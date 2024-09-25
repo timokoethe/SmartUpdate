@@ -37,3 +37,17 @@
     border: 10px #FF00D6 solid;
     border-radius: 20px;
 }
+
+.progressContainer {
+    width: 100vw;
+    height: 1.3vh;
+    background-color: white;
+    box-shadow: 0px 4px 4px #00000024;
+}
+
+.progressBar {
+    width: 10vw;
+    height: 1.3vh;
+    border-radius: 0px 30px 30px 0px;
+    background-image: linear-gradient(to right, #8F00FFE6, #FF00D6E6);
+}
