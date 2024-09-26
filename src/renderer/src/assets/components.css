@@ -11,8 +11,9 @@
     color: white;
     border-radius: 50%;
     background-image: radial-gradient(circle, #FF00D6E6, #8F00FFE6);
-    border: 0px;
+    border: none;
     animation: endless-in infinite 2s ease-in-out;
+    cursor: pointer;
 }
   
 @keyframes endless-in {
@@ -36,6 +37,41 @@
     background-color: black;
     border: 10px #FF00D6 solid;
     border-radius: 20px;
+    cursor: pointer;
+}
+
+.continueButton:active {
+    transform: scale(0.98);
+}
+
+.backButton {
+    background-image: url("./icons/BackButton.png");
+    background-color: transparent;
+    background-size: contain;
+    border: none;
+    height: 2.6vh;
+    width: 2.6vh;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.backButton:active {
+    transform: scale(0.97);
+}
+
+.cancelButton {
+    background-image: url("./icons/CancelButton.png");
+    background-color: transparent;
+    background-size: contain;
+    border: none;
+    height: 2.6vh;
+    width: 2.6vh;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.cancelButton:active {
+    transform: scale(0.97);
 }
 
 .progressContainer {
