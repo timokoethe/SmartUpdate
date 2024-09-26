@@ -6,7 +6,7 @@ function EntryView() {
   return (
     <>
         <h1>SmartUpdate</h1>
-        <ProgressBar />
+        <ProgressBar progress={9}/>
         <StartButton />
     </>
   )

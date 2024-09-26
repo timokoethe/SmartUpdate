@@ -1,9 +1,9 @@
 import { useState } from 'react'
 
-function ProgressBar() {
+function ProgressBar({ progress = 9}) {
   return (
       <div className='progressContainer'>
-        <div className='progressBar'>
+        <div className='progressBar' style={{ width: `${progress}vw`}}>
         </div>
       </div>
   )
