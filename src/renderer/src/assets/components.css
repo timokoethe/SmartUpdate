@@ -89,6 +89,36 @@
     transform: scale(0.97);
 }
 
+.androidPicker {
+    background-image: url("./icons/AndroidPicker.png");
+    background-color: transparent;
+    background-size: contain;
+    border: none;
+    height: 18.32vh;
+    width: 18.32vh;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.androidPicker:active {
+    transform: scale(0.97);
+}
+
+.applePicker {
+    background-image: url("./icons/ApplePicker.png");
+    background-color: transparent;
+    background-size: contain;
+    border: none;
+    height: 18.32vh;
+    width: 18.32vh;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.applePicker:active {
+    transform: scale(0.97);
+}
+
 .progressContainer {
     width: 100vw;
     height: 1.3vh;

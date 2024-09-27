@@ -6,6 +6,8 @@ import BackButton from '../components/BackButton'
 import CancelButton from '../components/CancelButton'
 import InfoButton from '../components/InfoButton'
 import LanguageToggle from '../components/LanguageToggle'
+import AndroidPicker from '../components/AndroidPicker'
+import ApplePicker from '../components/ApplePicker'
 
 function EntryView() {
   return (
@@ -17,6 +19,8 @@ function EntryView() {
         <CancelButton />
         <InfoButton />
         <LanguageToggle />
+        <AndroidPicker />
+        <ApplePicker />
     </>
   )
 }
