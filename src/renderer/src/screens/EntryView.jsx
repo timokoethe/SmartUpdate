@@ -8,8 +8,10 @@ import InfoButton from '../components/InfoButton'
 import LanguageToggle from '../components/LanguageToggle'
 import AndroidPicker from '../components/AndroidPicker'
 import ApplePicker from '../components/ApplePicker'
+import { useNavigate } from 'react-router-dom'
 
 function EntryView() {
+  const navigate = useNavigate()
   return (
     <>
         <ProgressBar progress={9}/>
@@ -20,7 +22,7 @@ function EntryView() {
         <InfoButton />
         <LanguageToggle />
         <AndroidPicker />
-        <ApplePicker />
+        <ApplePicker onClick={() => navigate('./InfoView')}/>
     </>
   )
 }

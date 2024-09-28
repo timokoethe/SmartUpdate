@@ -1,8 +1,8 @@
 import { useState } from 'react'
 
-function ApplePicker() {
+function ApplePicker({ onClick }) {
   return (
-      <button className='applePicker' />
+      <button className='applePicker' onClick={onClick} />
   )
 }
 
