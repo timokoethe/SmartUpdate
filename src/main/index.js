@@ -18,6 +18,8 @@ function createWindow() {
     }
   })
 
+  mainWindow.setAspectRatio(9 / 16)
+
   mainWindow.on('ready-to-show', () => {
     mainWindow.show()
   })
