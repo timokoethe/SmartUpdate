@@ -10,6 +10,7 @@ function PickerView() {
     <>
         <h1>PickerView</h1>
         <AndroidPicker onClick={() => navigate('/Android_Step01View')}/>
+        <ApplePicker onClick={() => navigate('/IOS_Step01View')}/>
     </>
   )
 }

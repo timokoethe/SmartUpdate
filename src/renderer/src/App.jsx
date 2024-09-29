@@ -15,6 +15,17 @@ import Android_Step08View from './screens/Android/Android_Step08View'
 
 import Android_WarningView from './screens/Android/Android_WarningView'
 
+import IOS_Step01View from './screens/iOS/iOS_Step01View'
+import IOS_Step02View from './screens/iOS/iOS_Step02View'
+import IOS_Step03View from './screens/iOS/iOS_Step03View'
+import IOS_Step04View from './screens/iOS/iOS_Step04View'
+import IOS_Step05View from './screens/iOS/iOS_Step05View'
+import IOS_Step06View from './screens/iOS/iOS_Step06View'
+import IOS_Step07View from './screens/iOS/iOS_Step07View'
+import IOS_Step08View from './screens/iOS/iOS_Step08View'
+
+import IOS_WarningView from './screens/iOS/iOS_WarningView'
+
 import CelebrationView from './screens/CelebrationView'
 import FinalView from './screens/FinalView'
 
@@ -39,6 +50,18 @@ function App() {
           <Route path="/Android_Step06View" element={<Android_Step06View />} />
           <Route path="/Android_Step07View" element={<Android_Step07View />} />
           <Route path="/Android_Step08View" element={<Android_Step08View />} />
+
+          <Route path="/IOS_Step01View" element={<IOS_Step01View />} />
+          <Route path="/IOS_Step02View" element={<IOS_Step02View />} />
+          <Route path="/IOS_Step03View" element={<IOS_Step03View />} />
+          <Route path="/IOS_Step04View" element={<IOS_Step04View />} />
+          <Route path="/IOS_Step05View" element={<IOS_Step05View />} />
+          <Route path="/IOS_Step06View" element={<IOS_Step06View />} />
+          <Route path="/IOS_Step07View" element={<IOS_Step07View />} />
+          <Route path="/IOS_Step08View" element={<IOS_Step08View />} />
+
+          <Route path="/IOS_WarningView" element={<IOS_WarningView />} />
+
           <Route path="/CelebrationView" element={<CelebrationView />} />
           <Route path="/FinalView" element={<FinalView />} />
         </Routes>

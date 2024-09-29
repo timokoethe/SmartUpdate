@@ -1,13 +1,15 @@
 import { useState } from 'react'
 import ContinueButton from '../../components/ContinueButton'
+import { useNavigate } from 'react-router-dom'
 
-function iOS_Step08iew() {
+function IOS_Step08View() {
+  const navigate = useNavigate()
   return (
     <>
         <h1>iOS_Step08View</h1>
-        <ContinueButton />
+        <ContinueButton onClick={() => navigate('/CelebrationView')} />
     </>
   )
 }
 
-export default iOS_Step08View
+export default IOS_Step08View
