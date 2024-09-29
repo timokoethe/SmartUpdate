@@ -2,6 +2,21 @@ import { HashRouter, Route, Routes, useNavigate } from 'react-router-dom'
 import EntryView from './screens/EntryView'
 import InfoView from './screens/InfoView'
 import ProgressBar from './components/ProgressBar'
+import SolutionView from './screens/SolutionView'
+import PickerView from './screens/PickerView'
+import Android_Step01View from './screens/Android/Android_Step01View'
+import Android_Step02View from './screens/Android/Android_Step02View'
+import Android_Step03View from './screens/Android/Android_Step03View'
+import Android_Step04View from './screens/Android/Android_Step04View'
+import Android_Step05View from './screens/Android/Android_Step05View'
+import Android_Step06View from './screens/Android/Android_Step06View'
+import Android_Step07View from './screens/Android/Android_Step07View'
+import Android_Step08View from './screens/Android/Android_Step08View'
+
+import Android_WarningView from './screens/Android/Android_WarningView'
+
+import CelebrationView from './screens/CelebrationView'
+import FinalView from './screens/FinalView'
 
 function App() {
   const ipcHandle = () => window.electron.ipcRenderer.send('ping')
@@ -12,7 +27,20 @@ function App() {
       <HashRouter>
         <Routes>
           <Route path="/" element={<EntryView />} />
-          <Route path="/info" element={<InfoView />} />
+          <Route path="/InfoView" element={<InfoView />} />
+          <Route path="/SolutionView" element={<SolutionView />} />
+          <Route path="/PickerView" element={<PickerView />} />
+          <Route path="/Android_Step01View" element={<Android_Step01View />} />
+          <Route path="/Android_Step02View" element={<Android_Step02View />} />
+          <Route path="/Android_Step03View" element={<Android_Step03View />} />
+          <Route path="/Android_Step04View" element={<Android_Step04View />} />
+          <Route path="/Android_Step05View" element={<Android_Step05View />} />
+          <Route path="/Android_WarningView" element={<Android_WarningView />} />
+          <Route path="/Android_Step06View" element={<Android_Step06View />} />
+          <Route path="/Android_Step07View" element={<Android_Step07View />} />
+          <Route path="/Android_Step08View" element={<Android_Step08View />} />
+          <Route path="/CelebrationView" element={<CelebrationView />} />
+          <Route path="/FinalView" element={<FinalView />} />
         </Routes>
       </HashRouter>
     </>

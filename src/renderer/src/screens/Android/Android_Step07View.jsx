@@ -1,11 +1,13 @@
 import { useState } from 'react'
 import ContinueButton from '../../components/ContinueButton'
+import { useNavigate } from 'react-router-dom'
 
-function Android_Step07iew() {
+function Android_Step07View() {
+  const navigate = useNavigate()
   return (
     <>
         <h1>Android_Step07View</h1>
-        <ContinueButton />
+        <ContinueButton onClick={() => navigate('/Android_Step08View')} />
     </>
   )
 }
