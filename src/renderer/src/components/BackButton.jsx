@@ -1,8 +1,8 @@
 import { useState } from 'react'
 
-function BackButton() {
+function BackButton({ onClick}) {
   return (
-      <button className='backButton' />
+      <button className='backButton' onClick={onClick}/>
   )
 }
 

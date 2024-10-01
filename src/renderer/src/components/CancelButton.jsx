@@ -1,8 +1,8 @@
 import { useState } from 'react'
 
-function CancelButton() {
+function CancelButton({ onClick }) {
   return (
-      <button className='cancelButton' />
+      <button className='cancelButton' onClick={onClick}/>
   )
 }
 
