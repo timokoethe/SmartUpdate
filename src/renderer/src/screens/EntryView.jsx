@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import ContinueButton from '../components/ContinueButton'
+import InfoWidget from '../components/InfoWidget'
 
 function EntryView() {
   const navigate = useNavigate()
@@ -8,6 +9,7 @@ function EntryView() {
     <>
         <h1>EntryView</h1>
         <ContinueButton onClick={() => navigate('/InfoView')} />
+        <InfoWidget />
     </>
   )
 }

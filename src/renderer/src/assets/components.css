@@ -132,6 +132,14 @@
     background-image: linear-gradient(to right, #8F00FFE6, #FF00D6E6); 
 }
 
+.infoWidget {
+    background-color: #B60099;
+    border-radius: 30px;
+    width: 77vw;
+    height: 17vh;
+    font-family: 'Ropa Sans';
+    padding: 20px;
+}
 
 
 
