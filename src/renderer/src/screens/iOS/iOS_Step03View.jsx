@@ -11,8 +11,8 @@ function IOS_Step03View() {
     <>
         <h1>iOS_Step03View</h1>
         <InfoButton />
-        <CancelButton />
-        <BackButton />
+        <CancelButton onClick={() => navigate('/')}/>
+        <BackButton onClick={() => navigate('/IOS_Step02View')}/>
         <ContinueButton onClick={() => navigate('/IOS_Step04View')} />
     </>
   )

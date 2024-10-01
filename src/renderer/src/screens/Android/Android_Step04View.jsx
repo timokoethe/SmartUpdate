@@ -9,8 +9,8 @@ function Android_Step04View() {
   return (
     <>
         <h1>Android_Step04View</h1>
-        <CancelButton />
-        <BackButton />
+        <CancelButton onClick={() => navigate('/')}/>
+        <BackButton onClick={() => navigate('/Android_Step03View')}/>
         <ContinueButton onClick={() => navigate('/Android_Step05View')} />
     </>
   )

@@ -1,8 +1,8 @@
 import { useState } from 'react'
 
-function InfoButton() {
+function InfoButton({ onClick }) {
   return (
-      <button className='infoButton' />
+      <button className='infoButton' onClick={onClick} />
   )
 }
 

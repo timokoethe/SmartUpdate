@@ -11,8 +11,8 @@ function Android_Step01View() {
     <>
         <h1>Android_Step01View</h1>
         <InfoButton />
-        <CancelButton />
-        <BackButton />
+        <CancelButton onClick={() => navigate('/')}/>
+        <BackButton onClick={() => navigate('/PickerView')}/>
         <ContinueButton onClick={() => navigate('/Android_Step02View')} />
     </>
   )

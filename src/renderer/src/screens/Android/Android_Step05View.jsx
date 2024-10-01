@@ -9,8 +9,8 @@ function Android_Step05View() {
   return (
     <>
         <h1>Android_Step05View</h1>
-        <CancelButton />
-        <BackButton />
+        <CancelButton onClick={() => navigate('/')}/>
+        <BackButton onClick={() => navigate('/Android_Step04View')}/>
         <ContinueButton onClick={() => navigate('/Android_WarningView')} />
     </>
   )
