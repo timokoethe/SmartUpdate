@@ -7,7 +7,7 @@ function FinalView() {
   const navigate = useNavigate()
   return (
     <>
-        <h1>FinalView</h1>
+        <h1 className='headline'>Congratulations!</h1>
         <BackButton />
         <ContinueButton onClick={() => navigate('/')} />
     </>

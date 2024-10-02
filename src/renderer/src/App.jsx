@@ -34,7 +34,6 @@ function App() {
 
   return (
     <>
-    <ProgressBar progress={9}/>
       <HashRouter>
         <Routes>
           <Route path="/" element={<EntryView />} />

@@ -8,7 +8,6 @@ function EntryView() {
   const navigate = useNavigate()
   return (
     <>
-        <h1>EntryView</h1>
         <InfoButton />
         <StartButton onClick={() => navigate('/InfoView')} />
         <InfoWidget widgetNumber={1} />

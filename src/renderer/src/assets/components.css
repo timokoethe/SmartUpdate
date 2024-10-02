@@ -273,3 +273,13 @@ input.check-toggle-round-flat + label:after {
 input.check-toggle-round-flat:checked + label:after {
     margin-left: 42px;
 }
+
+
+
+
+
+/* General Rules */
+.headline {
+    font-family: 'Ropa Sans';
+    font-size: 100px;
+}
