@@ -133,12 +133,40 @@
 }
 
 .infoWidget {
-    background-color: #B60099;
+    background-image: linear-gradient(to bottom, #A9008E, #5F00AA); 
     border-radius: 30px;
     width: 77vw;
     height: 17vh;
     font-family: 'Ropa Sans';
-    padding: 20px;
+    padding: 25px 50px 0px 50px;
+}
+
+.infoWidgetContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infoWidgetHeadline {
+    font-size: 100px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.infoWidgetText {
+    font-size: 70px;
+    color: white;
+    margin-bottom: 30px;
+    margin-right: 40px;
+}
+
+.infoWidgetIcon {
+    background-color: transparent;
+    background-size: contain;
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    margin-right: 20px;
 }
 
 

@@ -11,7 +11,7 @@ function EntryView() {
         <h1>EntryView</h1>
         <InfoButton />
         <StartButton onClick={() => navigate('/InfoView')} />
-        <InfoWidget />
+        <InfoWidget widgetNumber={1} />
     </>
   )
 }
