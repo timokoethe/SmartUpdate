@@ -15,11 +15,11 @@ function InfoView() {
           <p className='text-small leading'>Choose one or more answers that you think are important.</p>
         </div>
 
-        <AnswerOption optionNumber={1} />
-        <AnswerOption optionNumber={2} />
-        <AnswerOption optionNumber={3} />
-        <AnswerOption optionNumber={4} />
-        <AnswerOption optionNumber={5} />
+        <AnswerOption optionNumber={1} clickable={true}/>
+        <AnswerOption optionNumber={2} clickable={true}/>
+        <AnswerOption optionNumber={3} clickable={true}/>
+        <AnswerOption optionNumber={4} clickable={true}/>
+        <AnswerOption optionNumber={5} clickable={true}/>
 
         <div className='mt-300'>
           <ContinueButton onClick={() => navigate('/SolutionView')} />

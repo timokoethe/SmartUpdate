@@ -1,9 +1,12 @@
 import { useState } from 'react'
 
-function AnswerOption({optionNumber}) {
+function AnswerOption({optionNumber, clickable}) {
+  const isRight = optionNumber === 1 || optionNumber === 5
   const [isSelected, setIsSelected] = useState(false)
   const handleClick = () => {
-    setIsSelected(!isSelected)
+    if (clickable) {
+      setIsSelected(!isSelected)
+    }
   }
   const getContentForNumber = (optionNumber) => {
     switch (optionNumber) {
@@ -24,8 +27,12 @@ function AnswerOption({optionNumber}) {
 
 
   return (
-      <div className={`answerOption ${isSelected ? 'answerOptionSelected' : ''}`} onClick={handleClick} >
-        <div className={`answerOptionCheckBox ${isSelected ? 'answerOptionCheckBoxSelected' : ''}`} />
+      <div className={`answerOption 
+                    ${isSelected ? 'answerOptionSelected' : ''}
+                    ${clickable || !isRight ? '' : 'answerOptionSolution'}`} onClick={handleClick} >
+        <div className={`answerOptionCheckBox 
+                    ${isSelected ? 'answerOptionCheckBoxSelected' : ''}
+                    ${clickable || !isRight ? '' : 'answerOptionCheckBoxSolution'}`} />
         <p className='text-medium'>{text}</p>
       </div>
   )
