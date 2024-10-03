@@ -89,6 +89,39 @@
     transform: scale(0.97);
 }
 
+.answerOption {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-family: 'Ropa Sans';
+    height: 4.5vh;
+    width: 74vw;
+    color: white;
+    background-color: #828282;
+    border: 10px #828282 solid;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.answerOptionSelected {
+    border: 10px #FF8EED solid;
+}
+
+.answerOptionCheckBox {
+    background-color: #828282;
+    border: 7px solid white;
+    height: 3.2vw;
+    width: 3.2vw;
+    margin-left: 50px;
+    margin-right: 70px;
+}
+
+.answerOptionCheckBoxSelected {
+    background-color: #FF8EED;
+}
+
+
 .androidPicker {
     background-image: url("./icons/AndroidPicker.png");
     background-color: transparent;
@@ -214,6 +247,7 @@ input.check-toggle-round-flat:checked ~ .on {
     margin-left: -9999px;
     visibility: hidden;
 }
+
 .check-toggle + label {
     display: block;
     position: relative;
@@ -236,6 +270,7 @@ input.check-toggle-round-flat + label {
     -o-border-radius: 60px;
     border-radius: 60px;
 }
+
 input.check-toggle-round-flat + label:before, input.check-toggle-round-flat + label:after {
     display: block;
     position: absolute;
@@ -253,6 +288,7 @@ input.check-toggle-round-flat + label:before {
     -o-border-radius: 60px;
     border-radius: 60px;
 }
+
 input.check-toggle-round-flat + label:after {
     top: 4px;
     left: 4px;
@@ -288,6 +324,11 @@ input.check-toggle-round-flat:checked + label:after {
 .text {
     font-family: 'Ropa Sans';
     font-size: 90px;
+}
+
+.text-medium {
+    font-family: 'Ropa Sans';
+    font-size: 80px;
 }
 
 .text-small {
