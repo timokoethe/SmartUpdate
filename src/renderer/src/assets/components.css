@@ -279,7 +279,60 @@ input.check-toggle-round-flat:checked + label:after {
 
 
 /* General Rules */
+/* Font */
 .headline {
     font-family: 'Ropa Sans';
     font-size: 100px;
+}
+
+.text {
+    font-family: 'Ropa Sans';
+    font-size: 90px;
+}
+
+/* Spacing */
+.mx-80 {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.mx-200 {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.my-100 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mt-100 {
+    margin-top: 100px;
+}
+
+.px-100 {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.px-200 {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+
+
+.leading {
+    text-align: left;
+}
+
+.spacer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
