@@ -290,6 +290,11 @@ input.check-toggle-round-flat:checked + label:after {
     font-size: 90px;
 }
 
+.text-small {
+    font-family: 'Ropa Sans';
+    font-size: 70px;
+}
+
 /* Spacing */
 .mx-80 {
     margin-left: 80px;
@@ -306,12 +311,26 @@ input.check-toggle-round-flat:checked + label:after {
     margin-bottom: 100px;
 }
 
+.my-150 {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
 .mt-50 {
     margin-top: 50px;
 }
 
 .mt-100 {
     margin-top: 100px;
+}
+
+.mt-300 {
+    margin-top: 300px;
+}
+
+.px-80 {
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
 .px-100 {
@@ -334,5 +353,9 @@ input.check-toggle-round-flat:checked + label:after {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+}
+
+.fullWidth {
     width: 100%;
 }

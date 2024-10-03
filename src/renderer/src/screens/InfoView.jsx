@@ -8,8 +8,16 @@ function InfoView() {
   return (
     <>
         <ProgressBar progress={1}/>
-        <h1 className='headline'>Why are Software Updates so important?</h1>
-        <ContinueButton onClick={() => navigate('/SolutionView')} />
+        <h1 className='headline mt-100'>Why are Software Updates so important?</h1>
+        <div className='fullWidth px-80 my-150'>
+          <p className='text leading'> What do you think?</p>
+          <p className='text-small leading'>Choose one or more answers that you think are important.</p>
+        </div>
+
+        <div className='mt-300'>
+          <ContinueButton onClick={() => navigate('/SolutionView')} />
+        </div>
+
     </>
   )
 }
