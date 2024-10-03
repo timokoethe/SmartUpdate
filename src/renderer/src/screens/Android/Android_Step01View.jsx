@@ -10,12 +10,19 @@ function Android_Step01View() {
   const navigate = useNavigate()
   return (
     <>
-        <ProgressBar progress={4}/>
-        <h1 className='headline'>1. Find the Update Settings</h1>
-        <InfoButton />
-        <CancelButton onClick={() => navigate('/')}/>
+      <ProgressBar progress={4}/>
+      <div className='spacer px-100 mt-50' style={{alignItems: 'flex-start'}}>
         <BackButton onClick={() => navigate('/PickerView')}/>
-        <ContinueButton onClick={() => navigate('/Android_Step02View')} />
+        <h1 className='headline mb-150 mt-50'>1. Find the Update Settings</h1>
+        <CancelButton  onClick={() => navigate('/')}/>
+      </div>
+
+      <div className='spacer px-100'>
+        <p className='text-medium'>1. Search for your Settings App.</p>
+        <InfoButton />
+      </div>
+
+      <ContinueButton onClick={() => navigate('/Android_Step02View')} />
     </>
   )
 }

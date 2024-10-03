@@ -9,11 +9,18 @@ function Android_Step04View() {
   const navigate = useNavigate()
   return (
     <>
-        <ProgressBar progress={7}/>
-        <h1 className='headline'>2. Enable Automatic Update</h1>
-        <CancelButton onClick={() => navigate('/')}/>
+      <ProgressBar progress={7}/>
+      <div className='spacer px-100 mt-50' style={{alignItems: 'flex-start'}}>
         <BackButton onClick={() => navigate('/Android_Step03View')}/>
-        <ContinueButton onClick={() => navigate('/Android_Step05View')} />
+        <h1 className='headline mb-150 mt-50'>2. Enable Automatic Update</h1>
+        <CancelButton  onClick={() => navigate('/')}/>
+      </div>
+
+      <div className='spacer px-100'>
+        <p className='text-medium'>1. Click on the gear icon.</p>
+      </div>
+
+      <ContinueButton onClick={() => navigate('/Android_Step05View')} />
     </>
   )
 }

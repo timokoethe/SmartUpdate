@@ -10,12 +10,22 @@ function Android_Step02View() {
   const navigate = useNavigate()
   return (
     <>
-            <ProgressBar progress={5}/>
-        <h1 className='headline'>1. Find the Update Settings</h1>
-        <InfoButton />
-        <CancelButton onClick={() => navigate('/')}/>
+      <ProgressBar progress={5}/>
+      <div className='spacer px-100 mt-50' style={{alignItems: 'flex-start'}}>
         <BackButton onClick={() => navigate('/Android_Step01View')}/>
-        <ContinueButton onClick={() => navigate('/Android_Step03View')} />
+        <h1 className='headline mb-150 mt-50'>1. Find the Update Settings</h1>
+        <CancelButton  onClick={() => navigate('/')}/>
+      </div>
+
+      <div className='spacer px-100'>
+        <p className='text-medium'>1. Search for your Settings App.</p>
+        <InfoButton />
+      </div>
+      <div className='spacer px-100'>
+        <p className='text-medium'>2. Scroll to <i>System & Updates</i>.</p>
+      </div>
+
+      <ContinueButton onClick={() => navigate('/Android_Step03View')} />
     </>
   )
 }

@@ -10,12 +10,21 @@ function Android_Step06View() {
   const navigate = useNavigate()
   return (
     <>
-        <ProgressBar progress={9}/>
-        <h1 className='headline'>3. Search for Updates</h1>
-        <InfoButton />
-        <CancelButton onClick={() => navigate('/')}/>
+      <ProgressBar progress={9}/>
+      <div className='spacer px-100 mt-50' style={{alignItems: 'flex-start'}}>
         <BackButton onClick={() => navigate('/Android_Step05View')}/>
-        <ContinueButton onClick={() => navigate('/Android_Step07View')} />
+        <h1 className='headline mb-150 mt-50'>3. Search for Updates</h1>
+        <CancelButton  onClick={() => navigate('/')}/>
+      </div>
+
+      <div className='spacer px-100'>
+        <p className='text-medium' style={{width: '70vw'}}>1. Once you have enabled the Automatic Update 
+          function, go one step back to the <i>Software update</i> tab. Your phone
+          starts searching for updates.</p>
+        <InfoButton />
+      </div>
+
+      <ContinueButton onClick={() => navigate('/Android_Step07View')} />
     </>
   )
 }
