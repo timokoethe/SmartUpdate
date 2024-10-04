@@ -9,11 +9,18 @@ function IOS_Step04View() {
   const navigate = useNavigate()
   return (
     <>
-        <ProgressBar progress={7}/>
-        <h1 className='headline'>2. Enable Automatic Update</h1>
-        <CancelButton onClick={() => navigate('/')}/>
-        <BackButton onClick={() => navigate('/IOS_Step03View')}/>
-        <ContinueButton onClick={() => navigate('/IOS_Step05View')} />
+      <ProgressBar progress={7}/>
+      <div className='spacer px-100 mt-50' style={{alignItems: 'flex-start'}}>
+        <BackButton onClick={() => navigate('/iOS_Step03View')}/>
+        <h1 className='headline mb-150 mt-50'>2. Enable Automatic Update</h1>
+        <CancelButton  onClick={() => navigate('/')}/>
+      </div>
+
+      <div className='spacer px-100'>
+        <p className='text-medium'>1. Go to <i>Automatic Updates</i>.</p>
+      </div>
+
+      <ContinueButton onClick={() => navigate('/iOS_Step05View')} />
     </>
   )
 }

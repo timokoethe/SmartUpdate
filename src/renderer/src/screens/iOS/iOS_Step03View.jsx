@@ -10,12 +10,25 @@ function IOS_Step03View() {
   const navigate = useNavigate()
   return (
     <>
-        <ProgressBar progress={6}/>
-        <h1 className='headline'>1. Find the Update Settings</h1>
+      <ProgressBar progress={6}/>
+      <div className='spacer px-100 mt-50' style={{alignItems: 'flex-start'}}>
+        <BackButton onClick={() => navigate('/iOS_Step02View')}/>
+        <h1 className='headline mb-150 mt-50'>1. Find the Update Settings</h1>
+        <CancelButton  onClick={() => navigate('/')}/>
+      </div>
+
+      <div className='spacer px-100'>
+        <p className='text-medium'>1. Search for your Settings App.</p>
         <InfoButton />
-        <CancelButton onClick={() => navigate('/')}/>
-        <BackButton onClick={() => navigate('/IOS_Step02View')}/>
-        <ContinueButton onClick={() => navigate('/IOS_Step04View')} />
+      </div>
+      <div className='spacer px-100'>
+        <p className='text-medium'>2. Go to <i>General</i>.</p>
+      </div>
+      <div className='spacer px-100'>
+        <p className='text-medium'>3. Go to <i>Software Update</i>.</p>
+      </div>
+
+      <ContinueButton onClick={() => navigate('/iOS_Step04View')} />
     </>
   )
 }
