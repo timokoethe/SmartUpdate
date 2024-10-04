@@ -45,6 +45,22 @@
     transform: scale(0.98);
 }
 
+.completeButton {
+    font-family: 'Ropa Sans';
+    font-size: 82px;
+    height: 150px;
+    width: 450px;
+    color: white;
+    background-color: black;
+    border: 10px #FF00D6 solid;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.completeButton:active {
+    transform: scale(0.98);
+}
+
 .backButton {
     background-image: url("./icons/BackButton.png");
     background-color: transparent;
@@ -248,6 +264,32 @@
     padding-top: 100px;
 }
 
+.finalWidget {
+    width: 74vw;
+    height: 6.5vh;
+    background-color: #828282;
+    border-radius: 25px;
+    display: flex;
+}
+
+.finalWidgetContainer {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+}
+
+.finalWidgetIcon {
+    height: 2.6vh;
+    width: 2.6vh;
+}
+
+.finalWidgetText {
+    font-family: 'Ropa Sans';
+    font-size: 68px;
+    color: white;
+}
+
 
 
 /* Languange toggle switch */
@@ -388,6 +430,11 @@ input.check-toggle-round-flat:checked + label:after {
     margin-right: 80px;
 }
 
+.mx-100 {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
 .mx-200 {
     margin-left: 200px;
     margin-right: 200px;
@@ -418,6 +465,10 @@ input.check-toggle-round-flat:checked + label:after {
 
 .mt-300 {
     margin-top: 300px;
+}
+
+.mb-100 {
+    margin-bottom: 100px;
 }
 
 .mb-150 {
