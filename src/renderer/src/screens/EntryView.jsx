@@ -19,18 +19,19 @@ function EntryView() {
   
   return (
     <>
-      <video ref={videoRef} style={{position: 'fixed'}} src={video} loop />
-      <div style={{position: 'fixed'}}>
-      <div className='spacer mt-100'>
-        <InfoButton theme={'light'}/>
-        <LanguageToggle />
+      <video ref={videoRef} className='video' src={video} loop />
+
+      <div className='fullWidth'>
+        <div className='mt-100 spacer px-100'>
+          <InfoButton theme={'light'}/>
+          <LanguageToggle />
+        </div>
+
+        <div className='entryContainer' >
+          <InfoWidget widgetNumber={1} />
+          <StartButton onClick={() => navigate('/InfoView')} />
+        </div>
       </div>
-
-      <InfoWidget widgetNumber={1} />
-      <StartButton onClick={() => navigate('/InfoView')} />
-      </div>
-
-
     </>
   )
 }
