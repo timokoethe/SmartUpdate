@@ -3,7 +3,7 @@ function InfoOverlay({overlayNumber, isVisible, onClose}) {
   const getContentForNumber = (overlayNumber) => {
     switch (overlayNumber) {
       case 1:
-        return { text: 'Fixed possible security vulnerabilities'}
+        return { text: '- Turn your phone backwards.'}
       case 2:
         return { text: 'Improved features and functinality'}
       case 3:
@@ -15,10 +15,18 @@ function InfoOverlay({overlayNumber, isVisible, onClose}) {
   const { text } = getContentForNumber(overlayNumber);
 
   return (
-      <div>
-        <p className='text'>{text}</p>
-        <button onClick={onClose}>Close</button>
+    <div className='infoOverlayScreen'>
+              <div className='infoOverlay'>
+        <div className='infoOverlayHeaderContainer'>
+            <div className='infoOverlayHeadlineContainer'>
+                <h1 className='infoOverlayHeadline'>What platform do I have?</h1>
+            </div>
+            <button className='infoOverlayCloseButton' onClick={onClose}/>
+        </div>
+        <p className='infoOverlayText'>{text}</p>
       </div>
+    </div>
+
   )
 }
 

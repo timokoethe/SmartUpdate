@@ -77,7 +77,7 @@
 }
 
 .cancelButton {
-    background-image: url("./icons/CancelButton.png");
+    background-image: url("./icons/CancelButtonDark.png");
     background-color: transparent;
     background-size: contain;
     border: none;
@@ -311,6 +311,62 @@
     justify-content: center;
     align-items: center;
     position: relative;
+}
+
+.infoOverlayScreen {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000099;
+    z-index: 100;
+}
+
+.infoOverlay {
+    position: absolute;
+    width: 50vw;
+    height: 46.3vw;
+    background-image: linear-gradient(to bottom, #8C0076, #380064); 
+    border-radius: 25px;
+    box-shadow: 0px 10px 10px #00000024;
+}
+
+.infoOverlayHeaderContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    padding: 20px 20px 0px 50px;
+}
+
+.infoOverlayCloseButton {
+    background-image: url("./icons/CancelButtonLight.png");
+    background-color: transparent;
+    background-size: contain;
+    border: none;
+    height: 2.6vh;
+    width: 2.6vh;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.infoOverlayHeadlineContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 215px;
+}
+
+.infoOverlayHeadline {
+    font-family: 'Ropa Sans';
+    font-size: 82px;
+    color: white;
+}
+
+.infoOverlayText {
+    padding-left: 50px;
+    font-family: 'Ropa Sans';
+    font-size: 70px;
+    color: white;
+    margin-bottom: 50px;
 }
 
 /* Languange toggle switch */
