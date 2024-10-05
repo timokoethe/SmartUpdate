@@ -1,8 +1,10 @@
 import { useState } from 'react'
 
-function InfoButton({ onClick }) {
+function InfoButton({ onClick, theme }) {
+  const iconStyle = theme === 'dark' ? 'infoIconDark' : 'infoIconLight'
+
   return (
-      <button className='infoButton' onClick={onClick} />
+      <button className={`infoButton ${iconStyle}`} onClick={onClick} />
   )
 }
 

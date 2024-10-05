@@ -91,8 +91,15 @@
     transform: scale(0.97);
 }
 
+.infoIconDark {
+    background-image: url("./icons/InfoButtonDark.png");
+}
+
+.infoIconLight {
+    background-image: url("./icons/InfoButtonLight.png");
+}
+
 .infoButton {
-    background-image: url("./icons/InfoButton.png");
     background-color: transparent;
     background-size: contain;
     border: none;
@@ -290,7 +297,13 @@
     color: white;
 }
 
-
+.video {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* Languange toggle switch */
 .switch {
