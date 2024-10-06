@@ -476,6 +476,42 @@ input.check-toggle-round-flat:checked + label:after {
 }
 
 
+.widgetContainer {
+    position: relative;
+    width: 100vw;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.widgetWrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 3s ease-in-out;
+    width: 100vw;
+}
+
+.current {
+    z-index: 1;
+    transform: translateX(0vw);
+}
+
+.next {
+    z-index: 2;
+    transform: translateX(100vw);
+}
+
+.slideoutLeft {
+    transform: translateX(-100vw);
+}
+
+.slideinRight {
+    transform: translateX(0);
+}
 
 
 

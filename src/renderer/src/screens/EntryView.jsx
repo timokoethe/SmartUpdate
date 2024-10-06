@@ -19,8 +19,27 @@ function EntryView() {
     }
   }, [])
 
+  // Overlay State
   const [overlayVisible, setOverlayVisible] = useState(false);
   const toggleOverlay = () => setOverlayVisible(!overlayVisible);
+
+  // Widget State
+  const [activeWidget, setActiveWidget] = useState(1);
+  const [nextWidget, setNextWidget] = useState(2);
+  const [transitioning, setTransitioning] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setTransitioning(true);
+      setTimeout(() => {
+        setActiveWidget(nextWidget);
+        setNextWidget((prev) => (prev === 3 ? 1 : prev + 1));
+        setTransitioning(false);
+      }, 3000);
+    }, 8000);
+
+    return () => clearTimeout(timer);
+  }, [activeWidget, nextWidget]);
 
   return (
     <>
@@ -34,7 +53,20 @@ function EntryView() {
         </div>
 
         <div className='entryContainer' >
-          <InfoWidget widgetNumber={1} />
+          <div className='widgetContainer'>
+            <div className={`widgetWrapper current ${transitioning ? 'slideoutLeft' : ''}`}>
+              {activeWidget === 1 && <InfoWidget widgetNumber={1} />}
+              {activeWidget === 2 && <InfoWidget widgetNumber={2} />}
+              {activeWidget === 3 && <InfoWidget widgetNumber={3} />}
+            </div>
+
+            <div className={`widgetWrapper next ${transitioning ? 'slideinRight' : ''}`}>
+              {nextWidget === 1 && <InfoWidget widgetNumber={1} />}
+              {nextWidget === 2 && <InfoWidget widgetNumber={2} />}
+              {nextWidget === 3 && <InfoWidget widgetNumber={3} />}
+            </div>
+
+          </div>
           <StartButton onClick={() => navigate('/InfoView')} />
         </div>
       </div>
