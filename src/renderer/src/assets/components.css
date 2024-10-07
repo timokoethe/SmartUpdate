@@ -313,12 +313,28 @@
     position: relative;
 }
 
+@keyframes infoOverlayAppear {
+    from {
+        opacity: 0;
+        backdrop-filter: blur(0px);
+        background-color: #00000000;
+    }
+    to {
+        opacity: 1;
+        backdrop-filter: blur(20px);
+        background-color: #00000099;
+    }
+  }
+
 .infoOverlayScreen {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background-color: #00000099;
     z-index: 100;
+    animation-name: infoOverlayAppear;
+    animation-duration: 0.5s;
+    backdrop-filter: blur(20px);
+    background-color: #00000099;
 }
 
 .infoOverlay {
@@ -362,7 +378,6 @@
 }
 
 .infoOverlayText {
-    padding-left: 50px;
     font-family: 'Ropa Sans';
     font-size: 70px;
     color: white;
@@ -586,6 +601,11 @@ input.check-toggle-round-flat:checked + label:after {
 
 .mb-150 {
     margin-bottom: 150px;
+}
+
+.px-50 {
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .px-80 {

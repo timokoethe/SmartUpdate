@@ -3,7 +3,8 @@ function InfoOverlay({overlayNumber, isVisible, onClose}) {
   const getContentForNumber = (overlayNumber) => {
     switch (overlayNumber) {
       case 1:
-        return { text: '- Turn your phone backwards.'}
+        return { headline: 'What is this?',
+              text: 'This application offers you a quick and simple step by step guide on how to update your phone manually and how to enable the automatic update function.' }
       case 2:
         return { text: 'Improved features and functinality'}
       case 3:
@@ -12,21 +13,20 @@ function InfoOverlay({overlayNumber, isVisible, onClose}) {
         return { text: 'Ensured compatibility with other systems'}
       }
   };
-  const { text } = getContentForNumber(overlayNumber);
+  const { headline, text } = getContentForNumber(overlayNumber);
 
   return (
     <div className='infoOverlayScreen'>
               <div className='infoOverlay'>
         <div className='infoOverlayHeaderContainer'>
             <div className='infoOverlayHeadlineContainer'>
-                <h1 className='infoOverlayHeadline'>What platform do I have?</h1>
+                <h1 className='infoOverlayHeadline'>{headline}</h1>
             </div>
             <button className='infoOverlayCloseButton' onClick={onClose}/>
         </div>
-        <p className='infoOverlayText'>{text}</p>
+        <p className='infoOverlayText px-50'>{text}</p>
       </div>
     </div>
-
   )
 }
 
