@@ -6,13 +6,13 @@ import CancelButton from '../components/CancelButton'
 import FinalWidget from '../components/FinalWidget'
 import CompleteButton from '../components/CompleteButton'
 
-function FinalView() {
+function FinalViewAndroid() {
   const navigate = useNavigate()
   return (
     <>
       <ProgressBar progress={11}/>
       <div className='spacer px-100 mt-50' style={{alignItems: 'flex-start'}}>
-        <BackButton onClick={() => navigate('/PickerView')}/>
+        <BackButton onClick={() => navigate('/Android_Step08View')}/>
         <h1 className='headline mb-150 mt-50'>Congratulations!</h1>
         <CancelButton  onClick={() => navigate('/')}/>
       </div>
@@ -26,4 +26,4 @@ function FinalView() {
   )
 }
 
-export default FinalView
+export default FinalViewAndroid

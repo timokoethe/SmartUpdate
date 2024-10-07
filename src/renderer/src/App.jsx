@@ -21,8 +21,10 @@ import IOS_Step06View from './screens/iOS/iOS_Step06View'
 import IOS_Step07View from './screens/iOS/iOS_Step07View'
 import IOS_Step08View from './screens/iOS/iOS_Step08View'
 import IOS_WarningView from './screens/iOS/iOS_WarningView'
-import CelebrationView from './screens/CelebrationView'
-import FinalView from './screens/FinalView'
+import FinalViewAndroid from './screens/FinalViewAndroid'
+import FinalViewiOS from './screens/FinalViewiOS'
+import CelebViewAndroid from './screens/CelebViewAndroid'
+import CelebViewiOS from './screens/CelebViewiOS'
 
 function App() {
   const ipcHandle = () => window.electron.ipcRenderer.send('ping')
@@ -55,8 +57,10 @@ function App() {
           <Route path="/IOS_Step07View" element={<IOS_Step07View />} />
           <Route path="/IOS_Step08View" element={<IOS_Step08View />} />
 
-          <Route path="/CelebrationView" element={<CelebrationView />} />
-          <Route path="/FinalView" element={<FinalView />} />
+          <Route path="/CelebViewAndroid" element={<CelebViewAndroid />} />
+          <Route path="/CelebViewiOS" element={<CelebViewiOS />} />
+          <Route path="/FinalViewAndroid" element={<FinalViewAndroid />} />
+          <Route path="/FinalViewiOS" element={<FinalViewiOS />} />
         </Routes>
       </HashRouter>
     </>

@@ -34,7 +34,7 @@ function Android_Step08View() {
         </p>
       </div>
 
-      <ContinueButton onClick={() => navigate('/CelebrationView')} />
+      <ContinueButton onClick={() => navigate('/CelebViewAndroid')} />
     </>
   )
 }
