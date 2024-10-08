@@ -17,7 +17,7 @@ function PickerView() {
   return (
     <>
     <div className='fullWidth'>
-      <InfoOverlay overlayNumber={1} isVisible={overlayVisible} onClose={toggleOverlay}/>
+      <InfoOverlay overlayNumber={2} isVisible={overlayVisible} onClose={toggleOverlay}/>
       
       <ProgressBar progress={3}/>
       <div className='spacer px-100 mt-50' style={{alignItems: 'flex-start'}}>
@@ -26,7 +26,7 @@ function PickerView() {
         <CancelButton  onClick={() => navigate('/')}/>
       </div>
       <div>
-        <p className='text mx-80 leading mb-150'>Mobile phones offer us a function to perforam updates automatically.<br/>
+        <p className='text mx-80 leading mb-150'>Mobile phones offer us a function to perform updates automatically.<br/>
           In the following we will show you how to activate this and also how to perform an update manually.
         </p>
         <p className='text mx-80 leading my-100'>Grab your phone and try this simultaneously on your own!</p>

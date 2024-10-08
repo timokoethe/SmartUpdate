@@ -6,9 +6,11 @@ function InfoOverlay({overlayNumber, isVisible, onClose}) {
         return { headline: 'What is this?',
               text: 'This application offers you a quick and simple step by step guide on how to update your phone manually and how to enable the automatic update function.' }
       case 2:
-        return { text: 'Improved features and functinality'}
+        return { headline: 'What platform do I have?',
+          text: 'Turn your phone backwards. Look for an icon. If you find an apple like icon, your phone is an apple device. If you don\'t find any icon, choose Android.'}
       case 3:
-        return { text: 'Fixed possible bugs'}
+        return { headline: 'How to find the Settings App?',
+          text: 'Look for the gear icon. Swipe down shortly from the top half of your screen. A searchbar appears. Type in \'Settings\' and choose the first result.'}
       case 4:
         return { text: 'Ensured compatibility with other systems'}
       }
