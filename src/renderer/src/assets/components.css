@@ -639,3 +639,7 @@ input.check-toggle-round-flat:checked + label:after {
 .fullWidth {
     width: 100vw;
 }
+
+.center {
+    text-align: center;
+}
