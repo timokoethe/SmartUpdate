@@ -532,6 +532,11 @@ input.check-toggle-round-flat:checked + label:after {
 
 /* General Rules */
 /* Font */
+.headline-large {
+    font-family: 'Ropa Sans';
+    font-size: 200px;
+}
+
 .headline {
     font-family: 'Ropa Sans';
     font-size: 100px;
@@ -550,6 +555,10 @@ input.check-toggle-round-flat:checked + label:after {
 .text-small {
     font-family: 'Ropa Sans';
     font-size: 70px;
+}
+
+.white {
+    color: white;
 }
 
 /* Spacing */
@@ -623,6 +632,10 @@ input.check-toggle-round-flat:checked + label:after {
     padding-right: 200px;
 }
 
+.pt-300 {
+    padding-top: 30vh;
+}
+
 .pb-30 {
     padding-bottom: 30px;
 }
@@ -650,6 +663,10 @@ input.check-toggle-round-flat:checked + label:after {
 
 .topAlign {
     align-items: flex-start;
+}
+
+.centerAlign {
+    align-items: center;
 }
 
 
