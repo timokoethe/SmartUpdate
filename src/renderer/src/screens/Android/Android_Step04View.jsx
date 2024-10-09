@@ -1,12 +1,17 @@
 import { useState } from 'react'
 import ContinueButton from '../../components/ContinueButton'
 import { useNavigate } from 'react-router-dom'
+import InfoButton from '../../components/InfoButton'
 import CancelButton from '../../components/CancelButton'
 import BackButton from '../../components/BackButton'
 import ProgressBar from '../../components/ProgressBar'
+import image from '../../assets/icons/iPhone.png'
 
 function Android_Step04View() {
   const navigate = useNavigate()
+    // Overlay State
+    const [overlayVisible, setOverlayVisible] = useState(false);
+    const toggleOverlay = () => setOverlayVisible(!overlayVisible);
   return (
     <>
       <ProgressBar progress={7}/>
@@ -16,8 +21,14 @@ function Android_Step04View() {
         <CancelButton  onClick={() => navigate('/')}/>
       </div>
 
-      <div className='spacer px-100'>
-        <p className='text-medium'>1. Click on the gear icon.</p>
+      <div className='topAlign spacer px-100'>
+        <div style={{width: '44vw'}}>
+          <p className='text-medium pb-30'>1. Click on the gear icon.</p>
+        </div>
+
+        <img src={image} alt='iPhone' className='my-100'/>
+
+        <InfoButton theme={'dark'} onClick={toggleOverlay}/>
       </div>
 
       <ContinueButton onClick={() => navigate('/Android_Step05View')} />

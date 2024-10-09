@@ -623,6 +623,10 @@ input.check-toggle-round-flat:checked + label:after {
     padding-right: 200px;
 }
 
+.pb-30 {
+    padding-bottom: 30px;
+}
+
 
 
 .leading {
@@ -642,4 +646,13 @@ input.check-toggle-round-flat:checked + label:after {
 
 .center {
     text-align: center;
+}
+
+.topAlign {
+    align-items: flex-start;
+}
+
+
+.border {
+    border: 5px #FF00D6 solid;
 }

@@ -5,9 +5,13 @@ import InfoButton from '../../components/InfoButton'
 import CancelButton from '../../components/CancelButton'
 import BackButton from '../../components/BackButton'
 import ProgressBar from '../../components/ProgressBar'
+import image from '../../assets/icons/iPhone.png'
 
 function Android_Step06View() {
   const navigate = useNavigate()
+    // Overlay State
+    const [overlayVisible, setOverlayVisible] = useState(false);
+    const toggleOverlay = () => setOverlayVisible(!overlayVisible);
   return (
     <>
       <ProgressBar progress={9}/>
@@ -17,11 +21,16 @@ function Android_Step06View() {
         <CancelButton  onClick={() => navigate('/')}/>
       </div>
 
-      <div className='spacer px-100'>
-        <p className='text-medium' style={{width: '70vw'}}>1. Once you have enabled the Automatic Update 
-          function, go one step back to the <i>Software update</i> tab. Your phone
-          starts searching for updates.</p>
-        <InfoButton />
+      <div className='topAlign spacer px-100'>
+        <div style={{width: '44vw'}}>
+          <p className='text-medium pb-30'>1. Once you have enabled the Automatic Update function, 
+            go one step back to the <i>Software Update</i> tab. Your phone starts searching for 
+            updates.</p>
+        </div>
+
+        <img src={image} alt='iPhone' className='my-100'/>
+
+        <InfoButton theme={'dark'} onClick={toggleOverlay}/>
       </div>
 
       <ContinueButton onClick={() => navigate('/Android_Step07View')} />

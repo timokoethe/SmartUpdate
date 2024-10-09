@@ -5,9 +5,13 @@ import InfoButton from '../../components/InfoButton'
 import CancelButton from '../../components/CancelButton'
 import BackButton from '../../components/BackButton'
 import ProgressBar from '../../components/ProgressBar'
+import image from '../../assets/icons/iPhone.png'
 
 function Android_Step03View() {
   const navigate = useNavigate()
+    // Overlay State
+    const [overlayVisible, setOverlayVisible] = useState(false);
+    const toggleOverlay = () => setOverlayVisible(!overlayVisible);
   return (
     <>
       <ProgressBar progress={6}/>
@@ -17,15 +21,16 @@ function Android_Step03View() {
         <CancelButton  onClick={() => navigate('/')}/>
       </div>
 
-      <div className='spacer px-100'>
-        <p className='text-medium'>1. Search for your Settings App.</p>
-        <InfoButton />
-      </div>
-      <div className='spacer px-100'>
-        <p className='text-medium'>2. Scroll to <i>System & Updates</i>.</p>
-      </div>
-      <div className='spacer px-100'>
-        <p className='text-medium'>3. Go to <i>Software update</i>.</p>
+      <div className='topAlign spacer px-100'>
+        <div style={{width: '44vw'}}>
+          <p className='text-medium pb-30'>1. Search for your Settings App.</p>
+          <p className='text-medium pb-30'>2. Scroll to <i>System & updates</i>.</p>
+          <p className='text-medium pb-30'>3. Go to <i>Software update</i>.</p>
+        </div>
+
+        <img src={image} alt='iPhone' className='my-100'/>
+
+        <InfoButton theme={'dark'} onClick={toggleOverlay}/>
       </div>
 
       <ContinueButton onClick={() => navigate('/Android_Step04View')} />
