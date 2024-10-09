@@ -6,6 +6,7 @@ import CancelButton from '../../components/CancelButton'
 import BackButton from '../../components/BackButton'
 import ProgressBar from '../../components/ProgressBar'
 import image from '../../assets/icons/iPhone.png'
+import InfoOverlay from '../../components/InfoOverlay'
 
 function Android_Step08View() {
   const navigate = useNavigate()
@@ -14,30 +15,34 @@ function Android_Step08View() {
     const toggleOverlay = () => setOverlayVisible(!overlayVisible);
   return (
     <>
-      <ProgressBar progress={111}/>
-      <div className='spacer px-100 mt-50' style={{alignItems: 'flex-start'}}>
-        <BackButton onClick={() => navigate('/Android_Step07View')}/>
-        <h1 className='headline mb-150 mt-50'>3. Search for Updates</h1>
-        <CancelButton  onClick={() => navigate('/')}/>
-      </div>
-
-      <div className='topAlign spacer px-100'>
-        <div style={{width: '44vw'}}>
-          <p className='text-medium pb-30'>1. Once you have enabled the Automatic Update function, 
-            go one step back to the <i>Software Update</i> tab. Your phone starts searching for 
-            updates.</p>
-          <p className='text-medium pb-30'>2. If an update is available, it is displayed as on 
-            the right, otherwise nothing appears and you are already up-to-date.</p>    
-          <p className='text-medium pb-30'>3. Click on <i>Update Now</i> to start the Update 
-          immediately. It may take some time until the update is finished.</p>         
+      <div className='fullWidth'>
+      <InfoOverlay overlayNumber={8} isVisible={overlayVisible} onClose={toggleOverlay}/>
+        <ProgressBar progress={11}/>
+        <div className='spacer px-100 mt-50' style={{alignItems: 'flex-start'}}>
+          <BackButton onClick={() => navigate('/Android_Step07View')}/>
+          <h1 className='headline mb-150 mt-50'>3. Search for Updates</h1>
+          <CancelButton  onClick={() => navigate('/')}/>
         </div>
 
-        <img src={image} alt='iPhone' className='my-100'/>
+        <div className='topAlign spacer px-100'>
+          <div style={{width: '44vw'}}>
+            <p className='text-medium pb-30'>1. Once you have enabled the Automatic Update function, 
+              go one step back to the <i>Software Update</i> tab. Your phone starts searching for 
+              updates.</p>
+            <p className='text-medium pb-30'>2. If an update is available, it is displayed as on 
+              the right, otherwise nothing appears and you are already up-to-date.</p>    
+            <p className='text-medium pb-30'>3. Click on <i>Update Now</i> to start the Update 
+            immediately. It may take some time until the update is finished.</p>         
+          </div>
 
-        <InfoButton theme={'dark'} onClick={toggleOverlay}/>
+          <img src={image} alt='iPhone' className='my-100'/>
+
+          <InfoButton theme={'dark'} onClick={toggleOverlay}/>
+        </div>
+        <div className='center'>
+          <ContinueButton onClick={() => navigate('/CelebViewAndroid')} />
+        </div>
       </div>
-
-      <ContinueButton onClick={() => navigate('/CelebViewAndroid')} />
     </>
   )
 }

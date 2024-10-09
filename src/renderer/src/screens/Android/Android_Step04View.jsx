@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import ContinueButton from '../../components/ContinueButton'
 import { useNavigate } from 'react-router-dom'
 import InfoButton from '../../components/InfoButton'
@@ -9,9 +8,6 @@ import image from '../../assets/icons/iPhone.png'
 
 function Android_Step04View() {
   const navigate = useNavigate()
-    // Overlay State
-    const [overlayVisible, setOverlayVisible] = useState(false);
-    const toggleOverlay = () => setOverlayVisible(!overlayVisible);
   return (
     <>
       <ProgressBar progress={7}/>
@@ -28,7 +24,7 @@ function Android_Step04View() {
 
         <img src={image} alt='iPhone' className='my-100'/>
 
-        <InfoButton theme={'dark'} onClick={toggleOverlay}/>
+        <InfoButton theme={'light'}/>
       </div>
 
       <ContinueButton onClick={() => navigate('/Android_Step05View')} />

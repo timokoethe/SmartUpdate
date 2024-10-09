@@ -6,6 +6,7 @@ import CancelButton from '../../components/CancelButton'
 import BackButton from '../../components/BackButton'
 import ProgressBar from '../../components/ProgressBar'
 import image from '../../assets/icons/iPhone.png'
+import InfoOverlay from '../../components/InfoOverlay'
 
 function Android_Step02View() {
   const navigate = useNavigate()
@@ -14,25 +15,29 @@ function Android_Step02View() {
     const toggleOverlay = () => setOverlayVisible(!overlayVisible);
   return (
     <>
-      <ProgressBar progress={5}/>
-      <div className='spacer px-100 mt-50' style={{alignItems: 'flex-start'}}>
-        <BackButton onClick={() => navigate('/Android_Step01View')}/>
-        <h1 className='headline mb-150 mt-50'>1. Find the Update Settings</h1>
-        <CancelButton  onClick={() => navigate('/')}/>
-      </div>
-
-      <div className='topAlign spacer px-100 '>
-        <div style={{width: '44vw'}}>
-          <p className='text-medium pb-30'>1. Search for your Settings App.</p>
-          <p className='text-medium pb-30'>2. Scroll to <i>System & updates</i>.</p>
+      <div className='fullWidth'>
+        <InfoOverlay overlayNumber={4} isVisible={overlayVisible} onClose={toggleOverlay}/>
+        <ProgressBar progress={5}/>
+        <div className='spacer px-100 mt-50' style={{alignItems: 'flex-start'}}>
+          <BackButton onClick={() => navigate('/Android_Step01View')}/>
+          <h1 className='headline mb-150 mt-50'>1. Find the Update Settings</h1>
+          <CancelButton  onClick={() => navigate('/')}/>
         </div>
 
-        <img src={image} alt='iPhone' className='my-100'/>
+        <div className='topAlign spacer px-100 '>
+          <div style={{width: '44vw'}}>
+            <p className='text-medium pb-30'>1. Search for your Settings App.</p>
+            <p className='text-medium pb-30'>2. Scroll to <i>System & updates</i>.</p>
+          </div>
 
-        <InfoButton theme={'dark'} onClick={toggleOverlay}/>
+          <img src={image} alt='iPhone' className='my-100'/>
+
+          <InfoButton theme={'dark'} onClick={toggleOverlay}/>
+        </div>
+        <div className='center'>
+          <ContinueButton onClick={() => navigate('/Android_Step03View')} />
+        </div>
       </div>
-
-      <ContinueButton onClick={() => navigate('/Android_Step03View')} />
     </>
   )
 }
