@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import BackButton from '../components/BackButton'
 import ProgressBar from '../components/ProgressBar'
@@ -6,8 +6,13 @@ import CancelButton from '../components/CancelButton'
 import FinalWidget from '../components/FinalWidget'
 import CompleteButton from '../components/CompleteButton'
 
-function FinalViewiOS() {
+function FinalViewAndroid() {
   const navigate = useNavigate()
+  const [isMounted, setIsMounted] = useState(false)
+  useEffect(() => {
+    setIsMounted(true)
+  }, [])
+
   return (
     <>
       <ProgressBar progress={11}/>
@@ -17,13 +22,22 @@ function FinalViewiOS() {
         <CancelButton  onClick={() => navigate('/')}/>
       </div>
       <h1 className='text-medium mb-150'>You performed an important and major security action!</h1>
-      <FinalWidget widgetNumber={1}/>
-      <FinalWidget widgetNumber={2}/>
-      <FinalWidget widgetNumber={3}/>
-      <FinalWidget widgetNumber={4}/>
+      <div className='enlarge'>
+        <FinalWidget widgetNumber={1}/>
+      </div>
+
+      <div className='enlarge' style={{animationDelay: '0.5s'}}>
+        <FinalWidget widgetNumber={2}/>
+      </div>
+      <div className='enlarge' style={{animationDelay: '1s'}}>
+        <FinalWidget widgetNumber={3}/>
+      </div>
+      <div className='enlarge' style={{animationDelay: '1.5s'}}>
+        <FinalWidget widgetNumber={4}/>
+      </div>
       <CompleteButton onClick={() => navigate('/')} />
     </>
   )
 }
 
-export default FinalViewiOS
+export default FinalViewAndroid
