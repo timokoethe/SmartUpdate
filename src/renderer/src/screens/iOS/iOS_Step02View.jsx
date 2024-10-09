@@ -5,9 +5,13 @@ import InfoButton from '../../components/InfoButton'
 import CancelButton from '../../components/CancelButton'
 import BackButton from '../../components/BackButton'
 import ProgressBar from '../../components/ProgressBar'
+import image from '../../assets/icons/iPhone.png'
 
-function IOS_Step02View() {
+function iOS_Step02View() {
   const navigate = useNavigate()
+    // Overlay State
+    const [overlayVisible, setOverlayVisible] = useState(false);
+    const toggleOverlay = () => setOverlayVisible(!overlayVisible);
   return (
     <>
       <ProgressBar progress={5}/>
@@ -17,12 +21,15 @@ function IOS_Step02View() {
         <CancelButton  onClick={() => navigate('/')}/>
       </div>
 
-      <div className='spacer px-100'>
-        <p className='text-medium'>1. Search for your Settings App.</p>
-        <InfoButton />
-      </div>
-      <div className='spacer px-100'>
-        <p className='text-medium'>2. Go to <i>General</i>.</p>
+      <div className='topAlign spacer px-100 '>
+        <div style={{width: '44vw'}}>
+          <p className='text-medium pb-30'>1. Search for your Settings App.</p>
+          <p className='text-medium pb-30'>2. Go to <i>General</i>.</p>
+        </div>
+
+        <img src={image} alt='iPhone' className='my-100'/>
+
+        <InfoButton theme={'dark'} onClick={toggleOverlay}/>
       </div>
 
       <ContinueButton onClick={() => navigate('/iOS_Step03View')} />
@@ -30,4 +37,4 @@ function IOS_Step02View() {
   )
 }
 
-export default IOS_Step02View
+export default iOS_Step02View
