@@ -9,9 +9,7 @@ import image from '../../assets/icons/iPhone.png'
 
 function iOS_Step05View() {
   const navigate = useNavigate()
-    // Overlay State
-    const [overlayVisible, setOverlayVisible] = useState(false);
-    const toggleOverlay = () => setOverlayVisible(!overlayVisible);
+
   return (
     <>
       <ProgressBar progress={8}/>
@@ -29,7 +27,7 @@ function iOS_Step05View() {
 
         <img src={image} alt='iPhone' className='my-100'/>
 
-        <InfoButton theme={'dark'} onClick={toggleOverlay}/>
+        <InfoButton theme={'light'} />
       </div>
 
       <ContinueButton onClick={() => navigate('/iOS_WarningView')} />

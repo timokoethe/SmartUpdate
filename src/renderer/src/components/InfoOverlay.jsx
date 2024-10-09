@@ -26,6 +26,12 @@ function InfoOverlay({overlayNumber, isVisible, onClose}) {
       case 8:
         return { headline: 'A long text appears?',
           text: 'This is LEGAL (Licensed Application End User License Agreement). Sometimes you just have to accept it by clicking the button \'Accept\'.' }
+      case 9:
+        return { headline: 'How to find General?',
+          text: 'If you scroll to the top and swipe down a bit a search bar appears. Type in \'General\' and choose the first result.' }
+      case 10:
+        return { headline: 'How to find Software Update?',
+          text: 'This option is always in second place in the list.' }
         }
   };
   const { headline, text } = getContentForNumber(overlayNumber);
