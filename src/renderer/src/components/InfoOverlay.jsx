@@ -49,11 +49,11 @@ function InfoOverlay({overlayNumber, isVisible, onClose}) {
   return (
     <div className='infoOverlayScreen'>
       <div className={`infoOverlay ${position == 'left' ? 'ml-100 mt-100' : 'infoOverlayRight mr-100 mt-450'}`}>
-      <div className='infoOverlayHeaderContainer'>
-            <div className='infoOverlayHeadlineContainer'>
-                <h1 className='infoOverlayHeadline'>{headline}</h1>
-            </div>
-            <button className='infoOverlayCloseButton' onClick={onClose}/>
+        <div className='infoOverlayHeaderContainer'>
+          <div className='infoOverlayHeadlineContainer'>
+            <h1 className='infoOverlayHeadline'>{headline}</h1>
+          </div>
+          <button className='infoOverlayCloseButton' onClick={onClose}/>
         </div>
         <p className='infoOverlayText px-50'>{text}</p>
       </div>

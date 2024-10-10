@@ -7,16 +7,22 @@ import BackButton from '../../components/BackButton'
 import ProgressBar from '../../components/ProgressBar'
 import image from '../../assets/phones/Android_Step06.png'
 import InfoOverlay from '../../components/InfoOverlay'
+import UpdateWarning from '../../components/UpdateWarning'
 
 function Android_Step06View() {
   const navigate = useNavigate()
     // Overlay State
     const [overlayVisible, setOverlayVisible] = useState(false);
     const toggleOverlay = () => setOverlayVisible(!overlayVisible);
+    
+    // Warning State
+    const [warningVisible, setWarningVisible] = useState(false);
+    const toggleWarning = () => setWarningVisible(!warningVisible);
   return (
     <>
       <div className='fullWidth'>
         <InfoOverlay overlayNumber={6} isVisible={overlayVisible} onClose={toggleOverlay}/>
+        <UpdateWarning onClick={() => navigate('/Android_Step07View')} isVisible={warningVisible}/>
         <ProgressBar progress={9}/>
         <div className='spacer px-100 mt-50' style={{alignItems: 'flex-start'}}>
           <BackButton onClick={() => navigate('/Android_Step05View')}/>
@@ -36,7 +42,7 @@ function Android_Step06View() {
           <InfoButton theme={'dark'} onClick={toggleOverlay}/>
         </div>
         <div className='center continueButtonContainer'>
-          <ContinueButton onClick={() => navigate('/Android_Step07View')} />
+          <ContinueButton onClick={toggleWarning} />
         </div>
       </div>
     </>
