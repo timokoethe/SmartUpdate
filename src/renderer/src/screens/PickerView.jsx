@@ -1,4 +1,3 @@
-
 import { useState } from 'react'
 import ApplePicker from '../components/ApplePicker'
 import AndroidPicker from '../components/AndroidPicker'
@@ -7,6 +6,8 @@ import InfoButton from '../components/InfoButton'
 import CancelButton from '../components/CancelButton'
 import ProgressBar from '../components/ProgressBar'
 import InfoOverlay from '../components/InfoOverlay'
+import BottomDesign from '../components/BottomDesign'
+import BottomFont from '../components/BottomFont'
 
 function PickerView() {
   const navigate = useNavigate()
@@ -36,6 +37,8 @@ function PickerView() {
         <AndroidPicker onClick={() => navigate('/Android_Step01View')} />
         <ApplePicker onClick={() => navigate('/IOS_Step01View')} />
       </div>
+      <BottomDesign />
+      <BottomFont />
     </div>
 
     </>

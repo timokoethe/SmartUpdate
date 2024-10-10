@@ -3,6 +3,8 @@ import ContinueButton from '../components/ContinueButton'
 import { useNavigate } from 'react-router-dom'
 import ProgressBar from '../components/ProgressBar'
 import AnswerOption from '../components/AnswerOption'
+import BottomDesign from '../components/BottomDesign'
+import BottomFont from '../components/BottomFont'
 
 
 function SolutionView() {
@@ -25,6 +27,8 @@ function SolutionView() {
         <div className='mt-300'>
           <ContinueButton onClick={() => navigate('/PickerView')} />
         </div>
+        <BottomDesign />
+        <BottomFont />
     </>
   )
 }

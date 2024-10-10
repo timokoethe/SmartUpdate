@@ -8,6 +8,8 @@ import ProgressBar from '../../components/ProgressBar'
 import image from '../../assets/phones/iOS_Step06.png'
 import InfoOverlay from '../../components/InfoOverlay'
 import UpdateWarning from '../../components/UpdateWarning'
+import BottomDesign from '../../components/BottomDesign'
+import BottomFont from '../../components/BottomFont'
 
 function iOS_Step06View() {
   const navigate = useNavigate()
@@ -44,6 +46,8 @@ function iOS_Step06View() {
         <div className='center continueButtonContainer'>
           <ContinueButton onClick={toggleWarning} />
         </div>
+        <BottomDesign />
+        <BottomFont />
       </div>
     </>
   )

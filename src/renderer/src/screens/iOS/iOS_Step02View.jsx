@@ -7,6 +7,8 @@ import BackButton from '../../components/BackButton'
 import ProgressBar from '../../components/ProgressBar'
 import image from '../../assets/phones/iOS_Step02.png'
 import InfoOverlay from '../../components/InfoOverlay'
+import BottomDesign from '../../components/BottomDesign'
+import BottomFont from '../../components/BottomFont'
 
 function iOS_Step02View() {
   const navigate = useNavigate()
@@ -37,6 +39,8 @@ function iOS_Step02View() {
         <div className='center continueButtonContainer'>
           <ContinueButton onClick={() => navigate('/iOS_Step03View')} />
         </div>
+        <BottomDesign />
+        <BottomFont />
       </div>
     </>
   )

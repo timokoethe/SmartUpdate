@@ -738,3 +738,22 @@ input.check-toggle-round-flat:checked + label:after {
 .border {
     border: 5px #FF00D6 solid;
 }
+
+.bottomDesign {
+    position: absolute;
+    bottom: -10vh;
+    left: -1vw;
+    width: 130vw;
+    height: 20vh;
+    background-image: linear-gradient(to top, #8F00FF, #FF00D6);
+    border-radius: 50%;
+}
+
+.bottomFont {
+    position: absolute;
+    bottom: 0.2vh;
+    right: 1vw;
+    font-family: 'Ropa Sans';
+    font-size: 60px;
+    color: white;
+}

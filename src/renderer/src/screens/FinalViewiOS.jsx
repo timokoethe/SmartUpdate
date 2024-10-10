@@ -5,6 +5,8 @@ import ProgressBar from '../components/ProgressBar'
 import CancelButton from '../components/CancelButton'
 import FinalWidget from '../components/FinalWidget'
 import CompleteButton from '../components/CompleteButton'
+import BottomDesign from '../components/BottomDesign'
+import BottomFont from '../components/BottomFont'
 
 function FinalViewAndroid() {
   const navigate = useNavigate()
@@ -38,6 +40,8 @@ function FinalViewAndroid() {
       <div className='mt-100'>
         <CompleteButton onClick={() => navigate('/')} />
       </div>
+      <BottomDesign />
+      <BottomFont />
     </>
   )
 }

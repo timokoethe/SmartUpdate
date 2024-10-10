@@ -7,6 +7,8 @@ import BackButton from '../../components/BackButton'
 import ProgressBar from '../../components/ProgressBar'
 import image from '../../assets/phones/Android_Step01.png'
 import InfoOverlay from '../../components/InfoOverlay'
+import BottomDesign from '../../components/BottomDesign'
+import BottomFont from '../../components/BottomFont'
 
 function Android_Step01View() {
   const navigate = useNavigate()
@@ -37,6 +39,8 @@ function Android_Step01View() {
         <div className='center continueButtonContainer'>
           <ContinueButton onClick={() => navigate('/Android_Step02View')} />
         </div>
+        <BottomDesign />
+        <BottomFont />
       </div>
     </>
   )

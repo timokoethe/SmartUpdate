@@ -7,6 +7,8 @@ import BackButton from '../../components/BackButton'
 import ProgressBar from '../../components/ProgressBar'
 import image from '../../assets/phones/Android_Step06.png'
 import InfoOverlay from '../../components/InfoOverlay'
+import BottomDesign from '../../components/BottomDesign'
+import BottomFont from '../../components/BottomFont'
 
 function Android_Step08View() {
   const navigate = useNavigate()
@@ -42,6 +44,8 @@ function Android_Step08View() {
         <div className='center continueButtonContainer'>
           <ContinueButton onClick={() => navigate('/CelebViewAndroid')} />
         </div>
+        <BottomDesign />
+        <BottomFont />
       </div>
     </>
   )

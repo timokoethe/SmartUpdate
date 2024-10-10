@@ -5,6 +5,8 @@ import CancelButton from '../../components/CancelButton'
 import BackButton from '../../components/BackButton'
 import ProgressBar from '../../components/ProgressBar'
 import image from '../../assets/phones/Android_Step05.png'
+import BottomDesign from '../../components/BottomDesign'
+import BottomFont from '../../components/BottomFont'
 
 function Android_Step05View() {
   const navigate = useNavigate()
@@ -30,6 +32,8 @@ function Android_Step05View() {
       <div className='center continueButtonContainer'>
         <ContinueButton onClick={() => navigate('/Android_WarningView')} />
       </div>
+      <BottomDesign />
+      <BottomFont />
     </>
   )
 }
