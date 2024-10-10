@@ -293,7 +293,7 @@
 
 .finalWidgetText {
     font-family: 'Ropa Sans';
-    font-size: 68px;
+    font-size: 80px;
     color: white;
 }
 
@@ -382,6 +382,10 @@
     font-size: 70px;
     color: white;
     margin-bottom: 50px;
+}
+
+.infoOverlayRight {
+    right: 0;
 }
 
 /* Languange toggle switch */
@@ -616,8 +620,16 @@ input.check-toggle-round-flat:checked + label:after {
     margin-top: 100px;
 }
 
+.mt-200 {
+    margin-top: 200px;
+}
+
 .mt-300 {
     margin-top: 300px;
+}
+
+.mt-450 {
+    margin-top: 450px;
 }
 
 .mb-100 {
@@ -626,6 +638,14 @@ input.check-toggle-round-flat:checked + label:after {
 
 .mb-150 {
     margin-bottom: 150px;
+}
+
+.ml-100 {
+    margin-left: 100px;
+}
+
+.mr-100 {
+    margin-right: 100px;
 }
 
 .px-50 {
@@ -679,6 +699,12 @@ input.check-toggle-round-flat:checked + label:after {
 
 .topAlign {
     align-items: flex-start;
+}
+
+.continueButtonContainer {
+    position: absolute;
+    width: 100vw;
+    bottom: 30vh;
 }
 
 .centerAlign {

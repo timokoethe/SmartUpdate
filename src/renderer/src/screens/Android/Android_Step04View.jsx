@@ -26,8 +26,9 @@ function Android_Step04View() {
 
         <InfoButton theme={'light'}/>
       </div>
-
-      <ContinueButton onClick={() => navigate('/Android_Step05View')} />
+      <div className='center continueButtonContainer'>
+        <ContinueButton onClick={() => navigate('/Android_Step05View')} />
+      </div>
     </>
   )
 }

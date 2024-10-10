@@ -34,7 +34,7 @@ function iOS_Step02View() {
 
           <InfoButton theme={'dark'} onClick={toggleOverlay}/>
         </div>
-        <div className='center'>
+        <div className='center continueButtonContainer'>
           <ContinueButton onClick={() => navigate('/iOS_Step03View')} />
         </div>
       </div>

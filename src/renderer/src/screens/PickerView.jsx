@@ -30,7 +30,7 @@ function PickerView() {
           In the following we will show you how to activate this and also how to perform an update manually.
         </p>
         <p className='text mx-80 leading my-100'>Grab your phone and try this simultaneously on your own!</p>
-        <p className='text center mt-100'>Please choose your platform:</p>
+        <p className='text center mt-300'>Please choose your platform:</p>
       </div>
       <div className='spacer mt-100 px-200'>
         <AndroidPicker onClick={() => navigate('/Android_Step01View')} />

@@ -28,8 +28,9 @@ function iOS_Step04View() {
 
         <InfoButton theme={'light'}/>
       </div>
-
-      <ContinueButton onClick={() => navigate('/iOS_Step05View')} />
+      <div className='center continueButtonContainer'>
+        <ContinueButton onClick={() => navigate('/iOS_Step05View')} />
+      </div>
     </>
   )
 }

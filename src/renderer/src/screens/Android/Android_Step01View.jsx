@@ -34,7 +34,7 @@ function Android_Step01View() {
           <InfoButton theme={'dark'} onClick={toggleOverlay}/>
         </div>
 
-        <div className='center'>
+        <div className='center continueButtonContainer'>
           <ContinueButton onClick={() => navigate('/Android_Step02View')} />
         </div>
       </div>

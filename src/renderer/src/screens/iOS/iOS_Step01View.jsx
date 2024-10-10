@@ -16,7 +16,7 @@ function iOS_Step01View() {
   return (
     <>
       <dev className='fullWidth'>
-      <InfoOverlay overlayNumber={3} isVisible={overlayVisible} onClose={toggleOverlay}/>
+        <InfoOverlay overlayNumber={3} isVisible={overlayVisible} onClose={toggleOverlay}/>
         <ProgressBar progress={4}/>
         <div className='spacer px-100 mt-50' style={{alignItems: 'flex-start'}}>
           <BackButton onClick={() => navigate('/PickerView')}/>
@@ -33,7 +33,7 @@ function iOS_Step01View() {
 
           <InfoButton theme={'dark'} onClick={toggleOverlay}/>
         </div>
-        <div className='center'>
+        <div className='center continueButtonContainer'>
           <ContinueButton onClick={() => navigate('/iOS_Step02View')} />
         </div>
       </dev>
