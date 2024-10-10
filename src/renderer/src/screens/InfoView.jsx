@@ -5,8 +5,10 @@ import ProgressBar from '../components/ProgressBar'
 import AnswerOption from '../components/AnswerOption'
 import BottomDesign from '../components/BottomDesign'
 import BottomFont from '../components/BottomFont'
+import inactivityTimer from '../components/Timer'
 
 function InfoView() {
+  inactivityTimer()
   const navigate = useNavigate()
   return (
     <>

@@ -8,8 +8,10 @@ import ProgressBar from '../components/ProgressBar'
 import InfoOverlay from '../components/InfoOverlay'
 import BottomDesign from '../components/BottomDesign'
 import BottomFont from '../components/BottomFont'
+import inactivityTimer from '../components/Timer'
 
 function PickerView() {
+  inactivityTimer()
   const navigate = useNavigate()
   // Overlay State
   const [overlayVisible, setOverlayVisible] = useState(false);

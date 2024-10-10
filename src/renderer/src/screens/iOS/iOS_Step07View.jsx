@@ -9,8 +9,10 @@ import image from '../../assets/phones/iOS_Step07.png'
 import InfoOverlay from '../../components/InfoOverlay'
 import BottomDesign from '../../components/BottomDesign'
 import BottomFont from '../../components/BottomFont'
+import inactivityTimer from '../../components/Timer'
 
 function iOS_Step07View() {
+  inactivityTimer()
   const navigate = useNavigate()
     // Overlay State
     const [overlayVisible, setOverlayVisible] = useState(false);

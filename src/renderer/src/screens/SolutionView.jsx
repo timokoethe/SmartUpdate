@@ -5,9 +5,10 @@ import ProgressBar from '../components/ProgressBar'
 import AnswerOption from '../components/AnswerOption'
 import BottomDesign from '../components/BottomDesign'
 import BottomFont from '../components/BottomFont'
-
+import inactivityTimer from '../components/Timer'
 
 function SolutionView() {
+  inactivityTimer()
   const navigate = useNavigate()
   return (
     <>

@@ -7,8 +7,10 @@ import FinalWidget from '../components/FinalWidget'
 import CompleteButton from '../components/CompleteButton'
 import BottomDesign from '../components/BottomDesign'
 import BottomFont from '../components/BottomFont'
+import inactivityTimer from '../components/Timer'
 
 function FinalViewAndroid() {
+  inactivityTimer()
   const navigate = useNavigate()
   const [isMounted, setIsMounted] = useState(false)
   useEffect(() => {

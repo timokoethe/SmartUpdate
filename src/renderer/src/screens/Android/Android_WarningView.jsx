@@ -1,8 +1,10 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import WifiWarning from '../../components/WifiWarning'
+import inactivityTimer from '../../components/Timer'
 
 function Android_WarningView() {
+  inactivityTimer()
   const navigate = useNavigate()
   return (
     <>

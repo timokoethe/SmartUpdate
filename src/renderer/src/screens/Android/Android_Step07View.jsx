@@ -9,8 +9,10 @@ import image from '../../assets/phones/Android_Step06.png'
 import InfoOverlay from '../../components/InfoOverlay'
 import BottomDesign from '../../components/BottomDesign'
 import BottomFont from '../../components/BottomFont'
+import inactivityTimer from '../../components/Timer'
 
 function Android_Step07View() {
+  inactivityTimer()
   const navigate = useNavigate()
     // Overlay State
     const [overlayVisible, setOverlayVisible] = useState(false);

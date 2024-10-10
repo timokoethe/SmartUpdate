@@ -56,11 +56,6 @@ app.whenReady().then(() => {
   // IPC test
   ipcMain.on('ping', () => console.log('pong'))
 
-  // IPC Start Button Clicked
-  ipcMain.on('startButtonClicked', (_, timeStamp) => {
-    console.log('Start Button Clicked:', timeStamp)
-  })
-
   // IPC Save Timestamp for click on Start Button
   ipcMain.on('saveStartStamp', (_, timeStamp) => {
     const documentPath = app.getPath('documents')

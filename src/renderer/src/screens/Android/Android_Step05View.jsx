@@ -7,8 +7,10 @@ import ProgressBar from '../../components/ProgressBar'
 import image from '../../assets/phones/Android_Step05.png'
 import BottomDesign from '../../components/BottomDesign'
 import BottomFont from '../../components/BottomFont'
+import inactivityTimer from '../../components/Timer'
 
 function Android_Step05View() {
+  inactivityTimer()
   const navigate = useNavigate()
   return (
     <>
