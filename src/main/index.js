@@ -2,6 +2,7 @@ import { app, shell, BrowserWindow, ipcMain } from 'electron'
 import { join } from 'path'
 import { electronApp, optimizer, is } from '@electron-toolkit/utils'
 import icon from '../../resources/icon.png?asset'
+const fs = require('fs')
 
 function createWindow() {
   // Create the browser window.
@@ -54,6 +55,40 @@ app.whenReady().then(() => {
 
   // IPC test
   ipcMain.on('ping', () => console.log('pong'))
+
+  // IPC Start Button Clicked
+  ipcMain.on('startButtonClicked', (_, timeStamp) => {
+    console.log('Start Button Clicked:', timeStamp)
+  })
+
+  // IPC Save Timestamp for click on Start Button
+  ipcMain.on('saveStartStamp', (_, timeStamp) => {
+    const documentPath = app.getPath('documents')
+    const filePath = join(documentPath, 'timestamps.csv')
+    
+    // Writes the timestamp to the file
+    fs.appendFile(filePath, `\n${timeStamp};`, (err) => {
+      if (err) {
+        console.error('Error saving timestamp:', err)
+      }
+      console.log('Timestamp saved:', timeStamp)
+    })
+  })
+
+  // IPC Save Timestamp for click on any button
+  ipcMain.on('saveButtonStamp', (_, timeStamp) => {
+    const documentPath = app.getPath('documents')
+    const filePath = join(documentPath, 'timestamps.csv')
+    
+    // Writes the timestamp to the file
+    fs.appendFile(filePath, `${timeStamp};`, (err) => {
+      if (err) {
+        console.error('Error saving timestamp:', err)
+      }
+      console.log('Timestamp saved:', timeStamp)
+    })
+  })
+
 
   createWindow()
 
