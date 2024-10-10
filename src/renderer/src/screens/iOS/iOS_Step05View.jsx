@@ -5,7 +5,7 @@ import InfoButton from '../../components/InfoButton'
 import CancelButton from '../../components/CancelButton'
 import BackButton from '../../components/BackButton'
 import ProgressBar from '../../components/ProgressBar'
-import image from '../../assets/icons/iPhone.png'
+import image from '../../assets/phones/iOS_Step05.png'
 
 function iOS_Step05View() {
   const navigate = useNavigate()

@@ -4,7 +4,7 @@ import InfoButton from '../../components/InfoButton'
 import CancelButton from '../../components/CancelButton'
 import BackButton from '../../components/BackButton'
 import ProgressBar from '../../components/ProgressBar'
-import image from '../../assets/icons/iPhone.png'
+import image from '../../assets/phones/Android_Step04.png'
 
 function Android_Step04View() {
   const navigate = useNavigate()
