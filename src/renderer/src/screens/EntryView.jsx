@@ -54,18 +54,15 @@ function EntryView() {
 
         <div className='entryContainer' >
           <div className='widgetContainer'>
-            <div className={`widgetWrapper current ${transitioning ? 'slideoutLeft' : ''}`}>
-              {activeWidget === 1 && <InfoWidget widgetNumber={1} />}
-              {activeWidget === 2 && <InfoWidget widgetNumber={2} />}
-              {activeWidget === 3 && <InfoWidget widgetNumber={3} />}
+            <div className='leftWidget'>
+              <InfoWidget widgetNumber={1} />
             </div>
-
-            <div className={`widgetWrapper next ${transitioning ? 'slideinRight' : ''}`}>
-              {nextWidget === 1 && <InfoWidget widgetNumber={1} />}
-              {nextWidget === 2 && <InfoWidget widgetNumber={2} />}
-              {nextWidget === 3 && <InfoWidget widgetNumber={3} />}
+            <div className='middleWidget'>
+              <InfoWidget widgetNumber={2} />
             </div>
-
+            <div className='rightWidget'>
+              <InfoWidget widgetNumber={3} />
+            </div>
           </div>
           <StartButton onClick={() => navigate('/InfoView')} />
         </div>
