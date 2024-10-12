@@ -1,5 +1,5 @@
-appId: com.electron.app
-productName: smartupdate
+appId: com.timokoethe.smartupdate
+productName: SmartUpdate
 directories:
   buildResources: build
 files:

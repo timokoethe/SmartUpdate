@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "SmartUpdate is an interactive public display application that guides users through updating their smartphone and enabling automatic updates.",
   "main": "./out/main/index.js",
-  "author": "example.com",
-  "homepage": "https://electron-vite.org",
+  "author": "Timo Köthe",
+  "homepage": "https://timokoethe.com/smartupdate",
   "scripts": {
     "format": "prettier --write .",
     "lint": "eslint . --ext .js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix",
