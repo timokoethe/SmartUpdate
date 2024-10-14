@@ -19,13 +19,14 @@ function InfoView() {
           <p className='text-small leading'>Choose one or more answers that you think are important.</p>
         </div>
 
+
         <AnswerOption optionNumber={1} clickable={true}/>
         <AnswerOption optionNumber={2} clickable={true}/>
         <AnswerOption optionNumber={3} clickable={true}/>
         <AnswerOption optionNumber={4} clickable={true}/>
         <AnswerOption optionNumber={5} clickable={true}/>
 
-        <div className='mt-300'>
+        <div className='continueButtonContainerBottom center'>
           <ContinueButton onClick={() => navigate('/SolutionView')} />
         </div>
         <BottomDesign />

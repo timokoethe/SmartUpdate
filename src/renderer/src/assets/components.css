@@ -113,6 +113,76 @@
     transform: scale(0.97);
 }
 
+.solutionOptionWidget {
+    font-family: 'Ropa Sans';
+    height: 4.5vh;
+    width: 74vw;
+    color: white;
+    background-color: #828282;
+    border: 10px #828282 solid;
+    border-radius: 25px;
+    margin-bottom: 50px;
+    box-shadow: 0px 10px 10px #00000024;
+    animation: solutionWidgetAnimation 0.5s forwards;
+    animation-delay: 1s;
+}
+
+.solutionOptionWidgetCorrect {
+    border: 10px #00FF66 solid;
+}
+
+.solutionOptionWidgetContainer {
+    padding-top: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+}
+
+.solutionOptionCheckBox {
+    background-color: #828282;
+    border: 7px solid white;
+    height: 3.2vw;
+    width: 3.2vw;
+    margin-left: 50px;
+    margin-right: 70px;
+}
+
+.solutionOptionCheckBoxCorrect {
+    background-color: #00FF66;
+}
+
+.solutionOptionSubText {
+    padding-right: 20px;
+    opacity: 0;
+    font-family: 'Ropa Sans';
+    font-size: 70px;
+    color: white;
+    margin-left: 50px;
+    animation: solutionTextAnimation 0.5s forwards;
+    animation-delay: 1s;
+}
+
+@keyframes solutionTextAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes solutionWidgetAnimation {
+    0% {
+        transform: translateY(0vh);
+        height: 4.5vh;
+    }
+    100% {
+        transform: translateY(-10vh);
+        height: 10.3vh;
+    }
+}
+
 .answerOption {
     display: flex;
     justify-content: left;
@@ -616,6 +686,11 @@ input.check-toggle-round-flat:checked + label:after {
     font-size: 70px;
 }
 
+.text-super-small {
+    font-family: 'Ropa Sans';
+    font-size: 60px;
+}
+
 .white {
     color: white;
 }
@@ -715,8 +790,6 @@ input.check-toggle-round-flat:checked + label:after {
     padding-bottom: 30px;
 }
 
-
-
 .leading {
     text-align: left;
 }
@@ -746,10 +819,15 @@ input.check-toggle-round-flat:checked + label:after {
     bottom: 30vh;
 }
 
+.continueButtonContainerBottom {
+    position: absolute;
+    width: 100vw;
+    bottom: 20vh;
+}
+
 .centerAlign {
     align-items: center;
 }
-
 
 .border {
     border: 5px #FF00D6 solid;
@@ -772,4 +850,17 @@ input.check-toggle-round-flat:checked + label:after {
     font-family: 'Ropa Sans';
     font-size: 60px;
     color: white;
+}
+
+@keyframes hideAnimation {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.hide {
+    animation: hideAnimation 0.5s forwards;
 }
