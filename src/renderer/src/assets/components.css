@@ -5,16 +5,16 @@
 
 .startButton {
     font-family: 'Ropa Sans';
-    font-size: 90px;
-    height: 500px;
-    width: 1000px;
+    font-size: 4.16666vw; /*90px*/
+    height: 23.14888vw; /*500px*/
+    width: 46.296296vw; /*1000px*/
     color: white;
     border-radius: 50%;
     background-image: radial-gradient(circle, #FF00D6E6, #8F00FFE6);
     border: none;
     animation: endless-in infinite 2s ease-in-out;
     cursor: pointer;
-    margin-top: 500px;
+    margin-top: 23.14888vw; /*500px*/
 }
   
 @keyframes endless-in {
@@ -121,7 +121,7 @@
     background-color: #828282;
     border: 10px #828282 solid;
     border-radius: 25px;
-    margin-bottom: 50px;
+    margin-bottom: 2.3148148vw;
     box-shadow: 0px 10px 10px #00000024;
     animation: solutionWidgetAnimation 0.5s forwards;
     animation-delay: 1s;
@@ -144,7 +144,7 @@
     border: 7px solid white;
     height: 3.2vw;
     width: 3.2vw;
-    margin-left: 50px;
+    margin-left: 2.3148148vw;
     margin-right: 70px;
 }
 
@@ -158,7 +158,7 @@
     font-family: 'Ropa Sans';
     font-size: 70px;
     color: white;
-    margin-left: 50px;
+    margin-left: 2.3148148vw;
     animation: solutionTextAnimation 0.5s forwards;
     animation-delay: 1s;
 }
@@ -195,7 +195,7 @@
     border: 10px #828282 solid;
     border-radius: 25px;
     cursor: pointer;
-    margin-bottom: 50px;
+    margin-bottom: 2.3148148vw;
     box-shadow: 0px 10px 10px #00000024;
 }
 
@@ -208,7 +208,7 @@
     border: 7px solid white;
     height: 3.2vw;
     width: 3.2vw;
-    margin-left: 50px;
+    margin-left: 2.3148148vw;
     margin-right: 70px;
 }
 
@@ -269,12 +269,12 @@
 
 .infoWidget {
     background-image: linear-gradient(to bottom, #A9008E, #5F00AA); 
-    border-radius: 30px;
+    border-radius: 1.388888vw; /*30px*/
     width: 77vw;
     height: 17vh;
     font-family: 'Ropa Sans';
-    padding: 25px 50px 0px 50px;
-    margin-top: 888px;
+    padding: 1.1574vw 2.3148vw 0vw 2.3148vw; /*25px 50px 0px 50px*/
+    margin-top: 41.11111vw; /*888px*/
 }
 
 .infoWidgetContainer {
@@ -284,25 +284,25 @@
 }
 
 .infoWidgetHeadline {
-    font-size: 100px;
+    font-size: 4.6296vw; /*100px*/
     color: white;
-    margin-bottom: 30px;
+    margin-bottom: 1.38888vw; /*30px*/
 }
 
 .infoWidgetText {
-    font-size: 70px;
+    font-size: 3.24074vw; /*70px*/
     color: white;
-    margin-bottom: 30px;
-    margin-right: 40px;
+    margin-bottom: 1.38888vw; /*30px*/
+    margin-right: 1.85185vw; /*40px*/
 }
 
 .infoWidgetIcon {
     background-color: transparent;
     background-size: contain;
-    height: 100px;
-    width: 100px;
+    height: 4.6296vw; /*100px*/
+    width: 4.6296vw; /*100px*/
     background-repeat: no-repeat;
-    margin-right: 20px;
+    margin-right: 0.0925925vw; /*20px*/
 }
 
 .wifiWarningView {
@@ -337,7 +337,7 @@
     justify-content: center;
     align-items: center;
     padding-left: 75px;
-    padding-top: 100px;
+    padding-top: 4.629629vw;;
 }
 
 .finalWidget {
@@ -372,6 +372,8 @@
     left: 0;
     z-index: -100;
     object-fit: cover;
+    height: 100vh;
+    width: 100vw;
 }
 
 .entryContainer {
@@ -663,12 +665,12 @@ input.check-toggle-round-flat:checked + label:after {
 /* Font */
 .headline-large {
     font-family: 'Ropa Sans';
-    font-size: 200px;
+    font-size: 9.25925vw;
 }
 
 .headline {
     font-family: 'Ropa Sans';
-    font-size: 100px;
+    font-size: 4.629629vw;;
 }
 
 .text {
@@ -697,28 +699,28 @@ input.check-toggle-round-flat:checked + label:after {
 
 /* Spacing */
 .mx-80 {
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 3.703703vw;
+    margin-right: 3.703703vw;
 }
 
 .mx-100 {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 4.629629vw;;
+    margin-right: 4.629629vw;;
 }
 
 .mx-200 {
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 9.25925vw;
+    margin-right: 9.25925vw;
 }
 
 .my-50 {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 2.3148148vw;
+    margin-bottom: 2.3148148vw;
 }
 
 .my-100 {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 4.629629vw;;
+    margin-bottom: 4.629629vw;;
 }
 
 .my-150 {
@@ -727,15 +729,15 @@ input.check-toggle-round-flat:checked + label:after {
 }
 
 .mt-50 {
-    margin-top: 50px;
+    margin-top: 2.3148148vw;
 }
 
 .mt-100 {
-    margin-top: 100px;
+    margin-top: 4.629629vw;
 }
 
 .mt-200 {
-    margin-top: 200px;
+    margin-top: 9.25925vw;
 }
 
 .mt-300 {
@@ -747,7 +749,7 @@ input.check-toggle-round-flat:checked + label:after {
 }
 
 .mb-100 {
-    margin-bottom: 100px;
+    margin-bottom: 4.629629vw;;
 }
 
 .mb-150 {
@@ -755,31 +757,31 @@ input.check-toggle-round-flat:checked + label:after {
 }
 
 .ml-100 {
-    margin-left: 100px;
+    margin-left: 4.629629vw;;
 }
 
 .mr-100 {
-    margin-right: 100px;
+    margin-right: 4.629629vw;
 }
 
 .px-50 {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 2.3148148vw;
+    padding-right: 2.3148148vw;
 }
 
 .px-80 {
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 3.703703vw;
+    padding-right: 3.703703vw;
 }
 
 .px-100 {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 4.629629vw;
+    padding-right: 4.629629vw;
 }
 
 .px-200 {
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 9.25925vw;
+    padding-right: 9.25925vw;
 }
 
 .pt-300 {
