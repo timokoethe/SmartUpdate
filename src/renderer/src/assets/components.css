@@ -724,8 +724,8 @@ input.check-toggle-round-flat:checked + label:after {
 }
 
 .my-150 {
-    margin-top: 150px;
-    margin-bottom: 150px;
+    margin-top: 6.944444vw;
+    margin-bottom: 6.944444vw;
 }
 
 .mt-50 {
@@ -741,11 +741,11 @@ input.check-toggle-round-flat:checked + label:after {
 }
 
 .mt-300 {
-    margin-top: 300px;
+    margin-top: 13.888888vw;
 }
 
 .mt-450 {
-    margin-top: 450px;
+    margin-top: 20.833333vw;
 }
 
 .mb-100 {
@@ -753,7 +753,7 @@ input.check-toggle-round-flat:checked + label:after {
 }
 
 .mb-150 {
-    margin-bottom: 150px;
+    margin-bottom: 6.944444vw;
 }
 
 .ml-100 {
@@ -785,11 +785,11 @@ input.check-toggle-round-flat:checked + label:after {
 }
 
 .pt-300 {
-    padding-top: 30vh;
+    padding-top: 13.888888vw;
 }
 
 .pb-30 {
-    padding-bottom: 30px;
+    padding-bottom: 1.3888888vw;
 }
 
 .leading {
