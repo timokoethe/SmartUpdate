@@ -41,7 +41,7 @@ function Android_Step06View() {
               updates.</p>
           </div>
 
-          <img src={image} alt='iPhone' className='my-100'/>
+          <img src={image} alt='iPhone' className='my-100 stepImage'/>
 
           <InfoButton theme={'dark'} onClick={toggleOverlay}/>
         </div>

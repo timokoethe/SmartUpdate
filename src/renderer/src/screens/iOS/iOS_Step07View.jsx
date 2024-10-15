@@ -37,7 +37,7 @@ function iOS_Step07View() {
               the right, otherwise nothing appears and you are already up-to-date.</p>            
           </div>
 
-          <img src={image} alt='iPhone' className='my-100'/>
+          <img src={image} alt='iPhone' className='my-100 stepImage'/>
 
           <InfoButton theme={'dark'} onClick={toggleOverlay}/>
         </div>

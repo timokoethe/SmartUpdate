@@ -27,7 +27,7 @@ function Android_Step05View() {
           <p className='text-medium pb-30'>2. If not enabled, activate <i>all</i> options.</p>
         </div>
 
-        <img src={image} alt='iPhone' className='my-100'/>
+        <img src={image} alt='iPhone' className='my-100 stepImage'/>
 
         <InfoButton theme={'light'}/>
       </div>

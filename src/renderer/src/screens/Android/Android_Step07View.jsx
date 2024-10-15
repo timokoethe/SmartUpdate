@@ -36,7 +36,7 @@ function Android_Step07View() {
               <p className='text-medium pb-30'>2. If an update is available, it is displayed as on the right, otherwise nothing appears and you are already up-to-date.</p>            
           </div>
 
-          <img src={image} alt='iPhone' className='my-100'/>
+          <img src={image} alt='iPhone' className='my-100 stepImage'/>
 
           <InfoButton theme={'dark'} onClick={toggleOverlay}/>
         </div>

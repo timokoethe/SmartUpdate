@@ -34,7 +34,7 @@ function Android_Step02View() {
             <p className='text-medium pb-30'>2. Scroll to <i>System & updates</i>.</p>
           </div>
 
-          <img src={image} alt='iPhone' className='my-100'/>
+          <img src={image} alt='iPhone' className='my-100 stepImage'/>
 
           <InfoButton theme={'dark'} onClick={toggleOverlay}/>
         </div>

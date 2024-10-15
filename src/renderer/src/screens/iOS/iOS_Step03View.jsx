@@ -35,7 +35,7 @@ function iOS_Step03View() {
             <p className='text-medium pb-30'>3. Go to <i>Software Update</i>.</p>
           </div>
 
-          <img src={image} alt='iPhone' className='my-100'/>
+          <img src={image} alt='iPhone' className='my-100 stepImage'/>
 
           <InfoButton theme={'dark'} onClick={toggleOverlay}/>
         </div>

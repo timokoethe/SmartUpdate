@@ -33,7 +33,7 @@ function iOS_Step01View() {
             <p className='text-medium pb-30'>1. Search for your Settings App.</p>
           </div>
 
-          <img src={image} alt='iPhone' className='my-100'/>
+          <img src={image} alt='iPhone' className='my-100 stepImage'/>
 
           <InfoButton theme={'dark'} onClick={toggleOverlay}/>
         </div>

@@ -28,7 +28,7 @@ function iOS_Step04View() {
           <p className='text-medium pb-30'>1. Go to <i>Automatic Updates</i>.</p>
         </div>
 
-        <img src={image} alt='iPhone' className='my-100'/>
+        <img src={image} alt='iPhone' className='my-100 stepImage'/>
 
         <InfoButton theme={'light'}/>
       </div>

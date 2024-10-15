@@ -39,7 +39,7 @@ function Android_Step08View() {
             immediately. It may take some time until the update is finished.</p>         
           </div>
 
-          <img src={image} alt='iPhone' className='my-100'/>
+          <img src={image} alt='iPhone' className='my-100 stepImage'/>
 
           <InfoButton theme={'dark'} onClick={toggleOverlay}/>
         </div>

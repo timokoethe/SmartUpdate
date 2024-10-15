@@ -31,13 +31,13 @@
   
 .continueButton {
     font-family: 'Ropa Sans';
-    font-size: 82px;
-    height: 150px;
-    width: 450px;
+    font-size: 3.7962962vw;
+    height: 6.944444vw;
+    width: 20.833333vw;
     color: white;
     background-color: black;
-    border: 10px #FF00D6 solid;
-    border-radius: 20px;
+    border: 0.4629629vw #FF00D6 solid;
+    border-radius: 0.925925vw;
     cursor: pointer;
 }
 
@@ -47,13 +47,13 @@
 
 .completeButton {
     font-family: 'Ropa Sans';
-    font-size: 82px;
-    height: 150px;
-    width: 450px;
+    font-size: 3.7962962vw;
+    height: 6.944444vw;
+    width: 20.833333vw;
     color: white;
     background-color: black;
-    border: 10px #FF00D6 solid;
-    border-radius: 20px;
+    border: 0.4629629vw #FF00D6 solid;
+    border-radius: 0.925925vw;
     cursor: pointer;
 }
 
@@ -119,20 +119,20 @@
     width: 74vw;
     color: white;
     background-color: #828282;
-    border: 10px #828282 solid;
+    border: 0.4629629vw #828282 solid;
     border-radius: 25px;
     margin-bottom: 2.3148148vw;
-    box-shadow: 0px 10px 10px #00000024;
+    box-shadow: 0px 0.4629629vw 0.4629629vw #00000024;
     animation: solutionWidgetAnimation 0.5s forwards;
     animation-delay: 1s;
 }
 
 .solutionOptionWidgetCorrect {
-    border: 10px #00FF66 solid;
+    border: 0.4629629vw #00FF66 solid;
 }
 
 .solutionOptionWidgetContainer {
-    padding-top: 10px;
+    padding-top: 0.4629629vw;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -141,11 +141,11 @@
 
 .solutionOptionCheckBox {
     background-color: #828282;
-    border: 7px solid white;
+    border: 0.32407407vw solid white;
     height: 3.2vw;
     width: 3.2vw;
     margin-left: 2.3148148vw;
-    margin-right: 70px;
+    margin-right: 3.2407407vw;
 }
 
 .solutionOptionCheckBoxCorrect {
@@ -153,10 +153,10 @@
 }
 
 .solutionOptionSubText {
-    padding-right: 20px;
+    padding-right: 0.925925vw;
     opacity: 0;
     font-family: 'Ropa Sans';
-    font-size: 70px;
+    font-size: 3.2407407vw;
     color: white;
     margin-left: 2.3148148vw;
     animation: solutionTextAnimation 0.5s forwards;
@@ -192,24 +192,24 @@
     width: 74vw;
     color: white;
     background-color: #828282;
-    border: 10px #828282 solid;
-    border-radius: 25px;
+    border: 0.4629629vw #828282 solid;
+    border-radius: 1.15740740vw;
     cursor: pointer;
     margin-bottom: 2.3148148vw;
-    box-shadow: 0px 10px 10px #00000024;
+    box-shadow: 0vw 0.4629629vw 0.4629629vw #00000024;
 }
 
 .answerOptionSelected {
-    border: 10px #FF8EED solid;
+    border: 0.4629629vw #FF8EED solid;
 }
 
 .answerOptionCheckBox {
     background-color: #828282;
-    border: 7px solid white;
+    border: 0.32407407vw solid white;
     height: 3.2vw;
     width: 3.2vw;
     margin-left: 2.3148148vw;
-    margin-right: 70px;
+    margin-right: 3.2407407vw;
 }
 
 .answerOptionCheckBoxSelected {
@@ -217,7 +217,7 @@
 }
 
 .answerOptionSolution {
-    border: 10px #00FF66 solid;
+    border: 0.4629629vw #00FF66 solid;
 }
 
 .answerOptionCheckBoxSolution {
@@ -258,12 +258,12 @@
     width: 100vw;
     height: 1.3vh;
     background-color: white;
-    box-shadow: 0px 4px 4px #00000024;
+    box-shadow: 0vw 0.185185vw 0.185185vw #00000024;
 }
 
 .progressBar {
     height: 1.3vh;
-    border-radius: 0px 30px 30px 0px;
+    border-radius: 0vw 1.388888vw 1.388888vw 0vw;
     background-image: linear-gradient(to right, #8F00FFE6, #FF00D6E6); 
 }
 
@@ -318,8 +318,8 @@
     background: white;
     color: black;
     width: 92.6vw;
-    border-radius: 25px;
-    padding-top: 20px;
+    border-radius: 1.15740740vw;
+    padding-top: 0.925925vw;
 }
 
 .wifiWarningButtonContainer {
@@ -329,14 +329,15 @@
 }
 
 .wifiWarningIcon {
-    padding-right: 50px;
+    padding-right: 2.3148148vw;
+    height: 17.592592vw;
 }
 
 .wifiWarningContentContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 75px;
+    padding-left: 3.4722222vw;
     padding-top: 4.629629vw;;
 }
 
@@ -344,7 +345,7 @@
     width: 74vw;
     height: 6.5vh;
     background-color: #828282;
-    border-radius: 25px;
+    border-radius: 1.15740740vw;
     display: flex;
 }
 
@@ -362,7 +363,7 @@
 
 .finalWidgetText {
     font-family: 'Ropa Sans';
-    font-size: 80px;
+    font-size: 3.703703vw;
     color: white;
 }
 
@@ -460,7 +461,7 @@
     z-index: 100;
     animation-name: infoOverlayAppear;
     animation-duration: 0.5s;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(0.925925vw);
     background-color: #00000099;
 }
 
@@ -469,7 +470,7 @@
     background: white;
     color: black;
     width: 92.6vw;
-    border-radius: 25px;
+    border-radius: 1.15740740vw;
     padding-bottom: 2vh;
     top: 50%;
     left: 50%;
@@ -492,15 +493,15 @@
     width: 50vw;
     height: 46.3vw;
     background-image: linear-gradient(to bottom, #8C0076, #380064); 
-    border-radius: 25px;
-    box-shadow: 0px 10px 10px #00000024;
+    border-radius: 1.15740740vw;
+    box-shadow: 0vw 0.4629629vw 0.4629629vw #00000024;
 }
 
 .infoOverlayHeaderContainer {
     display: flex;
     justify-content: space-between;
     align-items: top;
-    padding: 20px 20px 0px 50px;
+    padding: 0.925925vw 0.925925vw 0vw 2.3148148vw;
 }
 
 .infoOverlayCloseButton {
@@ -518,20 +519,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 215px;
+    height: 9.9953704vw;
 }
 
 .infoOverlayHeadline {
     font-family: 'Ropa Sans';
-    font-size: 82px;
+    font-size: 3.7962962vw;
     color: white;
 }
 
 .infoOverlayText {
     font-family: 'Ropa Sans';
-    font-size: 70px;
+    font-size: 3.2407407vw;
     color: white;
-    margin-bottom: 50px;
+    margin-bottom: 2.3148148vw;
 }
 
 .infoOverlayRight {
@@ -542,15 +543,15 @@
 .switch {
     position: relative;
     display: inline-block;
-    margin: 0 5px;
+    margin: 0 0.23148148vw;
 }
   
 .switch > span {
     position: absolute;
     font-family: 'Ropa Sans';
-    top: 7px;
+    top: 0.32407407vw;
     pointer-events: none;
-    font-size: 16px;
+    font-size: 0.7407407vw;
     text-transform: uppercase;
     width: 50%;
     text-align: center;
@@ -566,19 +567,19 @@ input.check-toggle-round-flat:checked ~ .on {
   
 .switch > span.on {
     left: 0;
-    padding-left: 2px;
+    padding-left: 0.0925925vw;
     color: white;
 }
   
 .switch > span.off {
     right: 0;
-    padding-right: 4px;
+    padding-right: 0.185185vw;
     color: #B60099;
 }
   
 .check-toggle {
     position: absolute;
-    margin-left: -9999px;
+    margin-left: -4.6291666vw;
     visibility: hidden;
 }
 
@@ -594,15 +595,15 @@ input.check-toggle-round-flat:checked ~ .on {
 }
   
 input.check-toggle-round-flat + label {
-    padding: 2px;
-    width: 97px;
-    height: 35px;
+    padding: 0.0925925vw;
+    width: 4.49074074vw;
+    height: 1.62037037vw;
     background-color: black;
-    -webkit-border-radius: 60px;
-    -moz-border-radius: 60px;
-    -ms-border-radius: 60px;
-    -o-border-radius: 60px;
-    border-radius: 60px;
+    -webkit-border-radius: 2.7777777vw;
+    -moz-border-radius: 2.7777777vw;
+    -ms-border-radius: 2.7777777vw;
+    -o-border-radius: 2.7777777vw;
+    border-radius: 2.7777777vw;
 }
 
 input.check-toggle-round-flat + label:before, input.check-toggle-round-flat + label:after {
@@ -612,28 +613,28 @@ input.check-toggle-round-flat + label:before, input.check-toggle-round-flat + la
 }
   
 input.check-toggle-round-flat + label:before {
-    top: 2px;
-    left: 2px;
-    bottom: 2px;
-    right: 2px;
+    top: 0.0925925vw;
+    left: 0.0925925vw;
+    bottom: 0.0925925vw;
+    right: 0.0925925vw;
     background-color: black;
-    -webkit-moz-border-radius: 60px;
-    -ms-border-radius: 60px;
-    -o-border-radius: 60px;
-    border-radius: 60px;
+    -webkit-moz-border-radius: 2.777777vw;
+    -ms-border-radius: 2.777777vw;
+    -o-border-radius: 2.777777vw;
+    border-radius: 2.777777vw;
 }
 
 input.check-toggle-round-flat + label:after {
-    top: 4px;
-    left: 4px;
-    bottom: 4px;
-    width: 48px;
+    top: 0.185185vw;
+    left: 0.185185vw;
+    bottom: 0.185185vw;
+    width: 2.22222222vw;
     background-color: #B60099;
-    -webkit-border-radius: 52px;
-    -moz-border-radius: 52px;
-    -ms-border-radius: 52px;
-    -o-border-radius: 52px;
-    border-radius: 52px;
+    -webkit-border-radius: 2.407407vw;
+    -moz-border-radius: 2.407407vw;
+    -ms-border-radius: 2.407407vw;
+    -o-border-radius: 2.407407vw;
+    border-radius: 2.407407vw;
     -webkit-transition: margin 0.2s;
     -moz-transition: margin 0.2s;
     -o-transition: margin 0.2s;
@@ -641,7 +642,7 @@ input.check-toggle-round-flat + label:after {
 }
   
 input.check-toggle-round-flat:checked + label:after {
-    margin-left: 42px;
+    margin-left: 1.9444444vw;
 }
 
 @keyframes scaleUp {
@@ -865,4 +866,8 @@ input.check-toggle-round-flat:checked + label:after {
 
 .hide {
     animation: hideAnimation 0.5s forwards;
+}
+
+.stepImage {
+    width: 24.629629vw;
 }
