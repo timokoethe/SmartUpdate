@@ -1,6 +1,9 @@
 import { useState } from 'react'
+import { useLocalization } from '../LanguageContext'
 
 function StartButton({ onClick }) {
+  const loc = useLocalization()
+
   const handleClick = () => {
     const timeStamp = new Date().toISOString()
     window.electron.ipcRenderer.send('saveStartStamp', timeStamp)
@@ -9,7 +12,7 @@ function StartButton({ onClick }) {
 
   return (
     <button className='startButton' onClick={handleClick} >
-      <p>TAP <br/>TO START</p>
+      <p className='break'>{loc.startButton}</p>
     </button>
   )
 }

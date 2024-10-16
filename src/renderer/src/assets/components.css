@@ -871,3 +871,7 @@ input.check-toggle-round-flat:checked + label:after {
 .stepImage {
     width: 24.629629vw;
 }
+
+.break {
+    white-space: pre-line;
+}
