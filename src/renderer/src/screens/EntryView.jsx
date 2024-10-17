@@ -23,24 +23,6 @@ function EntryView() {
   const [overlayVisible, setOverlayVisible] = useState(false);
   const toggleOverlay = () => setOverlayVisible(!overlayVisible);
 
-  // Widget State
-  const [activeWidget, setActiveWidget] = useState(1);
-  const [nextWidget, setNextWidget] = useState(2);
-  const [transitioning, setTransitioning] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setTransitioning(true);
-      setTimeout(() => {
-        setActiveWidget(nextWidget);
-        setNextWidget((prev) => (prev === 3 ? 1 : prev + 1));
-        setTransitioning(false);
-      }, 3000);
-    }, 8000);
-
-    return () => clearTimeout(timer);
-  }, [activeWidget, nextWidget]);
-
   return (
     <>
       <video ref={videoRef} className='video' src={video} loop />
