@@ -1,3 +1,4 @@
+import { useLocalization } from '../LanguageContext'
 import { useState } from 'react'
 import ApplePicker from '../components/ApplePicker'
 import AndroidPicker from '../components/AndroidPicker'
@@ -11,6 +12,7 @@ import BottomFont from '../components/BottomFont'
 import inactivityTimer from '../components/Timer'
 
 function PickerView() {
+  const loc = useLocalization()
   inactivityTimer()
   const navigate = useNavigate()
   // Overlay State
@@ -25,15 +27,13 @@ function PickerView() {
       <ProgressBar progress={3}/>
       <div className='spacer px-100 mt-50' style={{alignItems: 'flex-start'}}>
       <InfoButton theme={'dark'} onClick={toggleOverlay}/>
-        <h1 className='headline mb-150 mt-50'>1. Choose Platform</h1>
+        <h1 className='headline mb-150 mt-50'>{loc.pickerViewHeadline}</h1>
         <CancelButton  onClick={() => navigate('/')}/>
       </div>
       <div>
-        <p className='text mx-80 leading mb-150'>Mobile phones offer us a function to perform updates automatically.<br/>
-          In the following we will show you how to activate this and also how to perform an update manually.
-        </p>
-        <p className='text mx-80 leading my-100'>Grab your phone and try this simultaneously on your own!</p>
-        <p className='text center mt-300'>Please choose your platform:</p>
+        <p className='text mx-80 leading mb-150'>{loc.pickerViewText01}</p>
+        <p className='text mx-80 leading my-100'>{loc.pickerViewText02}</p>
+        <p className='text center mt-300'>{loc.pickerViewText03}</p>
       </div>
       <div className='spacer mt-100 px-200'>
         <AndroidPicker onClick={() => navigate('/Android_Step01View')} />

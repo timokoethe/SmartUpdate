@@ -1,8 +1,10 @@
+import { useLocalization } from '../LanguageContext'
 import { useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import video from '../assets/videos/Confetti.mov'
 
 function CelebViewAndroid() {
+  const loc = useLocalization()
   const navigate = useNavigate()
   const videoRef = useRef()
 
@@ -30,7 +32,7 @@ function CelebViewAndroid() {
   return (
     <>
       <video ref={videoRef} className='video fullWidth' src={video} />
-      <h1 className='headline-large white center pt-300'>Congratulations!</h1>
+      <h1 className='headline-large white center pt-300'>{loc.celebViewText}</h1>
     </>
   )
 }

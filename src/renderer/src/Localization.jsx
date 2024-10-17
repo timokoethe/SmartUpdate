@@ -58,6 +58,17 @@ export const Localization = {
         infoOverlayText09: 'If you scroll to the top and swipe down a bit a search bar appears. Type in \'General\' and choose the first result.',
         infoOverlayText10: 'This option is always in second place in the list.',
         /*Screens*/
+        /*InfoView & SolutionView*/
+        infoViewHeadline: 'Why are Software Updates so important?',
+        infoViewText01: 'What do you think?',
+        infoViewText02: 'Choose one or more answers that you think are important.',
+        /*PickerView*/
+        pickerViewHeadline: '1. Choose Platform',
+        pickerViewText01: 'Mobile phones offer us a function to perform updates automatically.\nIn the following we will show you how to activate this and also how to perform an update manually.',
+        pickerViewText02: 'Grab your phone and try this simultaneously on your own!',
+        pickerViewText03: 'Please choose your platform:',
+        /*CelebViewAndroid & CelebViewiOS*/
+        celebViewText: 'Gratulation!',
     },
     de: {
         /*Components*/
@@ -118,5 +129,16 @@ export const Localization = {
         infoOverlayText09: 'If you scroll to the top and swipe down a bit a search bar appears. Type in \'General\' and choose the first result.',
         infoOverlayText10: 'This option is always in second place in the list.',
         /*Screens*/
+        /*InfoView & SolutionView*/
+        infoViewHeadline: 'Why are Software Updates so important?',
+        infoViewText01: 'What do you think?',
+        infoViewText02: 'Choose one or more answers that you think are important.',
+        /*PickerView*/
+        pickerViewHeadline: '1. Wähle deine Plattform',
+        pickerViewText01: 'Mobile phones offer us a function to perform updates automatically.\nIn the following we will show you how to activate this and also how to perform an update manually.',
+        pickerViewText02: 'Grab your phone and try this simultaneously on your own!',
+        pickerViewText03: 'Bitte wähle deine Plattform:',
+        /*CelebViewAndroid & CelebViewiOS*/
+        celebViewText: 'Gratulation!',
     },
 }
