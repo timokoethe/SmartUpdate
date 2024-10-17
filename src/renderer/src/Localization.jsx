@@ -68,7 +68,13 @@ export const Localization = {
         pickerViewText02: 'Grab your phone and try this simultaneously on your own!',
         pickerViewText03: 'Please choose your platform:',
         /*CelebViewAndroid & CelebViewiOS*/
-        celebViewText: 'Gratulation!',
+        celebViewText: 'Congratulations!',
+        /*StepViews*/
+        stepViewHeadline01: '1. Find the Update Settings',
+        stepViewText0101: '1. Search for your Settings App.',
+        stepViewText0102Android: '2. Scroll to System & updates.',
+        stepViewText0102iOS: '2. Go to General.',
+        stepViewText0103: '3. Go to Software update.',
     },
     de: {
         /*Components*/
@@ -104,9 +110,9 @@ export const Localization = {
         solutionOptionSubText04: 'Updates have little to no influence on battery life. On the contrary, sometimes they even increase it.',
         solutionOptionSubText05: 'Updates often bring new features to always offer the best experience. In addition they fix known bugs.',
         /*UpdateWarning*/
-        updateWarningText: 'If you want to execute the following steps right now, make sure you are connected to Wi-Fi because Updates may be large.',
+        updateWarningText: 'Wenn du die folgenden Schritte jetzt ausführen möchtest, stelle sicher, dass du mit einem WLAN verbunden bist, um eine hohe Datennutzung zu vermeiden.',
         /*WifiWarning*/
-        wifiWarningText: 'From now on, your mobile phone will try to install updates on its own as soon as it is connected to WI-FI.',
+        wifiWarningText: 'Von jetzt an wird dein Smartphone versuchen, Updates automatisch zu installieren, sobald eine WLAN-Verbindung besteht.',
         /*InfoOverlay*/
         infoOverlayHeadline01: 'What is this?',
         infoOverlayHeadline02: 'What platform do I have?',
@@ -135,10 +141,16 @@ export const Localization = {
         infoViewText02: 'Choose one or more answers that you think are important.',
         /*PickerView*/
         pickerViewHeadline: '1. Wähle deine Plattform',
-        pickerViewText01: 'Mobile phones offer us a function to perform updates automatically.\nIn the following we will show you how to activate this and also how to perform an update manually.',
-        pickerViewText02: 'Grab your phone and try this simultaneously on your own!',
+        pickerViewText01: 'Smartphones bieten uns die Möglichkeit Updates automatisch zu installieren.\nIm Folgenden zeigen wir dir, wie du diese Funktion aktivierst und auch wie du ein Update manuell durchführst.',
+        pickerViewText02: 'Nimm dein Smartphone und versuche es nebenbei!',
         pickerViewText03: 'Bitte wähle deine Plattform:',
         /*CelebViewAndroid & CelebViewiOS*/
         celebViewText: 'Gratulation!',
+        /*StepViews*/
+        stepViewHeadline01: '1. Update Einstellungen finden',
+        stepViewText0101: '1. Suche die App Einstellungen.',
+        stepViewText0102Android: '2. Scrolle zu System & updates.',
+        stepViewText0102iOS: '2. Gehe zu Allgemein.',
+        stepViewText0103: '3. Gehe zu Softwareupdate.',
     },
 }

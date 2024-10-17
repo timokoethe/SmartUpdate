@@ -1,3 +1,4 @@
+import { useLocalization } from '../../LanguageContext'
 import { useState } from 'react'
 import ContinueButton from '../../components/ContinueButton'
 import { useNavigate } from 'react-router-dom'
@@ -12,6 +13,7 @@ import BottomFont from '../../components/BottomFont'
 import inactivityTimer from '../../components/Timer'
 
 function iOS_Step02View() {
+  const loc = useLocalization()
   inactivityTimer()
   const navigate = useNavigate()
     // Overlay State
@@ -24,14 +26,14 @@ function iOS_Step02View() {
         <ProgressBar progress={5}/>
         <div className='spacer px-100 mt-50' style={{alignItems: 'flex-start'}}>
           <BackButton onClick={() => navigate('/iOS_Step01View')}/>
-          <h1 className='headline mb-150 mt-50'>1. Find the Update Settings</h1>
+          <h1 className='headline mb-150 mt-50'>{loc.stepViewHeadline01}</h1>
           <CancelButton  onClick={() => navigate('/')}/>
         </div>
 
         <div className='topAlign spacer px-100 '>
           <div style={{width: '44vw'}}>
-            <p className='text-medium pb-30'>1. Search for your Settings App.</p>
-            <p className='text-medium pb-30'>2. Go to <i>General</i>.</p>
+            <p className='text-medium pb-30'>{loc.stepViewText0101}</p>
+            <p className='text-medium pb-30'>{loc.stepViewText0102iOS}</p>
           </div>
 
           <img src={image} alt='iPhone' className='my-100 stepImage'/>
