@@ -1,9 +1,10 @@
-import { useState } from 'react'
+import { useLocalization } from '../LanguageContext'
 
 function CompleteButton({ onClick }) {
+  const loc = useLocalization()
   return (
       <button className='completeButton' onClick={onClick} >
-        <p>Complete</p>
+        <p>{loc.completeButton}</p>
       </button>
   )
 }

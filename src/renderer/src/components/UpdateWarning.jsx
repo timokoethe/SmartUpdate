@@ -1,15 +1,16 @@
 import ContinueButton from './ContinueButton'
 import CheckIcon from '../assets/icons/WarningIcon.png'
+import { useLocalization } from '../LanguageContext'
 
 function UpdateWarning({ onClick, isVisible }) {
+  const loc = useLocalization()
   if (!isVisible) return null
   return (
     <div className='wifiWarningOverlayScreen'>
       <div className='wifiWarningOverlay'>
         <div className='wifiWarningContentContainer'>
           <img src={CheckIcon} className='wifiWarningIcon' />
-          <p className='text'>If you want to execute the following steps right now, 
-            make sure you are connected to Wi-Fi because Updates may be large.</p>
+          <p className='text'>{loc.updateWarningText}</p>
         </div>
         <div className='wifiWarningButtonContainer mt-100'>
           <ContinueButton onClick={onClick}/>

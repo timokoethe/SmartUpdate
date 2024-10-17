@@ -1,17 +1,19 @@
-import { useState } from 'react'
+import { useLocalization } from '../LanguageContext'
 import icon from '../assets/icons/CheckIcon.png'
 
 function FinalWidget({widgetNumber}) {
+  const loc = useLocalization()
+
   const getContentForNumber = (widgetNumber) => {
     switch (widgetNumber) {
       case 1:
-        return { text: 'Fixed possible security vulnerabilities'}
+        return { text: loc.finalWidgetText01 }
       case 2:
-        return { text: 'Improved features and functinality'}
+        return { text: loc.finalWidgetText02 }
       case 3:
-        return { text: 'Fixed possible bugs'}
+        return { text: loc.finalWidgetText03 }
       case 4:
-        return { text: 'Ensured compatibility with other systems'}
+        return { text: loc.finalWidgetText04 }
       }
   };
 

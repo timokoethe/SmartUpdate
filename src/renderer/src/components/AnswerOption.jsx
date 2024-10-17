@@ -1,6 +1,8 @@
 import { useState } from 'react'
+import { useLocalization } from '../LanguageContext'
 
 function AnswerOption({optionNumber, clickable}) {
+  const loc = useLocalization()
   const isRight = optionNumber === 1 || optionNumber === 5
   const [isSelected, setIsSelected] = useState(false)
   const handleClick = () => {
@@ -11,15 +13,15 @@ function AnswerOption({optionNumber, clickable}) {
   const getContentForNumber = (optionNumber) => {
     switch (optionNumber) {
       case 1:
-        return { text: 'to fix security vulnearbilities' }
+        return { text: loc.answerOptionText01 }
       case 2:
-        return { text: 'to increase hardware wear and tear' }
+        return { text: loc.answerOptionText02 }
       case 3:
-        return { text: 'to reduce free memory' }
+        return { text: loc.answerOptionText03 }
       case 4:
-        return { text: 'to decrease battery life' }
+        return { text: loc.answerOptionText04 }
       case 5:
-        return { text: 'to improve features and functionality' }
+        return { text: loc.answerOptionText05 }
       }
   }
   const { text } = getContentForNumber(optionNumber);

@@ -1,6 +1,7 @@
-import { useState } from 'react'
+import { useLocalization } from '../LanguageContext'
 
 function ContinueButton({ onClick }) {
+  const loc = useLocalization()
   const handleClick = () => {
     const timeStamp = new Date().toISOString()
     window.electron.ipcRenderer.send('saveButtonStamp', timeStamp)
@@ -8,7 +9,7 @@ function ContinueButton({ onClick }) {
   }
   return (
       <button className='continueButton' onClick={handleClick} >
-        <p>Continue</p>
+        <p>{loc.continueButton}</p>
       </button>
   )
 }

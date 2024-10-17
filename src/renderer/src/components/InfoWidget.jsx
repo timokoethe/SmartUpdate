@@ -1,22 +1,24 @@
 import { useState } from 'react'
+import { useLocalization } from '../LanguageContext'
 import UpdateIcon from '../assets/icons/UpdateIcon.png'
 import PowerIcon from '../assets/icons/PowerIcon.png'
 import ShieldIcon from '../assets/icons/ShieldIcon.png'
 
 function InfoWidget({widgetNumber}) {
+  const loc = useLocalization()
   const getContentForNumber = (widgetNumber) => {
     switch (widgetNumber) {
       case 1:
-        return { headline: 'Keep Your Phone Up-to-Date', 
-          text: 'Learn how to update your phone\'s operating system and why it is so important in under 120 seconds!',
+        return { headline: loc.infoWidgetHeadline, 
+          text: loc.infoWidgetText01,
           icon: UpdateIcon }
       case 2:
-        return { headline: 'Keep Your Phone Up-to-Date', 
-          text: 'Updates often include optimizations that can help extend your phone\'s battery life.',
+        return { headline: loc.infoWidgetHeadline, 
+          text: loc.infoWidgetText02,
           icon: PowerIcon }
       case 3:
-        return { headline: 'Keep Your Phone Up-to-Date', 
-          text: 'Updating your phone ensures you have the latest security patches, protecting your data from vulnerabilities.',
+        return { headline: loc.infoWidgetHeadline, 
+          text: loc.infoWidgetText03,
           icon: ShieldIcon}
       }
   };
@@ -31,7 +33,7 @@ function InfoWidget({widgetNumber}) {
           <img src={icon} className='infoWidgetIcon' />
         </div>
         <p className='infoWidgetText'>{text}</p>
-        <p className='infoWidgetText'>Do it with your own smartphone now!</p>
+        <p className='infoWidgetText'>{loc.infoWidgetSubText}</p>
       </div>
   )
 }

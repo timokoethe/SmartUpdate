@@ -1,24 +1,25 @@
-import { useState } from 'react'
+import { useLocalization } from '../LanguageContext'
 
 function SolutionOption({optionNumber}) {
+  const loc = useLocalization()
   const isRight = optionNumber === 1 || optionNumber === 5
   const getContentForNumber = (optionNumber) => {
     switch (optionNumber) {
       case 1:
-        return { text: 'to fix security vulnearbilities', 
-            subtext: 'Updates fix security vulnerabilities that have arisen to offer you the safes experience.' }
+        return { text: loc.solutionOptionText01, 
+            subtext: loc.solutionOptionSubText01 }
       case 2:
-        return { text: 'to increase hardware wear and tear',
-            subtext: 'Updates have nothing to do with hardware wear and tear. They only affect the software.' }
+        return { text: loc.solutionOptionText02,
+            subtext: loc.solutionOptionSubText02 }
       case 3:
-        return { text: 'to reduce free memory',
-            subtext: 'Updates acutally need free memory but they fee up memory from old updates after installation.' }
+        return { text: loc.solutionOptionText03,
+            subtext: loc.solutionOptionSubText03 }
       case 4:
-        return { text: 'to decrease battery life',
-            subtext: 'Updates have little to no influence on battery life. On the contrary, sometimes they even increase it.' }
+        return { text: loc.solutionOptionText04,
+            subtext: loc.solutionOptionSubText04 }
       case 5:
-        return { text: 'to improve features and functionality',
-            subtext: 'Updates often bring new features to always offer the best experience. In addition they fix known bugs.' }
+        return { text: loc.solutionOptionText05,
+            subtext: loc.solutionOptionSubText05 }
       }
   }
   const { text, subtext } = getContentForNumber(optionNumber);

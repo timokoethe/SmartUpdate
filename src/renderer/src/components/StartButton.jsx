@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { useLocalization } from '../LanguageContext'
 
 function StartButton({ onClick }) {
