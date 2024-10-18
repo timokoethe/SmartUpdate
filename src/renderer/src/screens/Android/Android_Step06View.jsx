@@ -1,3 +1,4 @@
+import { useLocalization } from '../../LanguageContext'
 import { useState } from 'react'
 import ContinueButton from '../../components/ContinueButton'
 import { useNavigate } from 'react-router-dom'
@@ -13,6 +14,7 @@ import BottomFont from '../../components/BottomFont'
 import inactivityTimer from '../../components/Timer'
 
 function Android_Step06View() {
+  const loc = useLocalization()
   inactivityTimer()
   const navigate = useNavigate()
     // Overlay State
@@ -30,15 +32,13 @@ function Android_Step06View() {
         <ProgressBar progress={9}/>
         <div className='spacer px-100 mt-50' style={{alignItems: 'flex-start'}}>
           <BackButton onClick={() => navigate('/Android_Step05View')}/>
-          <h1 className='headline mb-150 mt-50'>3. Search for Updates</h1>
+          <h1 className='headline mb-150 mt-50'>{loc.stepViewHeadline03}</h1>
           <CancelButton  onClick={() => navigate('/')}/>
         </div>
 
         <div className='topAlign spacer px-100'>
           <div style={{width: '44vw'}}>
-            <p className='text-medium pb-30'>1. Once you have enabled the Automatic Update function, 
-              go one step back to the <i>Software Update</i> tab. Your phone starts searching for 
-              updates.</p>
+            <p className='text-medium pb-30'>{loc.stepViewText0301}</p>
           </div>
 
           <img src={image} alt='iPhone' className='my-100 stepImage'/>

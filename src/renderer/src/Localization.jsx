@@ -75,6 +75,17 @@ export const Localization = {
         stepViewText0102Android: '2. Scroll to System & updates.',
         stepViewText0102iOS: '2. Go to General.',
         stepViewText0103: '3. Go to Software update.',
+        stepViewHeadline02: '2. Enable Automatic Update',
+        stepViewText0201Android: '1. Click on the gear icon.',
+        stepViewText0201iOS: '1. Go to Automatic Updates.',
+        stepViewText0202: '2. If not enabled, activate all options.',
+        stepViewHeadline03: '3. Suche nach Updates',
+        stepViewText0301: '1. Once you have enabled the Automatic Update function, go one step back to the Software Update tab. Your phone starts searching for updates.',
+        stepViewText0302: '2. If an update is available, it is displayed as on the right, otherwise nothing appears and you are already up-to-date.',
+        stepViewText0303: '3. Click on Update Now to start the Update immediately. It may take some time until the update is finished.',
+        /*FinalViews*/
+        finalViewHeadline: 'Congratulations!',
+        finalViewText: 'You performed an important and major security action!',
     },
     de: {
         /*Components*/
@@ -152,5 +163,16 @@ export const Localization = {
         stepViewText0102Android: '2. Scrolle zu System & updates.',
         stepViewText0102iOS: '2. Gehe zu Allgemein.',
         stepViewText0103: '3. Gehe zu Softwareupdate.',
+        stepViewHeadline02: '2. Enable Automatic Update',
+        stepViewText0201Android: '1. Click on the gear icon.',
+        stepViewText0201iOS: '1. Go to Automatic Updates.',
+        stepViewText0202: '2. If not enabled, activate all options.',
+        stepViewHeadline03: '3. Suche nach Updates',
+        stepViewText0301: '1. Once you have enabled the Automatic Update function, go one step back to the Software Update tab. Your phone starts searching for updates.',
+        stepViewText0302: '2. If an update is available, it is displayed as on the right, otherwise nothing appears and you are already up-to-date.',
+        stepViewText0303: '3. Click on Update Now to start the Update immediately. It may take some time until the update is finished.',
+        /*FinalViews*/
+        finalViewHeadline: 'Gratulation!',
+        finalViewText: 'Du hast dein Smartphone ein Stück sicherer gemacht!',
     },
 }

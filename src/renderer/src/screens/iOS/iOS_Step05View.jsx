@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useLocalization } from '../../LanguageContext'
 import ContinueButton from '../../components/ContinueButton'
 import { useNavigate } from 'react-router-dom'
 import InfoButton from '../../components/InfoButton'
@@ -11,6 +11,7 @@ import BottomFont from '../../components/BottomFont'
 import inactivityTimer from '../../components/Timer'
 
 function iOS_Step05View() {
+  const loc = useLocalization()
   inactivityTimer()
   const navigate = useNavigate()
 
@@ -19,14 +20,14 @@ function iOS_Step05View() {
       <ProgressBar progress={8}/>
       <div className='spacer px-100 mt-50' style={{alignItems: 'flex-start'}}>
         <BackButton onClick={() => navigate('/iOS_Step04View')}/>
-        <h1 className='headline mb-150 mt-50'>2. Enable Automatic Update</h1>
+        <h1 className='headline mb-150 mt-50'>{loc.stepViewHeadline02}</h1>
         <CancelButton  onClick={() => navigate('/')}/>
       </div>
 
       <div className='topAlign spacer px-100'>
         <div style={{width: '44vw'}}>
-          <p className='text-medium pb-30'>1. Go to <i>Automatic Updates</i>.</p>
-          <p className='text-medium pb-30'>2. If not enabled, activate <i>all</i> options.</p>
+          <p className='text-medium pb-30'>{loc.stepViewText0201iOS}</p>
+          <p className='text-medium pb-30'>{loc.stepViewText0202}</p>
         </div>
 
         <img src={image} alt='iPhone' className='my-100 stepImage'/>

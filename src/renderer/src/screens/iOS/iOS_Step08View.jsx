@@ -1,3 +1,4 @@
+import { useLocalization } from '../../LanguageContext'
 import { useState } from 'react'
 import ContinueButton from '../../components/ContinueButton'
 import { useNavigate } from 'react-router-dom'
@@ -12,6 +13,7 @@ import BottomFont from '../../components/BottomFont'
 import inactivityTimer from '../../components/Timer'
 
 function iOS_Step08View() {
+  const loc = useLocalization()
   inactivityTimer()
   const navigate = useNavigate()
     // Overlay State
@@ -24,19 +26,15 @@ function iOS_Step08View() {
         <ProgressBar progress={11}/>
         <div className='spacer px-100 mt-50' style={{alignItems: 'flex-start'}}>
           <BackButton onClick={() => navigate('/iOS_Step07View')}/>
-          <h1 className='headline mb-150 mt-50'>3. Search for Updates</h1>
+          <h1 className='headline mb-150 mt-50'>{loc.stepViewHeadline03}</h1>
           <CancelButton  onClick={() => navigate('/')}/>
         </div>
 
         <div className='topAlign spacer px-100'>
           <div style={{width: '44vw'}}>
-            <p className='text-medium pb-30'>1. Once you have enabled the Automatic Update function, 
-              go one step back to the <i>Software Update</i> tab. Your phone starts searching for 
-              updates.</p>
-            <p className='text-medium pb-30'>2. If an update is available, it is displayed as on 
-              the right, otherwise nothing appears and you are already up-to-date.</p>    
-            <p className='text-medium pb-30'>3. Click on <i>Update Now</i> to start the Update 
-            immediately. It may take some time until the update is finished.</p>         
+            <p className='text-medium pb-30'>{loc.stepViewText0301}</p>
+            <p className='text-medium pb-30'>{loc.stepViewText0302}</p>    
+            <p className='text-medium pb-30'>{loc.stepViewText0303}</p>         
           </div>
 
           <img src={image} alt='iPhone' className='my-100 stepImage'/>

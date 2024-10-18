@@ -1,3 +1,4 @@
+import { useLocalization } from '../LanguageContext'
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import BackButton from '../components/BackButton'
@@ -10,6 +11,7 @@ import BottomFont from '../components/BottomFont'
 import inactivityTimer from '../components/Timer'
 
 function FinalViewAndroid() {
+  const loc = useLocalization()
   inactivityTimer()
   const navigate = useNavigate()
   const [isMounted, setIsMounted] = useState(false)
@@ -22,10 +24,10 @@ function FinalViewAndroid() {
       <ProgressBar progress={11}/>
       <div className='spacer px-100 mt-50' style={{alignItems: 'flex-start'}}>
         <BackButton onClick={() => navigate('/Android_Step08View')}/>
-        <h1 className='headline mb-150 mt-50'>Congratulations!</h1>
+        <h1 className='headline mb-150 mt-50'>{loc.finalViewHeadline}</h1>
         <CancelButton  onClick={() => navigate('/')}/>
       </div>
-      <h1 className='text-medium mb-150'>You performed an important and major security action!</h1>
+      <h1 className='text-medium mb-150'>{loc.finalViewText}</h1>
       <div className='enlarge'>
         <FinalWidget widgetNumber={1}/>
       </div>
