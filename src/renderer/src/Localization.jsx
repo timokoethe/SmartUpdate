@@ -17,7 +17,7 @@ export const Localization = {
         answerOptionText04: 'to decrease battery life',
         answerOptionText05: 'to improve features and functionality',
         /*FinalWidget*/
-        finalWidgetText01: 'Fixed possible security vulnerabilities',
+        finalWidgetText01: 'Prevent possible security vulnerabilities',
         finalWidgetText02: 'Improved features and functinality',
         finalWidgetText03: 'Fixed possible bugs',
         finalWidgetText04: 'Ensured compatibility with other systems',
@@ -79,7 +79,7 @@ export const Localization = {
         stepViewText0201Android: '1. Click on the gear icon.',
         stepViewText0201iOS: '1. Go to Automatic Updates.',
         stepViewText0202: '2. If not enabled, activate all options.',
-        stepViewHeadline03: '3. Suche nach Updates',
+        stepViewHeadline03: '3. Search for Updates',
         stepViewText0301: '1. Once you have enabled the Automatic Update function, go one step back to the Software Update tab. Your phone starts searching for updates.',
         stepViewText0302: '2. If an update is available, it is displayed as on the right, otherwise nothing appears and you are already up-to-date.',
         stepViewText0303: '3. Click on Update Now to start the Update immediately. It may take some time until the update is finished.',
