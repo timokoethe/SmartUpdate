@@ -343,7 +343,8 @@
 
 .finalWidget {
     width: 74vw;
-    height: 6.5vh;
+    /*height: 6.5vh;*/
+    min-height: 7.5vh;
     background-color: #828282;
     border-radius: 1.15740740vw;
     display: flex;
@@ -357,8 +358,8 @@
 }
 
 .finalWidgetIcon {
-    height: 2.6vh;
-    width: 2.6vh;
+    height: 2.9vh;
+    width: 2.9vh;
 }
 
 .finalWidgetText {
