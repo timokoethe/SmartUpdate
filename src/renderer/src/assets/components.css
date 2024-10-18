@@ -672,7 +672,7 @@ input.check-toggle-round-flat:checked + label:after {
 
 .headline {
     font-family: 'Ropa Sans';
-    font-size: 4.629629vw;;
+    font-size: 4.629629vw;
 }
 
 .text {
@@ -875,4 +875,15 @@ input.check-toggle-round-flat:checked + label:after {
 
 .break {
     white-space: pre-line;
+}
+
+.languageToggle {
+    font-family: 'Ropa Sans';
+    font-size: 2vw;
+    color: white;
+    width: 10vw;
+    background-image: linear-gradient(to top, #8F00FF, #FF00D6);
+    border: none;
+    border-radius: 1vw;
+    height: 2.8vw;
 }
