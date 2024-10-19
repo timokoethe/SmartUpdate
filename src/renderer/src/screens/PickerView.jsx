@@ -26,7 +26,7 @@ function PickerView() {
       
       <ProgressBar progress={3}/>
       <div className='spacer px-100 mt-50' style={{alignItems: 'flex-start'}}>
-      <InfoButton theme={'dark'} onClick={toggleOverlay}/>
+        <InfoButton theme={'dark'} onClick={toggleOverlay}/>
         <h1 className='headline mb-150 mt-50'>{loc.pickerViewHeadline}</h1>
         <CancelButton  onClick={() => navigate('/')}/>
       </div>
