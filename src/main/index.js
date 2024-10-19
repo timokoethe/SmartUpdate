@@ -7,8 +7,8 @@ const fs = require('fs')
 function createWindow() {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    width: 1080,
-    height: 2160,
+    width: 720,
+    height: 1280,
     show: false,
     autoHideMenuBar: true,
     //fullscreen: true,
