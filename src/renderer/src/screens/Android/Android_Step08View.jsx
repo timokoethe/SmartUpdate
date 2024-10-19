@@ -34,7 +34,7 @@ function Android_Step08View() {
           <div style={{width: '44vw'}}>
             <p className='text-medium pb-30'>{loc.stepViewText0301}</p>
             <p className='text-medium pb-30'>{loc.stepViewText0302}</p>    
-            <p className='text-medium pb-30'>{loc.stepViewText0303}</p>         
+            <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0303 }} />        
           </div>
 
           <img src={image} alt='iPhone' className='my-100 stepImage'/>

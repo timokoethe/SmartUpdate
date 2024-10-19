@@ -32,7 +32,7 @@ function Android_Step01View() {
 
         <div className='topAlign spacer px-100'>
           <div style={{width: '44vw'}}>
-            <p className='text-medium pb-30'>{loc.stepViewText0101}</p>
+            <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0101 }} />
           </div>
 
           <img src={image} alt='iPhone' className='my-100 stepImage'/>

@@ -32,9 +32,9 @@ function iOS_Step03View() {
 
         <div className='topAlign spacer px-100'>
           <div style={{width: '44vw'}}>
-            <p className='text-medium pb-30'>{loc.stepViewText0101}</p>
-            <p className='text-medium pb-30'>{loc.stepViewText0102iOS}</p>
-            <p className='text-medium pb-30'>{loc.stepViewText0103}</p>
+            <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0101 }} /> 
+            <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0102iOS }} /> 
+            <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0103 }} /> 
           </div>
 
           <img src={image} alt='iPhone' className='my-100 stepImage'/>

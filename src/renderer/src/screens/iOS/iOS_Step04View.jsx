@@ -26,7 +26,7 @@ function iOS_Step04View() {
 
       <div className='topAlign spacer px-100'>
         <div style={{width: '44vw'}}>
-          <p className='text-medium pb-30'>{loc.stepViewText0201iOS}</p>
+          <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0201iOS }} />
         </div>
 
         <img src={image} alt='iPhone' className='my-100 stepImage'/>
