@@ -31,7 +31,7 @@ function PickerView() {
         <CancelButton  onClick={() => navigate('/')}/>
       </div>
       <div>
-        <p className='text mx-80 leading mb-150'>{loc.pickerViewText01}</p>
+        <p className='text mx-80 leading mb-150 break'>{loc.pickerViewText01}</p>
         <p className='text mx-80 leading my-100'>{loc.pickerViewText02}</p>
         <p className='text center mt-300'>{loc.pickerViewText03}</p>
       </div>

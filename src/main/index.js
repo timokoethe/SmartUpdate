@@ -1,4 +1,4 @@
-import { app, shell, BrowserWindow, ipcMain } from 'electron'
+import { app, shell, BrowserWindow, ipcMain, screen, dialog } from 'electron'
 import { join } from 'path'
 import { electronApp, optimizer, is } from '@electron-toolkit/utils'
 import icon from '../../resources/icon.png?asset'
@@ -16,6 +16,7 @@ function createWindow() {
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),
       sandbox: false,
+      contextIsolation: false,
     }
   })
 
@@ -37,6 +38,41 @@ function createWindow() {
   } else {
     mainWindow.loadFile(join(__dirname, '../renderer/index.html'))
   }
+
+  /*
+
+  ipcMain.on('toggel-FullScreen', (event) => {
+    const { width, height } = screen.getPrimaryDisplay().workAreaSize
+
+    if (width / height == 9 / 16) {
+    const isFullScreen = mainWindow.isFullScreen()
+    mainWindow.setFullScreen(!isFullScreen)
+    } else {
+      dialog.showMessageBox({
+        type: 'error',
+        message: 'The aspect ratio of the screen is not 9:16.',
+        detail: 'Please change the aspect ratio of the screen to 9:16 and try again.',
+        buttons: ['OK']
+    })
+  }
+  })
+
+
+  // DialogFenster
+  dialog.showMessageBox(mainWindow,{
+    type: 'question',
+    message: 'The aspect ratio of the screen is not 9:16.',
+    detail: 'Please change the aspect ratio of the screen to 9:16 and try again.',
+    buttons: ['Yes', 'No']
+  }).then((response) => {
+    if (response.response === 0) {
+      console.log('Yes clicked')
+    } else {
+      console.log('No clicked')
+    }
+  })
+
+  */
 }
 
 // This method will be called when Electron has finished
