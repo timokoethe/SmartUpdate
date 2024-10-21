@@ -1,5 +1,6 @@
 export const Localization = {
     en: {
+        languageKey: 'en',
         /*Components*/
         startButton: 'TAP\n TO START',
         continueButton: 'Continue',
@@ -88,6 +89,7 @@ export const Localization = {
         finalViewText: 'You performed an important and major security action!',
     },
     de: {
+        languageKey: 'de',
         /*Components*/
         startButton: 'TIPPE\n HIER',
         continueButton: 'Weiter',

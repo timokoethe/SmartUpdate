@@ -887,3 +887,9 @@ input.check-toggle-round-flat:checked + label:after {
     border-radius: 1vw;
     height: 2.8vw;
 }
+
+.phoneVideo {
+    width: 25.185185vw;
+    height: 51.851851vw;
+    object-fit: cover;
+}
