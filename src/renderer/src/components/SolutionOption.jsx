@@ -1,6 +1,6 @@
 import { useLocalization } from '../LanguageContext'
 
-function SolutionOption({optionNumber}) {
+function SolutionOption({optionNumber, selected}) {
   const loc = useLocalization()
   const isRight = optionNumber === 1 || optionNumber === 5
   const getContentForNumber = (optionNumber) => {
@@ -25,9 +25,9 @@ function SolutionOption({optionNumber}) {
   const { text, subtext } = getContentForNumber(optionNumber);
 
   return (
-      <div className={`solutionOptionWidget ${isRight ? 'solutionOptionWidgetCorrect' : ''}`}>
+      <div className={`solutionOptionWidget ${isRight ? 'solutionOptionWidgetCorrect' : ''} ${selected && !isRight ? 'solutionOptionWidgetWrong' : ''}`}>
         <div className='solutionOptionWidgetContainer'>
-            <div className={`solutionOptionCheckBox ${isRight ? 'solutionOptionCheckBoxCorrect' : ''}`} />
+            <div className={`solutionOptionCheckBox ${isRight ? 'solutionOptionCheckBoxCorrect' : ''} ${selected && !isRight ? 'solutionOptionCheckBoxWrong' : ''}`} />
             <p className='text-medium'>{text}</p>
         </div>
         <p className='solutionOptionSubText'>{subtext}</p>

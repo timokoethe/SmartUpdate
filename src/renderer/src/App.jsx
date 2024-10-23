@@ -26,6 +26,7 @@ import FinalViewiOS from './screens/FinalViewiOS'
 import CelebViewAndroid from './screens/CelebViewAndroid'
 import CelebViewiOS from './screens/CelebViewiOS'
 import { LanguageProvider } from './LanguageContext'
+import QuizView from './screens/QuizView'
 
 function App() {
   const ipcHandle = () => window.electron.ipcRenderer.send('ping')
@@ -38,6 +39,7 @@ function App() {
             <Route path="/" element={<EntryView />} />
             <Route path="/InfoView" element={<InfoView />} />
             <Route path="/SolutionView" element={<SolutionView />} />
+            <Route path="/QuizView" element={<QuizView />} />
             <Route path="/PickerView" element={<PickerView />} />
             <Route path="/Android_Step01View" element={<Android_Step01View />} />
             <Route path="/Android_Step02View" element={<Android_Step02View />} />

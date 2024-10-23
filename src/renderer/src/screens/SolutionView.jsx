@@ -8,16 +8,18 @@ import inactivityTimer from '../components/Timer'
 import SolutionOption from '../components/SolutionOption'
 import CancelButton from '../components/CancelButton'
 import BackButton from '../components/BackButton'
+import { useEffect } from 'react'
 
-function SolutionView() {
+function SolutionView({ selectedOptions, navigateBack }) {
   const loc = useLocalization()
   inactivityTimer()
   const navigate = useNavigate()
+
   return (
     <>
       <ProgressBar progress={2} />
       <div className='spacer px-100 mt-50' style={{alignItems: 'flex-start'}}>
-        <BackButton onClick={() => navigate('/InfoView')}/>
+        <BackButton onClick={navigateBack}/>
         <h1 className='headline mt-100'>{loc.infoViewHeadline}</h1>
         <CancelButton  onClick={() => navigate('/')}/>
       </div>
@@ -27,11 +29,11 @@ function SolutionView() {
         <p className='text-small leading'>{loc.infoViewText02}</p>
       </div>
 
-      <SolutionOption optionNumber={1} />
-      <SolutionOption optionNumber={2} />
-      <SolutionOption optionNumber={3} />
-      <SolutionOption optionNumber={4} />
-      <SolutionOption optionNumber={5} />
+      <SolutionOption optionNumber={1} selected={selectedOptions.includes('A')} />
+      <SolutionOption optionNumber={2} selected={selectedOptions.includes('B')} />
+      <SolutionOption optionNumber={3} selected={selectedOptions.includes('C')} />
+      <SolutionOption optionNumber={4} selected={selectedOptions.includes('D')} />
+      <SolutionOption optionNumber={5} selected={selectedOptions.includes('E')} />
 
       <div className='continueButtonContainerBottom center' >
         <ContinueButton onClick={() => navigate('/PickerView')} />

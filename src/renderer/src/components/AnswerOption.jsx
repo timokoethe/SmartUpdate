@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useLocalization } from '../LanguageContext'
 
-function AnswerOption({optionNumber, clickable}) {
+function AnswerOption({optionNumber, clickable, onClick}) {
   const loc = useLocalization()
   const isRight = optionNumber === 1 || optionNumber === 5
   const [isSelected, setIsSelected] = useState(false)
@@ -9,6 +9,7 @@ function AnswerOption({optionNumber, clickable}) {
     if (clickable) {
       setIsSelected(!isSelected)
     }
+    onClick()
   }
   const getContentForNumber = (optionNumber) => {
     switch (optionNumber) {

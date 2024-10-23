@@ -131,6 +131,10 @@
     border: 0.4629629vw #00FF66 solid;
 }
 
+.solutionOptionWidgetWrong {
+    border: 0.4629629vw red solid;
+}
+
 .solutionOptionWidgetContainer {
     padding-top: 0.4629629vw;
     display: flex;
@@ -150,6 +154,10 @@
 
 .solutionOptionCheckBoxCorrect {
     background-color: #00FF66;
+}
+
+.solutionOptionCheckBoxWrong {
+    background-color: red;
 }
 
 .solutionOptionSubText {

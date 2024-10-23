@@ -8,11 +8,33 @@ import BottomFont from '../components/BottomFont'
 import inactivityTimer from '../components/Timer'
 import InfoButton from '../components/InfoButton'
 import CancelButton from '../components/CancelButton'
+import { useState } from 'react'
+import React from 'react'
 
-function InfoView() {
+function InfoView({ navigateToSolution }) {
   const loc = useLocalization()
   inactivityTimer()
   const navigate = useNavigate()
+
+  
+  const [selectedOptions, setSelectedOptions] = useState([])
+
+  const handleOptionClick = (optionNumber) => {
+    setSelectedOptions((prevSelectedOptions) => {
+      if (prevSelectedOptions.includes(optionNumber)) {
+        const updatedOptions = prevSelectedOptions.filter((answer) => answer !== optionNumber)
+        return updatedOptions
+      } else {
+        const updatedOptions = [...prevSelectedOptions, optionNumber]
+        return updatedOptions
+      }
+    })
+  }
+
+  const handleContinue = () => {
+    navigateToSolution(selectedOptions)
+  }
+
   return (
     <>
       <ProgressBar progress={1} />
@@ -26,14 +48,14 @@ function InfoView() {
         <p className='text-small leading'>{loc.infoViewText02}</p>
       </div>
 
-      <AnswerOption optionNumber={1} clickable={true}/>
-      <AnswerOption optionNumber={2} clickable={true}/>
-      <AnswerOption optionNumber={3} clickable={true}/>
-      <AnswerOption optionNumber={4} clickable={true}/>
-      <AnswerOption optionNumber={5} clickable={true}/>
+      <AnswerOption optionNumber={1} clickable={true} onClick={() => handleOptionClick('A')}/>
+      <AnswerOption optionNumber={2} clickable={true} onClick={() => handleOptionClick('B')}/>
+      <AnswerOption optionNumber={3} clickable={true} onClick={() => handleOptionClick('C')}/>
+      <AnswerOption optionNumber={4} clickable={true} onClick={() => handleOptionClick('D')}/>
+      <AnswerOption optionNumber={5} clickable={true} onClick={() => handleOptionClick('E')}/>
 
       <div className='continueButtonContainerBottom center'>
-        <ContinueButton onClick={() => navigate('/SolutionView')} />
+        <ContinueButton onClick={handleContinue}/>
       </div>
       <BottomDesign />
       <BottomFont />

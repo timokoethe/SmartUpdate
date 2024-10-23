@@ -46,7 +46,7 @@ function EntryView() {
               <InfoWidget widgetNumber={3} />
             </div>
           </div>
-          <StartButton onClick={() => navigate('/InfoView')} />
+          <StartButton onClick={() => navigate('/QuizView')} />
         </div>
       </div>
     </>
