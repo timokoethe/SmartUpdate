@@ -13,7 +13,7 @@ function LanguageToggle() {
   	    </div>
 		*/
 		<div>
-			<button class="languageToggle" onClick={changeLanguage}>{language === 'en' ? 'Deutsch' : 'English'}</button>
+			<button class="languageToggle" onClick={changeLanguage}>{language === 'en' ? 'DE' : 'EN'}</button>
 		</div>
   )
 }
