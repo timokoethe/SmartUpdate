@@ -67,7 +67,7 @@ export const Localization = {
         pickerViewHeadline: '1. Choose Platform',
         pickerViewText01: 'Mobile phones offer us a function to perform updates automatically.\nIn the following we will show you how to activate this and also how to perform an update manually.',
         pickerViewText02: 'Grab your phone and try this simultaneously on your own!',
-        pickerViewText03: 'Please choose your platform:',
+        pickerViewText03: 'Please scan the QR-Code according to you platform:',
         /*CelebViewAndroid & CelebViewiOS*/
         celebViewText: 'Congratulations!',
         /*StepViews*/
@@ -156,7 +156,7 @@ export const Localization = {
         pickerViewHeadline: '1. Wähle deine Plattform',
         pickerViewText01: 'Smartphones bieten uns die Möglichkeit Updates automatisch zu installieren.\nIm Folgenden zeigen wir dir, wie du diese Funktion aktivierst und auch wie du ein Update manuell durchführst.',
         pickerViewText02: 'Nimm dein Smartphone und versuche es nebenbei!',
-        pickerViewText03: 'Bitte wähle deine Plattform:',
+        pickerViewText03: 'Bitte scanne den QR-Code für dein Betriebssystem:',
         /*CelebViewAndroid & CelebViewiOS*/
         celebViewText: 'Gratulation!',
         /*StepViews*/

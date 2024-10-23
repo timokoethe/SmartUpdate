@@ -225,7 +225,7 @@
 }
 
 .androidPicker {
-    background-image: url("./icons/AndroidPicker.png");
+    background-image: url("./icons/AndroidPicker_QR.png");
     background-color: transparent;
     background-size: contain;
     border: none;
@@ -240,7 +240,7 @@
 }
 
 .applePicker {
-    background-image: url("./icons/ApplePicker.png");
+    background-image: url("./icons/ApplePicker_QR.png");
     background-color: transparent;
     background-size: contain;
     border: none;
