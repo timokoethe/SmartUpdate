@@ -951,7 +951,7 @@ input.check-toggle-round-flat:checked + label:after {
     cursor: pointer;
 }
 
-.phoneVideo {
+.phoneGraphic {
     width: 25.185185vw;
     height: 51.851851vw;
     object-fit: cover;
