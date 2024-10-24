@@ -45,12 +45,24 @@
     transform: scale(0.98);
 }
 
-
 .continueButtonDisabled {
     display: none;
-    /*background-color: #b1b1b1;
-    color: #4D4D4D;
-    border: 0.4629629vw #868686 solid;*/
+}
+
+.fallbackContinueButton {
+    font-family: 'Ropa Sans';
+    font-size: 3vw;
+    height: 6vw;
+    width: 15vw;
+    color: white;
+    background-color: rgb(95, 95, 95);
+    border: 0.4629629vw #ff8eec solid;
+    border-radius: 0.925925vw;
+    cursor: pointer;
+}
+
+.fallbackContinueButton:active {
+    transform: scale(0.98);
 }
 
 .completeButton {
@@ -726,6 +738,11 @@ input.check-toggle-round-flat:checked + label:after {
     margin-right: 4.629629vw;;
 }
 
+.mx-150 {
+    margin-left: 6.944444vw;
+    margin-right: 6.944444vw;
+}
+
 .mx-200 {
     margin-left: 9.25925vw;
     margin-right: 9.25925vw;
@@ -764,6 +781,10 @@ input.check-toggle-round-flat:checked + label:after {
 
 .mt-450 {
     margin-top: 20.833333vw;
+}
+
+.mb-20 {
+    margin-bottom: 0.925925vw;
 }
 
 .mb-100 {

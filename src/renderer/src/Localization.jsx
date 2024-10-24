@@ -67,7 +67,8 @@ export const Localization = {
         pickerViewHeadline: '1. Choose Platform',
         pickerViewText01: 'Mobile phones offer us a function to perform updates automatically.\nIn the following we will show you how to activate this and also how to perform an update manually.',
         pickerViewText02: 'Grab your phone and try this simultaneously on your own!',
-        pickerViewText03: 'Please scan the QR-Code according to you platform:',
+        pickerViewText03: 'Please scan the QR-Code according to you platform to open the settings app on your smartphone and click on it to continue:',
+        pickerViewText04: 'Did not work? Pleas choose here:',
         /*CelebViewAndroid & CelebViewiOS*/
         celebViewText: 'Congratulations!',
         /*StepViews*/
@@ -156,7 +157,8 @@ export const Localization = {
         pickerViewHeadline: '1. Wähle deine Plattform',
         pickerViewText01: 'Smartphones bieten uns die Möglichkeit Updates automatisch zu installieren.\nIm Folgenden zeigen wir dir, wie du diese Funktion aktivierst und auch wie du ein Update manuell durchführst.',
         pickerViewText02: 'Nimm dein Smartphone und versuche es nebenbei!',
-        pickerViewText03: 'Bitte scanne den QR-Code für dein Betriebssystem:',
+        pickerViewText03: 'Bitte scanne den QR-Code für dein Betriebssystem um die Einstellungen zu öffnen. Klicke danach auf den QR-Code um fortzufahren:',
+        pickerViewText04: 'Nicht geklappt? Dann wähle hier:',
         /*CelebViewAndroid & CelebViewiOS*/
         celebViewText: 'Gratulation!',
         /*StepViews*/
