@@ -7,12 +7,13 @@ import CancelButton from '../../components/CancelButton'
 import BackButton from '../../components/BackButton'
 import ProgressBar from '../../components/ProgressBar'
 import image from '../../assets/phones/iOS_Step01.png'
+import qrcode from '../../assets/icons/iOS_qrcode.png'
 import InfoOverlay from '../../components/InfoOverlay'
 import BottomDesign from '../../components/BottomDesign'
 import BottomFont from '../../components/BottomFont'
 import inactivityTimer from '../../components/Timer'
 
-function iOS_Step01View() {
+function iOS_Step01View({ withQRCode}) {
   const loc = useLocalization()
   inactivityTimer()
   const navigate = useNavigate()
@@ -32,10 +33,10 @@ function iOS_Step01View() {
 
         <div className='topAlign spacer px-100'>
           <div style={{width: '44vw'}}>
-            <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0101 }} />  
+            <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: withQRCode ? loc.stepViewText0101QRCode : loc.stepViewText0101  }} /> 
           </div>
 
-          <img src={image} alt='iPhone' className='my-100 stepImage'/>
+          <img src={withQRCode ? qrcode : image} alt='iPhone' className='my-100 stepImage'/>
 
           <InfoButton theme={'dark'} onClick={toggleOverlay}/>
         </div>

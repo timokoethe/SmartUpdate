@@ -40,7 +40,7 @@ function App() {
             <Route path="/InfoView" element={<InfoView />} />
             <Route path="/SolutionView" element={<SolutionView />} />
             <Route path="/QuizView" element={<QuizView />} />
-            <Route path="/PickerView" element={<PickerView />} />
+            <Route path="/PickerView" element={<PickerView withQRCode={false} />} />
             <Route path="/Android_Step01View" element={<Android_Step01View />} />
             <Route path="/Android_Step02View" element={<Android_Step02View />} />
             <Route path="/Android_Step03View" element={<Android_Step03View />} />
@@ -51,9 +51,9 @@ function App() {
             <Route path="/Android_Step07View" element={<Android_Step07View />} />
             <Route path="/Android_Step08View" element={<Android_Step08View />} />
 
-            <Route path="/IOS_Step01View" element={<IOS_Step01View />} />
-            <Route path="/IOS_Step02View" element={<IOS_Step02View />} />
-            <Route path="/IOS_Step03View" element={<IOS_Step03View />} />
+            <Route path="/IOS_Step01View" element={<IOS_Step01View withQRCode={true} />} />
+            <Route path="/IOS_Step02View" element={<IOS_Step02View withQRCode={true}/>} />
+            <Route path="/IOS_Step03View" element={<IOS_Step03View withQRCode={true}/>} />
             <Route path="/IOS_Step04View" element={<IOS_Step04View />} />
             <Route path="/IOS_Step05View" element={<IOS_Step05View />} />
             <Route path="/IOS_WarningView" element={<IOS_WarningView />} />

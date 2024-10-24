@@ -68,12 +68,14 @@ export const Localization = {
         pickerViewText01: 'Mobile phones offer us a function to perform updates automatically.\nIn the following we will show you how to activate this and also how to perform an update manually.',
         pickerViewText02: 'Grab your phone and try this simultaneously on your own!',
         pickerViewText03: 'Please scan the QR-Code according to you platform to open the settings app on your smartphone and click on it to continue:',
-        pickerViewText04: 'Did not work? Pleas choose here:',
+        pickerViewText04: 'Did not work? Please continue here:',
+        pickerViewText03WithoutQRCode: 'Please choose your platform here:',
         /*CelebViewAndroid & CelebViewiOS*/
         celebViewText: 'Congratulations!',
         /*StepViews*/
         stepViewHeadline01: '1. Find the Update Settings',
         stepViewText0101: '1. Search for your <i>Settings App</i>.',
+        stepViewText0101QRCode: '1. Scan the QR-Code to open the settings app on your smartphone:',
         stepViewText0102Android: '2. Scroll to <i>System & updates</i>.',
         stepViewText0102iOS: '2. Go to <i>General</i>.',
         stepViewText0103: '3. Go to <i>Software update</i>.',
@@ -159,11 +161,13 @@ export const Localization = {
         pickerViewText02: 'Nimm dein Smartphone und versuche es nebenbei!',
         pickerViewText03: 'Bitte scanne den QR-Code für dein Betriebssystem um die Einstellungen zu öffnen. Klicke danach auf den QR-Code um fortzufahren:',
         pickerViewText04: 'Nicht geklappt? Dann wähle hier:',
+        pickerViewText03WithoutQRCode: 'Bitte wähle hier dein Betriebssystem:',
         /*CelebViewAndroid & CelebViewiOS*/
         celebViewText: 'Gratulation!',
         /*StepViews*/
         stepViewHeadline01: '1. Update Einstellungen finden',
         stepViewText0101: '1. Suche die App <i>Einstellungen</i>.',
+        stepViewText0101QRCode: '1. Scanne den QR-Code um die Einstellungen zu öffnen:',
         stepViewText0102Android: '2. Scrolle zu <i>System & updates</i>.',
         stepViewText0102iOS: '2. Gehe zu <i>Allgemein</i>.',
         stepViewText0103: '3. Gehe zu <i>Softwareupdate</i>.',

@@ -1,8 +1,8 @@
 import { useState } from 'react'
 
-function AndroidPicker({ onClick }) {
+function AndroidPicker({ onClick, withQRCode }) {
   return (
-      <button className='androidPicker' onClick={onClick}/>
+      <button className={`${withQRCode ? 'androidPickerWithQRCode' : 'androidPicker'}`} onClick={onClick}/>
   )
 }
 

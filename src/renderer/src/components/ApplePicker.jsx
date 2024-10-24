@@ -1,8 +1,8 @@
 import { useState } from 'react'
 
-function ApplePicker({ onClick }) {
+function ApplePicker({ onClick, withQRCode }) {
   return (
-      <button className='applePicker' onClick={onClick} />
+      <button className={`${withQRCode ? 'applePickerWithQRCode' : 'applePicker'}`} onClick={onClick} />
   )
 }
 
