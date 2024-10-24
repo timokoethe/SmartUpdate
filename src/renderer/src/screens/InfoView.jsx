@@ -55,7 +55,7 @@ function InfoView({ navigateToSolution }) {
       <AnswerOption optionNumber={5} clickable={true} onClick={() => handleOptionClick('E')}/>
 
       <div className='continueButtonContainerBottom center'>
-        <ContinueButton onClick={handleContinue}/>
+        <ContinueButton onClick={handleContinue} disabled={selectedOptions.length == 0}/>
       </div>
       <BottomDesign />
       <BottomFont />

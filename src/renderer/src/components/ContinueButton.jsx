@@ -1,14 +1,15 @@
 import { useLocalization } from '../LanguageContext'
 
-function ContinueButton({ onClick }) {
+function ContinueButton({ onClick, disabled }) {
   const loc = useLocalization()
   const handleClick = () => {
+    if (disabled) return
     const timeStamp = new Date().toISOString()
     window.electron.ipcRenderer.send('saveButtonStamp', timeStamp)
     onClick()
   }
   return (
-      <button className='continueButton' onClick={handleClick} >
+      <button className={`continueButton ${disabled ? 'continueButtonDisabled' : {}}`} onClick={handleClick} >
         <p>{loc.continueButton}</p>
       </button>
   )
