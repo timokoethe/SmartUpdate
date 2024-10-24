@@ -75,7 +75,7 @@ export const Localization = {
         /*StepViews*/
         stepViewHeadline01: '1. Find the Update Settings',
         stepViewText0101: '1. Search for your <i>Settings App</i>.',
-        stepViewText0101QRCode: '1. Scan the QR-Code to open the settings app on your smartphone:',
+        stepViewText0101QRCode: '1. Scan the QR-Code to open the <i>Settings App</i> on your smartphone:',
         stepViewText0102Android: '2. Scroll to <i>System & updates</i>.',
         stepViewText0102iOS: '2. Go to <i>General</i>.',
         stepViewText0103: '3. Go to <i>Software update</i>.',
