@@ -11,6 +11,7 @@ import BottomDesign from '../../components/BottomDesign'
 import BottomFont from '../../components/BottomFont'
 import inactivityTimer from '../../components/Timer'
 import iOS_DE_02 from '../../assets/phones/iOS_DE_02.mp4'
+import iOS_EN_02 from '../../assets/phones/iOS_EN_02.mp4'
 
 function iOS_Step02View({ withQRCode }) {
   const loc = useLocalization()
@@ -44,7 +45,7 @@ function iOS_Step02View({ withQRCode }) {
             <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0102iOS }} /> 
           </div>
 
-          <video ref={videoRef} className='phoneGraphic mt-100' src={iOS_DE_02} loop />          
+          <video ref={videoRef} className='phoneGraphic mt-100' src={loc.languageKey == 'de' ? iOS_DE_02 : iOS_EN_02} loop />          
 
           <InfoButton theme={'dark'} onClick={toggleOverlay}/>
         </div>

@@ -11,6 +11,7 @@ import BottomDesign from '../../components/BottomDesign'
 import BottomFont from '../../components/BottomFont'
 import inactivityTimer from '../../components/Timer'
 import iOS_DE_08 from '../../assets/phones/iOS_DE_08.mp4'
+import iOS_EN_08 from '../../assets/phones/iOS_EN_08.mp4'
 
 function iOS_Step08View() {
   const loc = useLocalization()
@@ -45,7 +46,7 @@ function iOS_Step08View() {
             <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0303 }} />        
           </div>
 
-          <video ref={videoRef} className='phoneGraphic mt-100' src={iOS_DE_08} loop />
+          <video ref={videoRef} className='phoneGraphic mt-100' src={loc.languageKey == 'de' ? iOS_DE_08 : iOS_EN_08} loop />
 
           <InfoButton theme={'dark'} onClick={toggleOverlay}/>
         </div>

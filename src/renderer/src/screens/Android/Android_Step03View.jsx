@@ -34,7 +34,7 @@ function Android_Step03View({ withQRCode}) {
           <div style={{width: '44vw'}}>
             { withQRCode ? null : <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0101 }} /> }
             <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0102Android }} />
-            <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0103 }} />
+            <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0103Android }} />
           </div>
 
           <img src={image} alt='iPhone' className='my-100 stepImage'/>

@@ -12,9 +12,10 @@ import BottomDesign from '../../components/BottomDesign'
 import BottomFont from '../../components/BottomFont'
 import inactivityTimer from '../../components/Timer'
 import iOS_DE_01 from '../../assets/phones/iOS_DE_01.mp4'
+import iOS_EN_01 from '../../assets/phones/iOS_EN_01.mp4'
 
 
-function iOS_Step01View({ withQRCode}) {
+function iOS_Step01View({ withQRCode }) {
   const loc = useLocalization()
   inactivityTimer()
   const navigate = useNavigate()
@@ -49,7 +50,7 @@ function iOS_Step01View({ withQRCode}) {
             withQRCode ? 
             <img src={qrcode} alt='iPhone' className='my-100 stepImage'/>
             :
-            <video ref={videoRef} className='phoneGraphic mt-100' src={iOS_DE_01} loop />
+            <video ref={videoRef} className='phoneGraphic mt-100' src={loc.languageKey == 'de' ? iOS_DE_01 : iOS_EN_01} loop />
           }
 
           <InfoButton theme={'dark'} onClick={toggleOverlay}/>

@@ -11,6 +11,7 @@ import BottomDesign from '../../components/BottomDesign'
 import BottomFont from '../../components/BottomFont'
 import inactivityTimer from '../../components/Timer'
 import iOS_DE_03 from '../../assets/phones/iOS_DE_03.mp4'
+import iOS_EN_03 from '../../assets/phones/iOS_EN_03.mp4'
 
 function iOS_Step03View({ withQRCode }) {
   const loc = useLocalization()
@@ -42,10 +43,10 @@ function iOS_Step03View({ withQRCode }) {
           <div style={{width: '44vw'}}>
             { withQRCode ? null : <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0101 }} /> }
             <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0102iOS }} /> 
-            <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0103 }} /> 
+            <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0103iOS }} /> 
           </div>
 
-          <video ref={videoRef} className='phoneGraphic mt-100' src={iOS_DE_03} loop />
+          <video ref={videoRef} className='phoneGraphic mt-100' src={loc.languageKey == 'de' ? iOS_DE_03 : iOS_EN_03} loop />
 
           <InfoButton theme={'dark'} onClick={toggleOverlay}/>
         </div>
