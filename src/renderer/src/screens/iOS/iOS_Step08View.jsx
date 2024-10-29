@@ -52,7 +52,7 @@ function iOS_Step08View() {
         </div>
 
         <div className='center continueButtonContainer'>
-          <ContinueButton onClick={() => navigate('/CelebViewiOS')} />
+          <ContinueButton onClick={() => navigate('/FinalViewiOS')} />
         </div>
         <BottomDesign />
         <BottomFont />

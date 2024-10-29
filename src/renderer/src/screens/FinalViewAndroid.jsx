@@ -9,6 +9,7 @@ import CompleteButton from '../components/CompleteButton'
 import BottomDesign from '../components/BottomDesign'
 import BottomFont from '../components/BottomFont'
 import inactivityTimer from '../components/Timer'
+import Confetti from 'react-confetti'
 
 function FinalViewAndroid() {
   const loc = useLocalization()
@@ -46,6 +47,7 @@ function FinalViewAndroid() {
       </div>
       <BottomDesign />
       <BottomFont />
+      <Confetti width={window.innerWidth} height={window.innerHeight} numberOfPieces={500} recycle={false} run={isMounted}/>
     </>
   )
 }

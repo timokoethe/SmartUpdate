@@ -42,7 +42,7 @@ function Android_Step08View() {
           <InfoButton theme={'dark'} onClick={toggleOverlay}/>
         </div>
         <div className='center continueButtonContainer'>
-          <ContinueButton onClick={() => navigate('/CelebViewAndroid')} />
+          <ContinueButton onClick={() => navigate('/FinalViewAndroid')} />
         </div>
         <BottomDesign />
         <BottomFont />
