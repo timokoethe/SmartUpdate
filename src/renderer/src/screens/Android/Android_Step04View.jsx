@@ -9,8 +9,8 @@ import ProgressBar from '../../components/ProgressBar'
 import BottomDesign from '../../components/BottomDesign'
 import BottomFont from '../../components/BottomFont'
 import inactivityTimer from '../../components/Timer'
-import Android_DE_01 from '../../assets/phones/Android_DE_01.mp4'
-import Android_EN_01 from '../../assets/phones/Android_EN_01.mp4'
+import Android_DE_04 from '../../assets/phones/Android_DE_04.mp4'
+import Android_EN_04 from '../../assets/phones/Android_EN_04.mp4'
 
 function Android_Step04View() {
   const loc = useLocalization()
@@ -39,7 +39,7 @@ function Android_Step04View() {
           <p className='text-medium pb-30'>{loc.stepViewText0201Android}</p>
         </div>
 
-        <video ref={videoRef} className='phoneGraphic mt-100' src={loc.languageKey == 'de' ? Android_DE_01 : Android_EN_01} loop />
+        <video ref={videoRef} className='phoneGraphic mt-100' src={loc.languageKey == 'de' ? Android_DE_04 : Android_EN_04 } loop />
 
         <InfoButton theme={'light'}/>
       </div>
