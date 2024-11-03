@@ -10,8 +10,8 @@ import InfoOverlay from '../../components/InfoOverlay'
 import BottomDesign from '../../components/BottomDesign'
 import BottomFont from '../../components/BottomFont'
 import inactivityTimer from '../../components/Timer'
-import Android_DE_06 from '../../assets/phones/Android_DE_06.mp4'
-import Android_EN_06 from '../../assets/phones/Android_EN_06.mp4'
+import Android_DE_08 from '../../assets/phones/Android_DE_08.mp4'
+import Android_EN_08 from '../../assets/phones/Android_EN_08.mp4'
 
 function Android_Step08View() {
   const loc = useLocalization()
@@ -46,7 +46,7 @@ function Android_Step08View() {
             <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0303 }} />        
           </div>
 
-          <video ref={videoRef} className='phoneGraphic mt-100' src={loc.languageKey == 'de' ? Android_DE_06 : Android_EN_06 } loop />
+          <video ref={videoRef} className='phoneGraphic mt-100' src={loc.languageKey == 'de' ? Android_DE_08 : Android_EN_08 } loop />
 
           <InfoButton theme={'dark'} onClick={toggleOverlay}/>
         </div>
