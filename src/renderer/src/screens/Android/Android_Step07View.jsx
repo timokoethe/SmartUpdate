@@ -43,7 +43,7 @@ function Android_Step07View() {
         <div className='topAlign spacer px-100'>
           <div style={{width: '44vw'}}>
             <p className='text-medium pb-30'>{loc.stepViewText0301}</p>
-            <p className='text-medium pb-30'>{loc.stepViewText0302}</p>            
+            <p className='text-medium pb-30'>{loc.stepViewText0302Android}</p>            
           </div>
 
           <video ref={videoRef} className='phoneGraphic mt-100' src={loc.languageKey == 'de' ? Android_DE_07 : Android_EN_07 } loop />

@@ -42,8 +42,8 @@ function iOS_Step08View() {
         <div className='topAlign spacer px-100'>
           <div style={{width: '44vw'}}>
             <p className='text-medium pb-30'>{loc.stepViewText0301}</p>
-            <p className='text-medium pb-30'>{loc.stepViewText0302}</p>    
-            <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0303 }} />        
+            <p className='text-medium pb-30'>{loc.stepViewText0302iOS}</p>    
+            <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0303iOS }} />        
           </div>
 
           <video ref={videoRef} className='phoneGraphic mt-100' src={loc.languageKey == 'de' ? iOS_DE_08 : iOS_EN_08} loop />

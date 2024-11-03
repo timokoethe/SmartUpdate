@@ -42,7 +42,7 @@ function iOS_Step07View() {
         <div className='topAlign spacer px-100'>
           <div style={{width: '44vw'}}>
             <p className='text-medium pb-30'>{loc.stepViewText0301}</p>
-            <p className='text-medium pb-30'>{loc.stepViewText0302}</p>            
+            <p className='text-medium pb-30'>{loc.stepViewText0302iOS}</p>            
           </div>
 
           <video ref={videoRef} className='phoneGraphic mt-100' src={loc.languageKey == 'de' ? iOS_DE_07 : iOS_EN_07} loop />
