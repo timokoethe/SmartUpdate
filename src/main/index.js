@@ -39,8 +39,29 @@ function createWindow() {
     mainWindow.loadFile(join(__dirname, '../renderer/index.html'))
   }
 
-  /*
+  // Full Screen Mode
+  const { width, height } = screen.getPrimaryDisplay().workAreaSize
+  const marginError = 0.02
+  const targetAspectRatio = 9 / 16
 
+  if (Math.abs(width / height - targetAspectRatio) <= marginError) {
+    console.log('The aspect ratio of the screen is 9:16.')
+    // Dialog Window
+    dialog.showMessageBox(mainWindow,{
+      type: 'question',
+      message: 'The aspect ratio of the screen is 9:16.',
+      detail: 'Do you want to switch to full screen mode?',
+      buttons: ['Yes', 'No']
+    }).then((response) => {
+      if (response.response === 0) {
+        mainWindow.setFullScreen(true)
+      } else {
+        console.log('No clicked')
+      }
+    })
+  }
+
+  /*
   ipcMain.on('toggel-FullScreen', (event) => {
     const { width, height } = screen.getPrimaryDisplay().workAreaSize
 
@@ -55,24 +76,7 @@ function createWindow() {
         buttons: ['OK']
     })
   }
-  })
-
-
-  // DialogFenster
-  dialog.showMessageBox(mainWindow,{
-    type: 'question',
-    message: 'The aspect ratio of the screen is not 9:16.',
-    detail: 'Please change the aspect ratio of the screen to 9:16 and try again.',
-    buttons: ['Yes', 'No']
-  }).then((response) => {
-    if (response.response === 0) {
-      console.log('Yes clicked')
-    } else {
-      console.log('No clicked')
-    }
-  })
-
-  */
+  })*/
 }
 
 // This method will be called when Electron has finished
