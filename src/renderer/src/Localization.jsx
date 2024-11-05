@@ -36,7 +36,7 @@ export const Localization = {
         /*UpdateWarning*/
         updateWarningText: 'If you want to execute the following steps right now, make sure you are connected to Wi-Fi because Updates may be large.',
         /*WifiWarning*/
-        wifiWarningText: 'From now on, your mobile phone will try to install updates on its own as soon as it is connected to WI-FI.',
+        wifiWarningText: 'From now on your mobile phone will try to install updates on its own as soon as it is connected to WI-FI.',
         /*InfoOverlay*/
         infoOverlayHeadline01: 'What is this?',
         infoOverlayHeadline02: 'What platform do I have?',
@@ -48,7 +48,7 @@ export const Localization = {
         infoOverlayHeadline08: 'A long text appears?',
         infoOverlayHeadline09: 'How to find General?',
         infoOverlayHeadline10: 'How to find Software Update?',
-        infoOverlayText01: 'This application offers you a quick and simple step by step guide on how to update your phone manually and how to enable the automatic update function.',
+        infoOverlayText01: 'This application offers a quick and simple step by step guide on how to update your phone manually and how to enable the automatic update function.',
         infoOverlayText02: 'Turn your phone backwards. Look for an icon. If you find an apple like icon, your phone is an apple device. If you don\'t find any icon, choose Android.',
         infoOverlayText03: 'Look for the gear icon. Swipe down shortly from the top half of your screen. A searchbar appears. Type in \'Settings\' and choose the first result.',
         infoOverlayText04: 'Below the headline a search bar is placed. Type in System & updates and choose the first result.',
@@ -65,7 +65,7 @@ export const Localization = {
         infoViewText02: 'Choose one or more answers that you think are important.',
         /*PickerView*/
         pickerViewHeadline: '1. Choose Platform',
-        pickerViewText01: 'Mobile phones offer us a function to perform updates automatically.\nIn the following we will show you how to activate this and also how to perform an update manually.',
+        pickerViewText01: 'Mobile phones provide the possibility to perform updates automatically.\nIn the following we will show you how to activate this and also how to perform an update manually.',
         pickerViewText02: 'Grab your phone and try this simultaneously on your own!',
         pickerViewText03: 'Please scan the QR-Code according to you platform to open the settings app on your smartphone and click on it to continue:',
         pickerViewText04: 'Did not work? Please continue here:',
@@ -88,8 +88,8 @@ export const Localization = {
         stepViewText0301: '1. Once you have enabled the Automatic Update function, go one step back to the Software Update tab. Your phone starts searching for updates.',
         stepViewText0302iOS: '2. If an update is available, it is displayed as on the right, otherwise nothing appears and you are already up to date.',
         stepViewText0302Android: '2. If an update is available, it is displayed similarly to the right. Otherwise, you are already up to date.',
-        stepViewText0303iOS: '3. Click on <i>Update Now</i> to start the Update immediately. It may take some time until the update is finished.',
-        stepViewText0303Android: '3. Click on <i>New version</i> to start the Update immediately. It may take some time until the update is finished.',
+        stepViewText0303iOS: '3. Click on <i>Update Now</i> to start the Update immediately. It may take some time until it\'s finished.',
+        stepViewText0303Android: '3. Click on <i>New version</i> to start the Update immediately. It may take some time until it\'s finished.',
         /*FinalViews*/
         finalViewHeadline: 'Congratulations!',
         finalViewText: 'You performed an important and major security action!',
@@ -101,7 +101,7 @@ export const Localization = {
         continueButton: 'Weiter',
         completeButton: 'Abschließen',
         /*InfoWidget*/
-        infoWidgetHeadline: 'Halte dein Handy Up-to-Date',
+        infoWidgetHeadline: 'Behalte dein Handy Up-to-Date',
         infoWidgetText01: 'Lerne in unter 120 Sekunden, wie du dein Smartphone aktualisierst und warum das so wichtig ist!',
         infoWidgetText02: 'Updates enthalten oft Optimierungen, die die Akkulaufzeit deines Handys verlängern können.',
         infoWidgetText03: 'Durch Updates stellst du sicher, dass du und deine Daten gegen Schwachstellen geschützt sind.',
@@ -126,12 +126,12 @@ export const Localization = {
         solutionOptionSubText01: 'Updates beheben Sicherheitslücken, die aufgetreten sind, um dir das sicherste Erlebnis zu bieten.',
         solutionOptionSubText02: 'Updates haben nichts mit dem Verschleiß der Hardware zu tun. Sie beeinflussen nur die Software.',
         solutionOptionSubText03: 'Updates benötigen tatsächlich freien Speicher, geben aber nach der Installation wieder Speicher frei.',
-        solutionOptionSubText04: 'Updates haben wenig bis keinen Einfluss auf die Akkulaufzeit. Im Gegenteil, manchmal erhöhen sie sie sogar.',
-        solutionOptionSubText05: 'Updates bringen oft neue Funktionen, um immer das beste Erlebnis zu bieten. Außerdem beheben sie bekannte Fehler.',
+        solutionOptionSubText04: 'Updates haben wenig bis keinen Einfluss auf die Akkulaufzeit. Manchmal erhöhen sie sie sogar.',
+        solutionOptionSubText05: 'Updates enthalten oft neue Funktionen. Außerdem beheben sie bekannte Fehler.',
         /*UpdateWarning*/
         updateWarningText: 'Wenn du die folgenden Schritte jetzt ausführen möchtest, stelle sicher, dass du mit einem WLAN verbunden bist, um eine hohe Datennutzung zu vermeiden.',
         /*WifiWarning*/
-        wifiWarningText: 'Von jetzt an wird dein Smartphone versuchen, Updates automatisch zu installieren, sobald eine WLAN-Verbindung besteht.',
+        wifiWarningText: 'Von jetzt an wird dein Smartphone versuchen Updates automatisch zu installieren, sobald eine WLAN-Verbindung besteht.',
         /*InfoOverlay*/
         infoOverlayHeadline01: 'Was ist das hier?',
         infoOverlayHeadline02: 'Welche Plattform habe ich?',
