@@ -9,7 +9,7 @@
 SmartUpdate is an interactive public display application designed to educate users on how to update their smartphone and enable automatic update function based on their operating system (Android or iOS). This guide aims to help users keep their devices secure and running the latest software version by walking them through a step-by-step tutorial.
 
 ## Features
-- **Cross-Platform Compatinility**: Designed to work on macOS, Windows and Linux
+- **Cross-Platform Compatibility**: Designed to work on macOS, Windows and Linux
 - **Interactive Tutorials**: Users are provided with a dynamic step-by-step guide to their smartphone's operating system. Each step is broken into simple and easy-to-follow instructions.
 - **Platform-Specific Instructions**: Depending on whether the user selects Android or iOS, the app tailors the guide to reflect the specific nuances of each platform's update settings and process.
 - **Navigation Controls**: Users can move forward and backward through the tutorial steps allowing them to revisit any part of the application.
