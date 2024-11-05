@@ -1,6 +1,11 @@
 import { useLocalization } from '../LanguageContext'
 
 function InfoOverlay({overlayNumber, isVisible, onClose}) {
+  const handleClick = () => {
+    const timeStamp = new Date().toISOString()
+    window.electron.ipcRenderer.send('saveInfoCloseStamp', timeStamp)
+    onClose()
+  }
   const loc = useLocalization()
   if (!isVisible) return null
   const getContentForNumber = (overlayNumber) => {
@@ -56,7 +61,7 @@ function InfoOverlay({overlayNumber, isVisible, onClose}) {
           <div className='infoOverlayHeadlineContainer'>
             <h1 className='infoOverlayHeadline'>{headline}</h1>
           </div>
-          <button className='infoOverlayCloseButton' onClick={onClose}/>
+          <button className='infoOverlayCloseButton' onClick={handleClick}/>
         </div>
         <p className='infoOverlayText px-50'>{text}</p>
       </div>

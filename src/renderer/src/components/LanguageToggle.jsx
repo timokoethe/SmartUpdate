@@ -3,6 +3,11 @@ import { useLanguage } from '../LanguageContext'
 
 function LanguageToggle() {
   const { changeLanguage, language } = useLanguage()
+  const handleClick = () => {
+    const timeStamp = new Date().toISOString()
+    window.electron.ipcRenderer.send('saveLanguageStamp', timeStamp)
+    changeLanguage()
+  }
   return (
 		/*
 	    <div class="switch">
@@ -13,7 +18,7 @@ function LanguageToggle() {
   	    </div>
 		*/
 		<div>
-			<button class="languageToggle" onClick={changeLanguage}>{language === 'en' ? 'DE' : 'EN'}</button>
+			<button class="languageToggle" onClick={handleClick}>{language === 'en' ? 'DE' : 'EN'}</button>
 		</div>
   )
 }

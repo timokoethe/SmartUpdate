@@ -106,7 +106,7 @@ app.whenReady().then(() => {
       if (err) {
         console.error('Error saving timestamp:', err)
       }
-      console.log('Timestamp saved:', timeStamp)
+      console.log('Start Timestamp saved:', timeStamp)
     })
   })
 
@@ -120,10 +120,121 @@ app.whenReady().then(() => {
       if (err) {
         console.error('Error saving timestamp:', err)
       }
-      console.log('Timestamp saved:', timeStamp)
+      console.log('Continue Timestamp saved:', timeStamp)
     })
   })
 
+  // IPC Save Timestamp for Back Button
+  ipcMain.on('saveBackStamp', (_, timeStamp) => {
+    const documentPath = app.getPath('documents')
+    const filePath = join(documentPath, 'timestamps.csv')
+    
+    // Writes the timestamp to the file
+    fs.appendFile(filePath, `Back at: ${timeStamp};`, (err) => {
+      if (err) {
+        console.error('Error saving timestamp:', err)
+      }
+      console.log('Back Timestamp saved:', timeStamp)
+    })
+  })
+
+  // IPC Save Timestamp for Cancel Button
+  ipcMain.on('saveCancelStamp', (_, timeStamp) => {
+    const documentPath = app.getPath('documents')
+    const filePath = join(documentPath, 'timestamps.csv')
+    
+    // Writes the timestamp to the file
+    fs.appendFile(filePath, `Cancel at: ${timeStamp};`, (err) => {
+      if (err) {
+        console.error('Error saving timestamp:', err)
+      }
+      console.log('Cancel Timestamp saved:', timeStamp)
+    })
+  })
+
+  // IPC Save Timestamp for Complete Button
+  ipcMain.on('saveCompleteStamp', (_, timeStamp) => {
+    const documentPath = app.getPath('documents')
+    const filePath = join(documentPath, 'timestamps.csv')
+    
+    // Writes the timestamp to the file
+    fs.appendFile(filePath, `Completed at: ${timeStamp};`, (err) => {
+      if (err) {
+        console.error('Error saving timestamp:', err)
+      }
+      console.log('Complete Timestamp saved:', timeStamp)
+    })
+  })
+
+  // IPC Save Timestamp for Apple Picker Button
+  ipcMain.on('saveAppleStamp', (_, timeStamp) => {
+    const documentPath = app.getPath('documents')
+    const filePath = join(documentPath, 'timestamps.csv')
+    
+    // Writes the timestamp to the file
+    fs.appendFile(filePath, `Apple at: ${timeStamp};`, (err) => {
+      if (err) {
+        console.error('Error saving timestamp:', err)
+      }
+      console.log('Apple Timestamp saved:', timeStamp)
+    })
+  })
+
+  // IPC Save Timestamp for Android Picker Button
+  ipcMain.on('saveAndroidStamp', (_, timeStamp) => {
+    const documentPath = app.getPath('documents')
+    const filePath = join(documentPath, 'timestamps.csv')
+    
+    // Writes the timestamp to the file
+    fs.appendFile(filePath, `Android at: ${timeStamp};`, (err) => {
+      if (err) {
+        console.error('Error saving timestamp:', err)
+      }
+      console.log('Android Timestamp saved:', timeStamp)
+    })
+  })
+
+  // IPC Save Timestamp for Info Button
+  ipcMain.on('saveInfoStamp', (_, timeStamp) => {
+    const documentPath = app.getPath('documents')
+    const filePath = join(documentPath, 'timestamps.csv')
+    
+    // Writes the timestamp to the file
+    fs.appendFile(filePath, `Info at: ${timeStamp};`, (err) => {
+      if (err) {
+        console.error('Error saving timestamp:', err)
+      }
+      console.log('Info Timestamp saved:', timeStamp)
+    })
+  })
+
+  // IPC Save Timestamp for Info Cancel Button
+  ipcMain.on('saveInfoCloseStamp', (_, timeStamp) => {
+    const documentPath = app.getPath('documents')
+    const filePath = join(documentPath, 'timestamps.csv')
+    
+    // Writes the timestamp to the file
+    fs.appendFile(filePath, `Info closed at: ${timeStamp};`, (err) => {
+      if (err) {
+        console.error('Error saving timestamp:', err)
+      }
+      console.log('Info Close Timestamp saved:', timeStamp)
+    })
+  })
+
+  // IPC Save Timestamp for Language Button
+  ipcMain.on('saveLanguageStamp', (_, timeStamp) => {
+    const documentPath = app.getPath('documents')
+    const filePath = join(documentPath, 'timestamps.csv')
+    
+    // Writes the timestamp to the file
+    fs.appendFile(filePath, `Language at: ${timeStamp};`, (err) => {
+      if (err) {
+        console.error('Error saving timestamp:', err)
+      }
+      console.log('Language Timestamp saved:', timeStamp)
+    })
+  })
 
   createWindow()
 
