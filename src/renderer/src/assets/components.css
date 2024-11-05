@@ -1,0 +1,958 @@
+@font-face {
+    font-family: 'Ropa Sans';
+    src: local('Ropa Sans'), url('./fonts/RopaSans-Regular.ttf') format('truetype');
+  }
+
+.startButton {
+    font-family: 'Ropa Sans';
+    font-size: 4.16666vw; /*90px*/
+    height: 23.14888vw; /*500px*/
+    width: 46.296296vw; /*1000px*/
+    color: white;
+    border-radius: 50%;
+    background-image: radial-gradient(circle, #FF00D6E6, #8F00FFE6);
+    border: none;
+    animation: endless-in infinite 2s ease-in-out;
+    cursor: pointer;
+    margin-top: 23.14888vw; /*500px*/
+}
+  
+@keyframes endless-in {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.08);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+  
+.continueButton {
+    font-family: 'Ropa Sans';
+    font-size: 3.7962962vw;
+    height: 6.944444vw;
+    width: 20.833333vw;
+    color: white;
+    background-color: black;
+    border: 0.4629629vw #FF00D6 solid;
+    border-radius: 0.925925vw;
+    cursor: pointer;
+}
+
+.continueButton:active {
+    transform: scale(0.98);
+}
+
+.continueButtonDisabled {
+    display: none;
+}
+
+.fallbackContinueButton {
+    font-family: 'Ropa Sans';
+    font-size: 3vw;
+    height: 6vw;
+    width: 15vw;
+    color: white;
+    background-color: rgb(95, 95, 95);
+    border: 0.4629629vw #ff8eec solid;
+    border-radius: 0.925925vw;
+    cursor: pointer;
+}
+
+.fallbackContinueButton:active {
+    transform: scale(0.98);
+}
+
+.completeButton {
+    font-family: 'Ropa Sans';
+    font-size: 3.7962962vw;
+    height: 6.944444vw;
+    width: 20.833333vw;
+    color: white;
+    background-color: black;
+    border: 0.4629629vw #FF00D6 solid;
+    border-radius: 0.925925vw;
+    cursor: pointer;
+}
+
+.completeButton:active {
+    transform: scale(0.98);
+}
+
+.backButton {
+    background-image: url("./icons/BackButton.png");
+    background-color: transparent;
+    background-size: contain;
+    border: none;
+    height: 2.6vh;
+    width: 2.6vh;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.backButton:active {
+    transform: scale(0.97);
+}
+
+.cancelButton {
+    background-image: url("./icons/CancelButtonDark.png");
+    background-color: transparent;
+    background-size: contain;
+    border: none;
+    height: 2.6vh;
+    width: 2.6vh;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.cancelButton:active {
+    transform: scale(0.97);
+}
+
+.infoIconDark {
+    background-image: url("./icons/InfoButtonDark.png");
+}
+
+.infoIconLight {
+    background-image: url("./icons/InfoButtonLight.png");
+}
+
+.infoButton {
+    background-color: transparent;
+    background-size: contain;
+    border: none;
+    height: 2.6vh;
+    width: 2.6vh;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.infoButton:active {
+    transform: scale(0.97);
+}
+
+.solutionOptionWidget {
+    font-family: 'Ropa Sans';
+    height: 4.5vh;
+    width: 74vw;
+    color: white;
+    background-color: #828282;
+    border: 0.4629629vw #828282 solid;
+    border-radius: 1.15740740vw;
+    margin-bottom: 2.3148148vw;
+    box-shadow: 0px 0.4629629vw 0.4629629vw #00000024;
+    animation: solutionWidgetAnimation 0.5s forwards;
+    animation-delay: 1s;
+}
+
+.solutionOptionWidgetCorrect {
+    border: 0.4629629vw #00FF66 solid;
+}
+
+.solutionOptionWidgetWrong {
+    border: 0.4629629vw red solid;
+}
+
+.solutionOptionWidgetContainer {
+    padding-top: 0.4629629vw;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+}
+
+.solutionOptionCheckBox {
+    background-color: #828282;
+    border: 0.32407407vw solid white;
+    height: 3.2vw;
+    width: 3.2vw;
+    margin-left: 2.3148148vw;
+    margin-right: 3.2407407vw;
+}
+
+.solutionOptionCheckBoxCorrect {
+    background-color: #00FF66;
+}
+
+.solutionOptionCheckBoxWrong {
+    background-color: red;
+}
+
+.solutionOptionSubText {
+    padding-right: 0.925925vw;
+    opacity: 0;
+    font-family: 'Ropa Sans';
+    font-size: 3.2407407vw;
+    color: white;
+    margin-left: 2.3148148vw;
+    animation: solutionTextAnimation 0.5s forwards;
+    animation-delay: 1s;
+}
+
+@keyframes solutionTextAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes solutionWidgetAnimation {
+    0% {
+        transform: translateY(0vh);
+        height: 4.5vh;
+    }
+    100% {
+        transform: translateY(-10vh);
+        height: 10.3vh;
+    }
+}
+
+.answerOption {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-family: 'Ropa Sans';
+    height: 4.5vh;
+    width: 74vw;
+    color: white;
+    background-color: #828282;
+    border: 0.4629629vw #828282 solid;
+    border-radius: 1.15740740vw;
+    cursor: pointer;
+    margin-bottom: 2.3148148vw;
+    box-shadow: 0vw 0.4629629vw 0.4629629vw #00000024;
+}
+
+.answerOptionSelected {
+    border: 0.4629629vw #FF8EED solid;
+}
+
+.answerOptionCheckBox {
+    background-color: #828282;
+    border: 0.32407407vw solid white;
+    height: 3.2vw;
+    width: 3.2vw;
+    margin-left: 2.3148148vw;
+    margin-right: 3.2407407vw;
+}
+
+.answerOptionCheckBoxSelected {
+    background-color: #FF8EED;
+}
+
+.answerOptionSolution {
+    border: 0.4629629vw #00FF66 solid;
+}
+
+.answerOptionCheckBoxSolution {
+    background-color: #00FF66;
+}
+
+.androidPicker {
+    background-image: url("./icons/AndroidPicker.png");
+    background-color: transparent;
+    background-size: contain;
+    border: none;
+    height: 18.32vh;
+    width: 18.32vh;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.androidPickerWithQRCode {
+    background-image: url("./icons/AndroidPicker_QR.png");
+    background-color: transparent;
+    background-size: contain;
+    border: none;
+    height: 18.32vh;
+    width: 18.32vh;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.androidPicker:active {
+    transform: scale(0.97);
+}
+
+.applePicker {
+    background-image: url("./icons/ApplePicker.png");
+    background-color: transparent;
+    background-size: contain;
+    border: none;
+    height: 18.32vh;
+    width: 18.32vh;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.applePickerWithQRCode {
+    background-image: url("./icons/ApplePicker_QR.png");
+    background-color: transparent;
+    background-size: contain;
+    border: none;
+    height: 18.32vh;
+    width: 18.32vh;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.applePicker:active {
+    transform: scale(0.97);
+}
+
+.progressContainer {
+    width: 100vw;
+    height: 1.3vh;
+    background-color: white;
+    box-shadow: 0vw 0.185185vw 0.185185vw #00000024;
+}
+
+.progressBar {
+    height: 1.3vh;
+    border-radius: 0vw 1.388888vw 1.388888vw 0vw;
+    background-image: linear-gradient(to right, #8F00FFE6, #FF00D6E6); 
+}
+
+.infoWidget {
+    background-image: linear-gradient(to bottom, #A9008E, #5F00AA); 
+    border-radius: 1.388888vw; /*30px*/
+    width: 77vw;
+    height: 17vh;
+    font-family: 'Ropa Sans';
+    padding: 1.1574vw 2.3148vw 0vw 2.3148vw; /*25px 50px 0px 50px*/
+    margin-top: 41.11111vw; /*888px*/
+}
+
+.infoWidgetContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infoWidgetHeadline {
+    font-size: 4.6296vw; /*100px*/
+    color: white;
+    margin-bottom: 1.38888vw; /*30px*/
+}
+
+.infoWidgetText {
+    font-size: 3.24074vw; /*70px*/
+    color: white;
+    margin-bottom: 1.38888vw; /*30px*/
+    margin-right: 1.85185vw; /*40px*/
+}
+
+.infoWidgetIcon {
+    background-color: transparent;
+    background-size: contain;
+    height: 4.6296vw; /*100px*/
+    width: 4.6296vw; /*100px*/
+    background-repeat: no-repeat;
+    margin-right: 0.0925925vw; /*20px*/
+}
+
+.wifiWarningView {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wifiWarning {
+    background: white;
+    color: black;
+    width: 92.6vw;
+    border-radius: 1.15740740vw;
+    padding-top: 0.925925vw;
+}
+
+.wifiWarningButtonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wifiWarningIcon {
+    padding-right: 2.3148148vw;
+    height: 17.592592vw;
+}
+
+.wifiWarningContentContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3.4722222vw;
+    padding-top: 4.629629vw;;
+}
+
+.finalWidget {
+    width: 74vw;
+    /*height: 6.5vh;*/
+    min-height: 7.5vh;
+    background-color: #828282;
+    border-radius: 1.15740740vw;
+    display: flex;
+}
+
+.finalWidgetContainer {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+}
+
+.finalWidgetIcon {
+    height: 2.9vh;
+    width: 2.9vh;
+}
+
+.finalWidgetText {
+    font-family: 'Ropa Sans';
+    font-size: 3.703703vw;
+    color: white;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    object-fit: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.entryContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.widgetContainer {
+    position: relative;
+    width: 100vw;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(0vw);
+    animation: slideIn 32s ease-in-out infinite;
+}
+
+.leftWidget {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    transform: translateX(-23.5vw);
+}
+
+.middleWidget {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    transform: translateX(0vw);
+}
+
+.rightWidget {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    transform: translateX(23.5vw);
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100vw);
+    }
+    29.66% {
+        transform: translateX(-100vw);
+    }
+    33.36% {
+        transform: translateX(0vw);
+    }
+    63.02% {
+        transform: translateX(0vw);
+    }
+    66.72% {
+        transform: translateX(100vw);
+    }
+    96.38% {
+        transform: translateX(100vw);
+    }
+    100% {
+        transform: translateX(-100vw);
+    }
+}
+
+@keyframes infoOverlayAppear {
+    from {
+        opacity: 0;
+        backdrop-filter: blur(0px);
+        background-color: #00000000;
+    }
+    to {
+        opacity: 1;
+        backdrop-filter: blur(20px);
+        background-color: #00000099;
+    }
+}
+
+.wifiWarningOverlayScreen {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    animation-name: infoOverlayAppear;
+    animation-duration: 0.5s;
+    backdrop-filter: blur(0.925925vw);
+    background-color: #00000099;
+}
+
+.wifiWarningOverlay {
+    position: absolute;
+    background: white;
+    color: black;
+    width: 92.6vw;
+    border-radius: 1.15740740vw;
+    padding-bottom: 2vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.infoOverlayScreen {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    animation-name: infoOverlayAppear;
+    animation-duration: 0.5s;
+    backdrop-filter: blur(20px);
+    background-color: #00000099;
+}
+
+.infoOverlay {
+    position: absolute;
+    width: 50vw;
+    height: 46.3vw;
+    background-image: linear-gradient(to bottom, #8C0076, #380064); 
+    border-radius: 1.15740740vw;
+    box-shadow: 0vw 0.4629629vw 0.4629629vw #00000024;
+}
+
+.infoOverlayHeaderContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    padding: 0.925925vw 0.925925vw 0vw 2.3148148vw;
+}
+
+.infoOverlayCloseButton {
+    background-image: url("./icons/CancelButtonLight.png");
+    background-color: transparent;
+    background-size: contain;
+    border: none;
+    height: 2.6vh;
+    width: 2.6vh;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.infoOverlayHeadlineContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 9.9953704vw;
+}
+
+.infoOverlayHeadline {
+    font-family: 'Ropa Sans';
+    font-size: 3.7962962vw;
+    color: white;
+}
+
+.infoOverlayText {
+    font-family: 'Ropa Sans';
+    font-size: 3.2407407vw;
+    color: white;
+    margin-bottom: 2.3148148vw;
+}
+
+.infoOverlayRight {
+    right: 0;
+}
+
+/* Languange toggle switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    margin: 0 0.23148148vw;
+}
+  
+.switch > span {
+    position: absolute;
+    font-family: 'Ropa Sans';
+    top: 0.32407407vw;
+    pointer-events: none;
+    font-size: 0.7407407vw;
+    text-transform: uppercase;
+    width: 50%;
+    text-align: center;
+}
+  
+input.check-toggle-round-flat:checked ~ .off {
+    color: white;
+}
+  
+input.check-toggle-round-flat:checked ~ .on {
+    color: #B60099;
+}
+  
+.switch > span.on {
+    left: 0;
+    padding-left: 0.0925925vw;
+    color: white;
+}
+  
+.switch > span.off {
+    right: 0;
+    padding-right: 0.185185vw;
+    color: #B60099;
+}
+  
+.check-toggle {
+    position: absolute;
+    margin-left: -4.6291666vw;
+    visibility: hidden;
+}
+
+.check-toggle + label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+input.check-toggle-round-flat + label {
+    padding: 0.0925925vw;
+    width: 4.49074074vw;
+    height: 1.62037037vw;
+    background-color: black;
+    -webkit-border-radius: 2.7777777vw;
+    -moz-border-radius: 2.7777777vw;
+    -ms-border-radius: 2.7777777vw;
+    -o-border-radius: 2.7777777vw;
+    border-radius: 2.7777777vw;
+}
+
+input.check-toggle-round-flat + label:before, input.check-toggle-round-flat + label:after {
+    display: block;
+    position: absolute;
+    content: "";
+}
+  
+input.check-toggle-round-flat + label:before {
+    top: 0.0925925vw;
+    left: 0.0925925vw;
+    bottom: 0.0925925vw;
+    right: 0.0925925vw;
+    background-color: black;
+    -webkit-moz-border-radius: 2.777777vw;
+    -ms-border-radius: 2.777777vw;
+    -o-border-radius: 2.777777vw;
+    border-radius: 2.777777vw;
+}
+
+input.check-toggle-round-flat + label:after {
+    top: 0.185185vw;
+    left: 0.185185vw;
+    bottom: 0.185185vw;
+    width: 2.22222222vw;
+    background-color: #B60099;
+    -webkit-border-radius: 2.407407vw;
+    -moz-border-radius: 2.407407vw;
+    -ms-border-radius: 2.407407vw;
+    -o-border-radius: 2.407407vw;
+    border-radius: 2.407407vw;
+    -webkit-transition: margin 0.2s;
+    -moz-transition: margin 0.2s;
+    -o-transition: margin 0.2s;
+    transition: margin 0.2s;
+}
+  
+input.check-toggle-round-flat:checked + label:after {
+    margin-left: 1.9444444vw;
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(1);
+    }
+    30% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.enlarge {
+    animation: scaleUp 0.5s ease-in-out forwards;
+}
+
+
+/* General Rules */
+/* Font */
+.headline-large {
+    font-family: 'Ropa Sans';
+    font-size: 9.25925vw;
+}
+
+.headline {
+    font-family: 'Ropa Sans';
+    font-size: 4.629629vw;
+}
+
+.text {
+    font-family: 'Ropa Sans';
+    font-size: 4.166666vw;
+}
+
+.text-medium {
+    font-family: 'Ropa Sans';
+    font-size: 3.703703vw;
+}
+
+.text-small {
+    font-family: 'Ropa Sans';
+    font-size: 3.2407407vw;
+}
+
+.text-super-small {
+    font-family: 'Ropa Sans';
+    font-size: 2.77777vw;
+}
+
+.white {
+    color: white;
+}
+
+/* Spacing */
+.mx-80 {
+    margin-left: 3.703703vw;
+    margin-right: 3.703703vw;
+}
+
+.mx-100 {
+    margin-left: 4.629629vw;;
+    margin-right: 4.629629vw;;
+}
+
+.mx-150 {
+    margin-left: 6.944444vw;
+    margin-right: 6.944444vw;
+}
+
+.mx-200 {
+    margin-left: 9.25925vw;
+    margin-right: 9.25925vw;
+}
+
+.my-50 {
+    margin-top: 2.3148148vw;
+    margin-bottom: 2.3148148vw;
+}
+
+.my-100 {
+    margin-top: 4.629629vw;;
+    margin-bottom: 4.629629vw;;
+}
+
+.my-150 {
+    margin-top: 6.944444vw;
+    margin-bottom: 6.944444vw;
+}
+
+.mt-50 {
+    margin-top: 2.3148148vw;
+}
+
+.mt-100 {
+    margin-top: 4.629629vw;
+}
+
+.mt-200 {
+    margin-top: 9.25925vw;
+}
+
+.mt-300 {
+    margin-top: 13.888888vw;
+}
+
+.mt-450 {
+    margin-top: 20.833333vw;
+}
+
+.mb-20 {
+    margin-bottom: 0.925925vw;
+}
+
+.mb-100 {
+    margin-bottom: 4.629629vw;;
+}
+
+.mb-150 {
+    margin-bottom: 6.944444vw;
+}
+
+.ml-100 {
+    margin-left: 4.629629vw;;
+}
+
+.mr-100 {
+    margin-right: 4.629629vw;
+}
+
+.px-50 {
+    padding-left: 2.3148148vw;
+    padding-right: 2.3148148vw;
+}
+
+.px-80 {
+    padding-left: 3.703703vw;
+    padding-right: 3.703703vw;
+}
+
+.px-100 {
+    padding-left: 4.629629vw;
+    padding-right: 4.629629vw;
+}
+
+.px-200 {
+    padding-left: 9.25925vw;
+    padding-right: 9.25925vw;
+}
+
+.pt-300 {
+    padding-top: 13.888888vw;
+}
+
+.pb-30 {
+    padding-bottom: 1.3888888vw;
+}
+
+.leading {
+    text-align: left;
+}
+
+.spacer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.fullWidth {
+    width: 100vw;
+}
+
+.center {
+    text-align: center;
+}
+
+.topAlign {
+    align-items: flex-start;
+}
+
+.continueButtonContainer {
+    position: absolute;
+    width: 100vw;
+    bottom: 30vh;
+}
+
+.continueButtonContainerBottom {
+    position: absolute;
+    width: 100vw;
+    bottom: 20vh;
+}
+
+.centerAlign {
+    align-items: center;
+}
+
+.border {
+    border: 5px #FF00D6 solid;
+}
+
+.bottomDesign {
+    position: absolute;
+    bottom: -10vh;
+    left: -1vw;
+    width: 130vw;
+    height: 20vh;
+    background-image: linear-gradient(to top, #8F00FF, #FF00D6);
+    border-radius: 50%;
+}
+
+.bottomFont {
+    position: absolute;
+    bottom: 0.2vh;
+    right: 1vw;
+    font-family: 'Ropa Sans';
+    font-size: 2.777777vw;
+    color: white;
+}
+
+@keyframes hideAnimation {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.hide {
+    animation: hideAnimation 0.5s forwards;
+}
+
+.stepImage {
+    width: 24.629629vw;
+}
+
+.break {
+    white-space: pre-line;
+}
+
+.languageToggle {
+    font-family: 'Ropa Sans';
+    font-size: 2.5vw;
+    color: white;
+    width: 2.6vh;
+    background-image: linear-gradient(to top, #8F00FF, #FF00D6);
+    border: 0.2vh solid white;
+    border-radius: 2.6vh;
+    height: 2.6vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+
+.phoneGraphic {
+    width: 25.185185vw;
+    height: 51.851851vw;
+    object-fit: cover;
+}
