@@ -936,19 +936,35 @@ input.check-toggle-round-flat:checked + label:after {
     white-space: pre-line;
 }
 
-.languageToggle {
+
+.languageToggleButton {
+    border: none;
+    border-radius: 2vh;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+}
+
+.languageToggleContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.languageToggleText {
+    justify-content: center;
+    align-items: center;
     font-family: 'Ropa Sans';
     font-size: 2.5vw;
     color: white;
-    width: 2.6vh;
+    padding: 0.65vh;
+    border-radius: 2vh;
+}
+
+.languageToggleTextChosen {
     background-image: linear-gradient(to top, #8F00FF, #FF00D6);
-    border: 0.2vh solid white;
-    border-radius: 2.6vh;
-    height: 2.6vh;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    cursor: pointer;
 }
 
 .phoneGraphic {
