@@ -1,7 +1,6 @@
 import { useLocalization } from '../LanguageContext'
 import { useState } from 'react'
-import ApplePicker from '../components/ApplePicker'
-import AndroidPicker from '../components/AndroidPicker'
+import Picker from '../components/Picker'
 import { useNavigate } from 'react-router-dom'
 import InfoButton from '../components/InfoButton'
 import CancelButton from '../components/CancelButton'
@@ -67,8 +66,8 @@ function PickerView({ withQRCode }) {
             <p className='text center mt-300'>{loc.pickerViewText03WithoutQRCode}</p>
           </div>
           <div className='spacer mt-100 px-200'>
-            <AndroidPicker withQRCode={false} onClick={() => navigate('/Android_Step01View')} />
-            <ApplePicker withQRCode={false} onClick={() => navigate('/IOS_Step01View')} />
+            <Picker withQRCode={false} onClick={() => navigate('/Android_Step01View')} os={'Android'}/>
+            <Picker withQRCode={false} onClick={() => navigate('/IOS_Step01View')} os={'iOS'}/>
           </div>
           <BottomDesign />
           <BottomFont />
