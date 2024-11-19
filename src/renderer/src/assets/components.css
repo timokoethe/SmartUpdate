@@ -5,16 +5,15 @@
 
 .startButton {
     font-family: 'Ropa Sans';
-    font-size: 4.16666vw; /*90px*/
-    height: 23.14888vw; /*500px*/
-    width: 46.296296vw; /*1000px*/
-    color: white;
-    border-radius: 50%;
-    background-image: radial-gradient(circle, #FF00D6E6, #8F00FFE6);
-    border: none;
+    font-size: 6vw;
+    height: 32vw;
+    width: 32vw;
+    background-color: rgb(0, 0, 0);
+    color: #FF00D6;
+    border: 0.7vw #FF00D6 solid;
+    border-radius: 100%;
     animation: endless-in infinite 2s ease-in-out;
     cursor: pointer;
-    margin-top: 23.14888vw; /*500px*/
 }
   
 @keyframes endless-in {
@@ -318,13 +317,13 @@
 }
 
 .infoWidget {
-    background-image: linear-gradient(to bottom, #A9008E, #5F00AA); 
-    border-radius: 1.388888vw; /*30px*/
+    background-image: linear-gradient(to bottom, #A9008E, #5F00AA);
+    border-radius: 2vw; 
     width: 77vw;
     height: 17vh;
     font-family: 'Ropa Sans';
     padding: 1.1574vw 2.3148vw 0vw 2.3148vw; /*25px 50px 0px 50px*/
-    margin-top: 41.11111vw; /*888px*/
+    margin-top: 10vw; /*888px*/
 }
 
 .infoWidgetContainer {
