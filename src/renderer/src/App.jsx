@@ -40,7 +40,7 @@ function App() {
             <Route path="/InfoView" element={<InfoView />} />
             <Route path="/SolutionView" element={<SolutionView />} />
             <Route path="/QuizView" element={<QuizView />} />
-            <Route path="/PickerView" element={<PickerView withQRCode={false} />} />
+            <Route path="/PickerView" element={<PickerView />} />
             <Route path="/Android_Step01View" element={<Android_Step01View withQRCode={false}/>} />
             <Route path="/Android_Step02View" element={<Android_Step02View withQRCode={false}/>} />
             <Route path="/Android_Step03View" element={<Android_Step03View withQRCode={false}/>} />

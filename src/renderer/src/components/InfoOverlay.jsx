@@ -55,7 +55,7 @@ function InfoOverlay({overlayNumber, isVisible, onClose}) {
   const { headline, text, position } = getContentForNumber(overlayNumber);
 
   return (
-    <div className='infoOverlayScreen'>
+    <div className='fullBackgroundBlur'>
       <div className={`infoOverlay ${position == 'left' ? 'ml-100 mt-100' : 'infoOverlayRight mr-100 mt-450'}`}>
         <div className='infoOverlayHeaderContainer'>
           <div className='infoOverlayHeadlineContainer'>
