@@ -70,6 +70,7 @@ export const Localization = {
         pickerViewText03: 'Please scan the QR-Code according to you platform to open the settings app on your smartphone and click on it to continue:',
         pickerViewText04: 'Did not work? Please continue here:',
         pickerViewText03WithoutQRCode: 'Please choose your platform here:',
+        androidPickerText: 'Android may vary across different devices. Please choose your smartphone brand:',
         /*CelebViewAndroid & CelebViewiOS*/
         celebViewText: 'Congratulations!',
         /*StepViews*/
@@ -165,6 +166,7 @@ export const Localization = {
         pickerViewText03: 'Bitte scanne den QR-Code für dein Betriebssystem um die Einstellungen zu öffnen. Klicke danach auf den QR-Code um fortzufahren:',
         pickerViewText04: 'Nicht geklappt? Dann wähle hier:',
         pickerViewText03WithoutQRCode: 'Bitte wähle hier dein Betriebssystem:',
+        androidPickerText: 'Android kann sich auf verschiedenen Geräten unterscheiden. Bitte wähle deine Handymarke:',
         /*CelebViewAndroid & CelebViewiOS*/
         celebViewText: 'Gratulation!',
         /*StepViews*/
