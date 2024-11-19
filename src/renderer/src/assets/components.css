@@ -972,6 +972,20 @@ input.check-toggle-round-flat:checked + label:after {
     width: 2.6vh;
     background-repeat: no-repeat;
     cursor: pointer;
+    margin-top: 2vw;
+    margin-right: 2vw;
+}
+
+.androidPickerButtonContainer {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.androidPickerConatiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .fullBackgroundBlur {
@@ -983,4 +997,41 @@ input.check-toggle-round-flat:checked + label:after {
     animation-duration: 0.5s;
     backdrop-filter: blur(20px);
     background-color: #00000099;
+}
+
+.androidPickerOverlay {
+    position: absolute;
+    background: white;
+    color: black;
+    width: 92.6vw;
+    border-radius: 1.15740740vw;
+    padding-bottom: 3vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.androidPickerContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3.4722222vw;
+    padding-right: 3.4722222vw;
+    padding-top: 1vw;
+}
+
+.brandButton {
+    font-family: 'Ropa Sans';
+    font-size: 3.7962962vw;
+    color: white;
+    background-color: black;
+    border: 0.4629629vw #FF00D6 solid;
+    border-radius: 0.925925vw;
+    background-size: contain;
+    height: 10vw;
+    width: 20vw;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    box-shadow: ;
+    margin: 0vw 5vw 0vw 5vw;
 }
