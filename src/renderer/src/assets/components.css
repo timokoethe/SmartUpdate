@@ -504,17 +504,6 @@
     }
 }
 
-.wifiWarningOverlayScreen {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    z-index: 100;
-    animation-name: infoOverlayAppear;
-    animation-duration: 0.5s;
-    backdrop-filter: blur(0.925925vw);
-    background-color: #00000099;
-}
-
 .wifiWarningOverlay {
     position: absolute;
     background: white;
@@ -970,4 +959,28 @@ input.check-toggle-round-flat:checked + label:after {
     width: 25.185185vw;
     height: 51.851851vw;
     object-fit: cover;
+}
+
+
+
+.androidPickerCloseButton {
+    background-image: url("./icons/CancelButtonDark.png");
+    background-color: transparent;
+    background-size: contain;
+    border: none;
+    height: 2.6vh;
+    width: 2.6vh;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.fullBackgroundBlur {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    animation-name: infoOverlayAppear;
+    animation-duration: 0.5s;
+    backdrop-filter: blur(20px);
+    background-color: #00000099;
 }

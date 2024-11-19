@@ -6,7 +6,7 @@ function UpdateWarning({ onClick, isVisible }) {
   const loc = useLocalization()
   if (!isVisible) return null
   return (
-    <div className='wifiWarningOverlayScreen'>
+    <div className='fullBackgroundBlur'>
       <div className='wifiWarningOverlay'>
         <div className='wifiWarningContentContainer'>
           <img src={CheckIcon} className='wifiWarningIcon' />
