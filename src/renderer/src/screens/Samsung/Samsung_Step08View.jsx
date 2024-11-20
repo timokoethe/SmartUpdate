@@ -13,7 +13,7 @@ import inactivityTimer from '../../components/Timer'
 import Android_DE_08 from '../../assets/phones/Android_DE_08.mp4'
 import Android_EN_08 from '../../assets/phones/Android_EN_08.mp4'
 
-function Android_Step08View() {
+function Samsung_Step08View() {
   const loc = useLocalization()
   inactivityTimer()
   const navigate = useNavigate()
@@ -34,7 +34,7 @@ function Android_Step08View() {
       <InfoOverlay overlayNumber={8} isVisible={overlayVisible} onClose={toggleOverlay}/>
         <ProgressBar progress={11}/>
         <div className='spacer px-100 mt-50' style={{alignItems: 'flex-start'}}>
-          <BackButton onClick={() => navigate('/Android_Step07View')}/>
+          <BackButton onClick={() => navigate('/Samsung_Step07View')}/>
           <h1 className='headline mb-150 mt-50'>{loc.stepViewHeadline03}</h1>
           <CancelButton  onClick={() => navigate('/')}/>
         </div>
@@ -60,4 +60,4 @@ function Android_Step08View() {
   )
 }
 
-export default Android_Step08View
+export default Samsung_Step08View

@@ -1032,6 +1032,5 @@ input.check-toggle-round-flat:checked + label:after {
     width: 20vw;
     background-repeat: no-repeat;
     cursor: pointer;
-    box-shadow: ;
     margin: 0vw 5vw 0vw 5vw;
 }

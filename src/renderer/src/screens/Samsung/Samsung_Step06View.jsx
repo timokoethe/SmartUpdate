@@ -14,7 +14,7 @@ import inactivityTimer from '../../components/Timer'
 import Android_DE_06 from '../../assets/phones/Android_DE_06.mp4'
 import Android_EN_06 from '../../assets/phones/Android_EN_06.mp4'
 
-function Android_Step06View() {
+function Samsung_Step06View() {
   const loc = useLocalization()
   inactivityTimer()
   const navigate = useNavigate()
@@ -37,10 +37,10 @@ function Android_Step06View() {
     <>
       <div className='fullWidth'>
         <InfoOverlay overlayNumber={6} isVisible={overlayVisible} onClose={toggleOverlay}/>
-        <UpdateWarning onClick={() => navigate('/Android_Step07View')} isVisible={warningVisible}/>
+        <UpdateWarning onClick={() => navigate('/Samsung_Step07View')} isVisible={warningVisible}/>
         <ProgressBar progress={9}/>
         <div className='spacer px-100 mt-50' style={{alignItems: 'flex-start'}}>
-          <BackButton onClick={() => navigate('/Android_Step05View')}/>
+          <BackButton onClick={() => navigate('/Samsung_Step05View')}/>
           <h1 className='headline mb-150 mt-50'>{loc.stepViewHeadline03}</h1>
           <CancelButton  onClick={() => navigate('/')}/>
         </div>
@@ -64,4 +64,4 @@ function Android_Step06View() {
   )
 }
 
-export default Android_Step06View
+export default Samsung_Step06View

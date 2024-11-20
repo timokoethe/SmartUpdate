@@ -13,7 +13,7 @@ import inactivityTimer from '../../components/Timer'
 import Android_DE_07 from '../../assets/phones/Android_DE_07.mp4'
 import Android_EN_07 from '../../assets/phones/Android_EN_07.mp4'
 
-function Android_Step07View() {
+function Samsung_Step07View() {
   const loc = useLocalization()
   inactivityTimer()
   const navigate = useNavigate()
@@ -35,7 +35,7 @@ function Android_Step07View() {
         <InfoOverlay overlayNumber={7} isVisible={overlayVisible} onClose={toggleOverlay}/>
         <ProgressBar progress={10}/>
         <div className='spacer px-100 mt-50' style={{alignItems: 'flex-start'}}>
-          <BackButton onClick={() => navigate('/Android_Step06View')}/>
+          <BackButton onClick={() => navigate('/Samsung_Step06View')}/>
           <h1 className='headline mb-150 mt-50'>{loc.stepViewHeadline03}</h1>
           <CancelButton  onClick={() => navigate('/')}/>
         </div>
@@ -51,7 +51,7 @@ function Android_Step07View() {
           <InfoButton theme={'dark'} onClick={toggleOverlay}/>
         </div>
         <div className='center continueButtonContainer'>
-          <ContinueButton onClick={() => navigate('/Android_Step08View')} />
+          <ContinueButton onClick={() => navigate('/Samsung_Step08View')} />
         </div>
         <BottomDesign />
         <BottomFont />
@@ -60,4 +60,4 @@ function Android_Step07View() {
   )
 }
 
-export default Android_Step07View
+export default Samsung_Step07View
