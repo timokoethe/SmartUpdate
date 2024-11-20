@@ -21,7 +21,7 @@ function AndroidPicker({ isVisible, onClose }) {
           <p className='text'>{loc.androidPickerText}</p>
         </div>
         <div className='androidPickerConatiner mt-100'>
-            <button className='brandButton' onClick={() => navigate('/Android_Step01View')}>Samsung</button>
+            <button className='brandButton' onClick={() => navigate('/Samsung_Step01View')}>Samsung</button>
             <button className='brandButton' onClick={() => navigate('/Android_Step01View')}>Huawei</button>
         </div>
       </div>

@@ -12,6 +12,15 @@ import Android_Step06View from './screens/Android/Android_Step06View'
 import Android_Step07View from './screens/Android/Android_Step07View'
 import Android_Step08View from './screens/Android/Android_Step08View'
 import Android_WarningView from './screens/Android/Android_WarningView'
+import Samsung_Step01View from './screens/Samsung/Samsung_Step01View'
+import Samsung_Step02View from './screens/Samsung/Samsung_Step02View'
+import Samsung_Step03View from './screens/Samsung/Samsung_Step03View'
+import Samsung_Step04View from './screens/Samsung/Samsung_Step04View'
+import Samsung_Step05View from './screens/Samsung/Samsung_Step05View'
+import Samsung_Step06View from './screens/Samsung/Samsung_Step06View'
+import Samsung_Step07View from './screens/Samsung/Samsung_Step07View'
+import Samsung_Step08View from './screens/Samsung/Samsung_Step08View'
+import Samsung_WarningView from './screens/Samsung/Samsung_WarningView'
 import IOS_Step01View from './screens/iOS/iOS_Step01View'
 import IOS_Step02View from './screens/iOS/iOS_Step02View'
 import IOS_Step03View from './screens/iOS/iOS_Step03View'
@@ -50,6 +59,16 @@ function App() {
             <Route path="/Android_Step06View" element={<Android_Step06View />} />
             <Route path="/Android_Step07View" element={<Android_Step07View />} />
             <Route path="/Android_Step08View" element={<Android_Step08View />} />
+
+            <Route path="/Samsung_Step01View" element={<Samsung_Step01View />} />
+            <Route path="/Samsung_Step02View" element={<Samsung_Step02View />} />
+            <Route path="/Samsung_Step03View" element={<Samsung_Step03View />} />
+            <Route path="/Samsung_Step04View" element={<Samsung_Step04View />} />
+            <Route path="/Samsung_Step05View" element={<Samsung_Step05View />} />
+            <Route path="/Samsung_WarningView" element={<Samsung_WarningView />} />
+            <Route path="/Samsung_Step06View" element={<Samsung_Step06View />} />
+            <Route path="/Samsung_Step07View" element={<Samsung_Step07View />} />
+            <Route path="/Samsung_Step08View" element={<Samsung_Step08View />} />
 
             <Route path="/IOS_Step01View" element={<IOS_Step01View withQRCode={true} />} />
             <Route path="/IOS_Step02View" element={<IOS_Step02View withQRCode={true}/>} />

@@ -13,7 +13,7 @@ import inactivityTimer from '../../components/Timer'
 import Android_DE_03 from '../../assets/phones/Android_DE_03.mp4'
 import Android_EN_03 from '../../assets/phones/Android_EN_03.mp4'
 
-function Android_Step03View({ withQRCode}) {
+function Samsung_Step03View() {
   const loc = useLocalization()
   inactivityTimer()
   const navigate = useNavigate()
@@ -34,14 +34,14 @@ function Android_Step03View({ withQRCode}) {
         <InfoOverlay overlayNumber={5} isVisible={overlayVisible} onClose={toggleOverlay}/>
         <ProgressBar progress={6}/>
         <div className='spacer px-100 mt-50' style={{alignItems: 'flex-start'}}>
-          <BackButton onClick={() => navigate('/Android_Step02View')}/>
+          <BackButton onClick={() => navigate('/Samsung_Step02View')}/>
           <h1 className='headline mb-150 mt-50'>{loc.stepViewHeadline01}</h1>
           <CancelButton  onClick={() => navigate('/')}/>
         </div>
 
         <div className='topAlign spacer px-100'>
           <div style={{width: '44vw'}}>
-            { withQRCode ? null : <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0101 }} /> }
+            <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0101 }} />
             <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0102Android }} />
             <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0103Android }} />
           </div>
@@ -51,7 +51,7 @@ function Android_Step03View({ withQRCode}) {
           <InfoButton theme={'dark'} onClick={toggleOverlay}/>
         </div>
         <div className='center continueButtonContainer'>
-          <ContinueButton onClick={() => navigate('/Android_Step04View')} />
+          <ContinueButton onClick={() => navigate('/Samsung_Step04View')} />
         </div>
         <BottomDesign />
         <BottomFont />
@@ -60,4 +60,4 @@ function Android_Step03View({ withQRCode}) {
   )
 }
 
-export default Android_Step03View
+export default Samsung_Step03View

@@ -12,7 +12,7 @@ import inactivityTimer from '../../components/Timer'
 import Android_DE_04 from '../../assets/phones/Android_DE_04.mp4'
 import Android_EN_04 from '../../assets/phones/Android_EN_04.mp4'
 
-function Android_Step04View() {
+function Samsung_Step04View() {
   const loc = useLocalization()
   inactivityTimer()
   const navigate = useNavigate()
@@ -29,7 +29,7 @@ function Android_Step04View() {
     <>
       <ProgressBar progress={7}/>
       <div className='spacer px-100 mt-50' style={{alignItems: 'flex-start'}}>
-        <BackButton onClick={() => navigate('/Android_Step03View')}/>
+        <BackButton onClick={() => navigate('/Samsung_Step03View')}/>
         <h1 className='headline mb-150 mt-50'>{loc.stepViewHeadline02}</h1>
         <CancelButton  onClick={() => navigate('/')}/>
       </div>
@@ -44,7 +44,7 @@ function Android_Step04View() {
         <InfoButton theme={'light'}/>
       </div>
       <div className='center continueButtonContainer'>
-        <ContinueButton onClick={() => navigate('/Android_Step05View')} />
+        <ContinueButton onClick={() => navigate('/Samsung_Step05View')} />
       </div>
       <BottomDesign />
       <BottomFont />
@@ -52,4 +52,4 @@ function Android_Step04View() {
   )
 }
 
-export default Android_Step04View
+export default Samsung_Step04View
