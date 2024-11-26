@@ -28,12 +28,12 @@ function InfoWidget({widgetNumber}) {
 
   return (
       <div className='infoWidget'>
-        <div className='infoWidgetContainer'>
-          <h1 className='infoWidgetHeadline'>{headline}</h1>
+          <div className='infoWidgetContainer'>
+            <h1 className='infoWidgetHeadline'>{headline}</h1>
+            <p className='infoWidgetText'>{text}</p>
+            <p className='infoWidgetSubText'>{loc.infoWidgetSubText}</p>
+          </div>
           <img src={icon} className='infoWidgetIcon' />
-        </div>
-        <p className='infoWidgetText'>{text}</p>
-        <p className='infoWidgetText'>{loc.infoWidgetSubText}</p>
       </div>
   )
 }

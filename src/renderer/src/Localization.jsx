@@ -102,11 +102,11 @@ export const Localization = {
         continueButton: 'Weiter',
         completeButton: 'Abschließen',
         /*InfoWidget*/
-        infoWidgetHeadline: 'Behalte dein Handy Up-to-Date',
+        infoWidgetHeadline: 'Halte dein Handy Up-to-Date',
         infoWidgetText01: 'Lerne in unter 120 Sekunden, wie du dein Smartphone aktualisierst und warum das so wichtig ist!',
         infoWidgetText02: 'Updates enthalten oft Optimierungen, die die Akkulaufzeit deines Handys verlängern können.',
         infoWidgetText03: 'Durch Updates stellst du sicher, dass du und deine Daten gegen Schwachstellen geschützt sind.',
-        infoWidgetSubText: 'Versuche es jetzt mit deinem eigenen Smartphone!',
+        infoWidgetSubText: 'Versuche es jetzt mit deinem Smartphone!',
         /*AnswerOption*/
         answerOptionText01: 'um Sicherheitslücken zu beheben',  
         answerOptionText02: 'um den Verschleiß der Hardware zu fördern',
