@@ -40,14 +40,14 @@ function Samsung_Step06View() {
         <UpdateWarning onClick={() => navigate('/Samsung_Step07View')} isVisible={warningVisible}/>
         <ProgressBar progress={9}/>
         <div className='spacer px-100 mt-50' style={{alignItems: 'flex-start'}}>
-          <BackButton onClick={() => navigate('/Samsung_Step05View')}/>
+          <BackButton onClick={() => navigate('/Samsung_Step04View')}/>
           <h1 className='headline mb-150 mt-50'>{loc.stepViewHeadline03}</h1>
           <CancelButton  onClick={() => navigate('/')}/>
         </div>
 
         <div className='topAlign spacer px-100'>
           <div style={{width: '44vw'}}>
-            <p className='text-medium pb-30'>{loc.stepViewText0301}</p>
+            <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0301_Samsung }} />
           </div>
 
           <video ref={videoRef} className='phoneGraphic mt-100' src={loc.languageKey == 'de' ? Samsung_DE_06 : Samsung_EN_06 } loop />
