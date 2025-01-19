@@ -11,8 +11,8 @@ import UpdateWarning from '../../components/UpdateWarning'
 import BottomDesign from '../../components/BottomDesign'
 import BottomFont from '../../components/BottomFont'
 import inactivityTimer from '../../components/Timer'
-import Android_DE_06 from '../../assets/phones/Android_DE_06.mp4'
-import Android_EN_06 from '../../assets/phones/Android_EN_06.mp4'
+import Samsung_DE_06 from '../../assets/phones/Samsung_DE_06.mp4'
+import Samsung_EN_06 from '../../assets/phones/Samsung_EN_06.mp4'
 
 function Samsung_Step06View() {
   const loc = useLocalization()
@@ -50,7 +50,7 @@ function Samsung_Step06View() {
             <p className='text-medium pb-30'>{loc.stepViewText0301}</p>
           </div>
 
-          <video ref={videoRef} className='phoneGraphic mt-100' src={loc.languageKey == 'de' ? Android_DE_06 : Android_EN_06 } loop />
+          <video ref={videoRef} className='phoneGraphic mt-100' src={loc.languageKey == 'de' ? Samsung_DE_06 : Samsung_EN_06 } loop />
 
           <InfoButton theme={'dark'} onClick={toggleOverlay}/>
         </div>

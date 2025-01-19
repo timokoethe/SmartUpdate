@@ -10,8 +10,8 @@ import InfoOverlay from '../../components/InfoOverlay'
 import BottomDesign from '../../components/BottomDesign'
 import BottomFont from '../../components/BottomFont'
 import inactivityTimer from '../../components/Timer'
-import Android_DE_02 from '../../assets/phones/Android_DE_02.mp4'
-import Android_EN_02 from '../../assets/phones/Android_EN_02.mp4'
+import Samsung_DE_02 from '../../assets/phones/Samsung_DE_02.mp4'
+import Samsung_EN_02 from '../../assets/phones/Samsung_EN_02.mp4'
 
 
 function Samsung_Step02View() {
@@ -47,7 +47,7 @@ function Samsung_Step02View() {
             <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0102Android }} />
           </div>
 
-          <video ref={videoRef} className='phoneGraphic mt-100' src={loc.languageKey == 'de' ? Android_DE_02 : Android_EN_02 } loop />
+          <video ref={videoRef} className='phoneGraphic mt-100' src={loc.languageKey == 'de' ? Samsung_DE_02 : Samsung_EN_02 } loop />
 
           <InfoButton theme={'dark'} onClick={toggleOverlay}/>
         </div>
