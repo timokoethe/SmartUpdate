@@ -41,7 +41,7 @@ function Samsung_Step01View() {
         </div>
         <div className='topAlign spacer px-100'>
           <div style={{width: '44vw'}}>
-            <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0101 }} />
+            <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0101_Samsung }} />
           </div>
           <video ref={videoRef} className='phoneGraphic mt-100' src={loc.languageKey == 'de' ? Samsung_DE_01 : Samsung_EN_01} loop />
           <InfoButton theme={'dark'} onClick={toggleOverlay}/>

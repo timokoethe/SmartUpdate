@@ -41,9 +41,9 @@ function Samsung_Step03View() {
 
         <div className='topAlign spacer px-100'>
           <div style={{width: '44vw'}}>
-            <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0101 }} />
-            <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0102Android }} />
-            <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0103Android }} />
+            <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0101_Samsung }} />
+            <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0102_Samsung }} />
+            <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0103_Samsung }} />
           </div>
 
           <video ref={videoRef} className='phoneGraphic mt-100' src={loc.languageKey == 'de' ? Samsung_DE_03 : Samsung_EN_03 } loop />

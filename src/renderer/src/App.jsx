@@ -31,6 +31,7 @@ import IOS_Step07View from './screens/iOS/iOS_Step07View'
 import IOS_Step08View from './screens/iOS/iOS_Step08View'
 import IOS_WarningView from './screens/iOS/iOS_WarningView'
 import FinalViewAndroid from './screens/FinalViewAndroid'
+import FinalViewSamsung from './screens/FinalViewSamsung'
 import FinalViewiOS from './screens/FinalViewiOS'
 import CelebViewAndroid from './screens/CelebViewAndroid'
 import CelebViewiOS from './screens/CelebViewiOS'
@@ -83,6 +84,7 @@ function App() {
             <Route path="/CelebViewAndroid" element={<CelebViewAndroid />} />
             <Route path="/CelebViewiOS" element={<CelebViewiOS />} />
             <Route path="/FinalViewAndroid" element={<FinalViewAndroid />} />
+            <Route path="/FinalViewSamsung" element={<FinalViewSamsung />} />
             <Route path="/FinalViewiOS" element={<FinalViewiOS />} />
           </Routes>
         </HashRouter>

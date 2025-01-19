@@ -73,7 +73,19 @@ export const Localization = {
         androidPickerText: 'Android may vary across different devices. Please choose your smartphone brand:',
         /*CelebViewAndroid & CelebViewiOS*/
         celebViewText: 'Congratulations!',
-        /*StepViews*/
+        /*StepViews iOS*/
+        
+        /*StepViews Huawei*/
+
+        /*StepViews Samsung */
+        stepViewText0101_Samsung: '1. Swipe from the top of your smartphone to open the Notification Panel.',
+        stepViewText0102_Samsung: '2. Open the Settings App.',
+        stepViewText0103_Samsung: '3. Go to <i>Software update</i>.',
+        stepViewText0201_Samsung: '1. If not enabled, activate <i>Auto download over Wi-Fi</i>.',
+        stepViewText0301_Samsung: '1. Once you have enabled the Automatic Update function, go to <i>Download and install</i>. Your phone starts searching for updates.',
+        stepViewText0302_Samsung: '2. If an update is available, it is displayed similarly to the right. Click on <i>Download</i>. Otherwise, you are already up to date.',
+        stepViewText0303_Samsung: '3. After the download click on <i>Install now</i> to start the update immediately. It may take some time until it\'s finished.',
+
         stepViewHeadline01: '1. Find the Update Settings',
         stepViewText0101: '1. Search for your <i>Settings App</i>.',
         stepViewText0101QRCode: '1. Scan the QR-Code to open the <i>Settings App</i> on your smartphone:',
@@ -89,8 +101,8 @@ export const Localization = {
         stepViewText0301: '1. Once you have enabled the Automatic Update function, go one step back to the Software Update tab. Your phone starts searching for updates.',
         stepViewText0302iOS: '2. If an update is available, it is displayed as on the right, otherwise nothing appears and you are already up to date.',
         stepViewText0302Android: '2. If an update is available, it is displayed similarly to the right. Otherwise, you are already up to date.',
-        stepViewText0303iOS: '3. Click on <i>Update Now</i> to start the Update immediately. It may take some time until it\'s finished.',
-        stepViewText0303Android: '3. Click on <i>New version</i> to start the Update immediately. It may take some time until it\'s finished.',
+        stepViewText0303iOS: '3. Click on <i>Update Now</i> to start the update immediately. It may take some time until it\'s finished.',
+        stepViewText0303Android: '3. Click on <i>New version</i> to start the update immediately. It may take some time until it\'s finished.',
         /*FinalViews*/
         finalViewHeadline: 'Congratulations!',
         finalViewText: 'You performed an important and major security action!',
@@ -169,7 +181,19 @@ export const Localization = {
         androidPickerText: 'Android kann sich auf verschiedenen Geräten unterscheiden. Bitte wähle deine Handymarke:',
         /*CelebViewAndroid & CelebViewiOS*/
         celebViewText: 'Gratulation!',
-        /*StepViews*/
+        /*StepViews iOS*/
+
+        /*StepViews Huawei*/
+
+        /*StepViews Samsung */
+        stepViewText0101_Samsung: '1. Wische von oben nach unten, um das Benachrichtigungsfeld zu öffnen.',
+        stepViewText0102_Samsung: '2. Öffne die Einstellungen.',
+        stepViewText0103_Samsung: '3. Gehe zu <i>Software-Update</i>.',
+        stepViewText0201_Samsung: '1. Wenn nicht aktiviert, aktiviere <i>Automatisch über WLAN laden</i>.',
+        stepViewText0301_Samsung: '1. Sobald du die Funktion für Automatische Updates aktiviert hast, gehe zu <i>Herunterladen und installieren</i>. Die Suche nach Updates beginnt.',
+        stepViewText0302_Samsung: '2. Wenn ein Update verfügbar ist, wird es ähnlich wie rechts dargestellt. Klicke auf <i>Herunterladen</i>. Andernfalls bist du bereits up-to-date.',
+        stepViewText0303_Samsung: '3. Klicke auf <i>Jetzt installieren</i> um das Update sofort zu starten. Manchmal braucht es ein wenig Zeit bis das Update abgeschlossen ist.',
+
         stepViewHeadline01: '1. Update Einstellungen finden',
         stepViewText0101: '1. Suche die App <i>Einstellungen</i>.',
         stepViewText0101QRCode: '1. Scanne den QR-Code um die Einstellungen zu öffnen:',

@@ -36,7 +36,7 @@ function Samsung_Step04View() {
 
       <div className='topAlign spacer px-100'>
         <div style={{width: '44vw'}}>
-          <p className='text-medium pb-30'>{loc.stepViewText0201Android}</p>
+          <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0201_Samsung }} />
         </div>
 
         <video ref={videoRef} className='phoneGraphic mt-100' src={loc.languageKey == 'de' ? Samsung_DE_04 : Samsung_EN_04 } loop />
@@ -44,7 +44,7 @@ function Samsung_Step04View() {
         <InfoButton theme={'light'}/>
       </div>
       <div className='center continueButtonContainer'>
-        <ContinueButton onClick={() => navigate('/Samsung_Step05View')} />
+        <ContinueButton onClick={() => navigate('/Samsung_WarningView')} />
       </div>
       <BottomDesign />
       <BottomFont />
