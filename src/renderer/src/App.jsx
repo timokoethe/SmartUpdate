@@ -16,7 +16,6 @@ import Samsung_Step01View from './screens/Samsung/Samsung_Step01View'
 import Samsung_Step02View from './screens/Samsung/Samsung_Step02View'
 import Samsung_Step03View from './screens/Samsung/Samsung_Step03View'
 import Samsung_Step04View from './screens/Samsung/Samsung_Step04View'
-import Samsung_Step05View from './screens/Samsung/Samsung_Step05View'
 import Samsung_Step06View from './screens/Samsung/Samsung_Step06View'
 import Samsung_Step07View from './screens/Samsung/Samsung_Step07View'
 import Samsung_Step08View from './screens/Samsung/Samsung_Step08View'
@@ -65,7 +64,6 @@ function App() {
             <Route path="/Samsung_Step02View" element={<Samsung_Step02View />} />
             <Route path="/Samsung_Step03View" element={<Samsung_Step03View />} />
             <Route path="/Samsung_Step04View" element={<Samsung_Step04View />} />
-            <Route path="/Samsung_Step05View" element={<Samsung_Step05View />} />
             <Route path="/Samsung_WarningView" element={<Samsung_WarningView />} />
             <Route path="/Samsung_Step06View" element={<Samsung_Step06View />} />
             <Route path="/Samsung_Step07View" element={<Samsung_Step07View />} />
