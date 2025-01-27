@@ -83,7 +83,7 @@ export const Localization = {
         stepViewText0103_Samsung: '3. Go to <i>Software update</i>.',
         stepViewText0201_Samsung: '1. If not enabled, activate <i>Auto download over Wi-Fi</i>.',
         stepViewText0301_Samsung: '1. Once you have enabled the Automatic Update function, go to <i>Download and install</i>. Your phone starts searching for updates.',
-        stepViewText0302_Samsung: '2. If an update is available, it is displayed similarly to the right. Click on <i>Download</i>. Otherwise, you are already up to date.',
+        stepViewText0302_Samsung: '2. If an update is available, the download will start automatically. Otherwise, you are already up to date.',
         stepViewText0303_Samsung: '3. After the download click on <i>Install now</i> to start the update immediately. It may take some time until it\'s finished.',
 
         stepViewHeadline01: '1. Find the Update Settings',
@@ -191,7 +191,7 @@ export const Localization = {
         stepViewText0103_Samsung: '3. Gehe zu <i>Software-Update</i>.',
         stepViewText0201_Samsung: '1. Wenn nicht aktiviert, aktiviere <i>Automatisch über WLAN laden</i>.',
         stepViewText0301_Samsung: '1. Sobald du die Funktion für Automatische Updates aktiviert hast, gehe zu <i>Herunterladen und installieren</i>. Die Suche nach Updates beginnt.',
-        stepViewText0302_Samsung: '2. Wenn ein Update verfügbar ist, wird es ähnlich wie rechts dargestellt. Klicke auf <i>Herunterladen</i>. Andernfalls bist du bereits up-to-date.',
+        stepViewText0302_Samsung: '2. Wenn ein Update verfügbar ist, beginnt das Herunterladen automatisch. Andernfalls bist du bereits up-to-date.',
         stepViewText0303_Samsung: '3. Klicke auf <i>Jetzt installieren</i> um das Update sofort zu starten. Manchmal braucht es ein wenig Zeit bis das Update abgeschlossen ist.',
 
         stepViewHeadline01: '1. Update Einstellungen finden',
