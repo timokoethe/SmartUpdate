@@ -20,7 +20,7 @@ function createWindow() {
     }
   })
 
-  mainWindow.setAspectRatio(9 / 16)
+  mainWindow.setAspectRatio(16 / 9)
 
   mainWindow.on('ready-to-show', () => {
     mainWindow.show()
@@ -41,8 +41,8 @@ function createWindow() {
 
   // Full Screen Mode
   const { width, height } = screen.getPrimaryDisplay().workAreaSize
-  const marginError = 0.02
-  const targetAspectRatio = 9 / 16
+  const marginError = 0.5
+  const targetAspectRatio = 16 / 9
 
   if (Math.abs(width / height - targetAspectRatio) <= marginError) {
     console.log('The aspect ratio of the screen is 9:16.')
