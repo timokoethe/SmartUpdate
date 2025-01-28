@@ -1,6 +1,6 @@
 {
   "name": "smartupdate",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "SmartUpdate is an interactive public display application that guides users through updating their smartphone and enabling automatic updates.",
   "main": "./out/main/index.js",
   "author": "Timo Köthe",
