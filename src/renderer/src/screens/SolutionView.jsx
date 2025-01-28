@@ -29,11 +29,14 @@ function SolutionView({ selectedOptions, navigateBack }) {
         <p className='text-small leading'>{loc.infoViewText02}</p>
       </div>
 
-      <SolutionOption optionNumber={1} selected={selectedOptions.includes('A')} />
-      <SolutionOption optionNumber={2} selected={selectedOptions.includes('B')} />
-      <SolutionOption optionNumber={3} selected={selectedOptions.includes('C')} />
-      <SolutionOption optionNumber={4} selected={selectedOptions.includes('D')} />
-      <SolutionOption optionNumber={5} selected={selectedOptions.includes('E')} />
+      <div>
+        <SolutionOption optionNumber={1} selected={selectedOptions.includes('A')} />
+        <SolutionOption optionNumber={2} selected={selectedOptions.includes('B')} />
+        <SolutionOption optionNumber={3} selected={selectedOptions.includes('C')} />
+        <SolutionOption optionNumber={4} selected={selectedOptions.includes('D')} />
+        <SolutionOption optionNumber={5} selected={selectedOptions.includes('E')} />
+      </div>
+
 
       <div className='continueButtonContainerBottom center' >
         <ContinueButton onClick={() => navigate('/PickerView')} />

@@ -22,27 +22,27 @@ function FinalViewSamsung() {
 
   return (
     <>
-      <ProgressBar progress={11}/>
-      <div className='spacer px-100 mt-50' style={{alignItems: 'flex-start'}}>
+    <ProgressBar progress={11}/>
+      <div className='spacer px-100 mt-50'>
         <BackButton onClick={() => navigate('/Samsung_Step08View')}/>
         <h1 className='headline mb-150 mt-50'>{loc.finalViewHeadline}</h1>
         <CancelButton  onClick={() => navigate('/')}/>
       </div>
-      <h1 className='text-medium mb-150'>{loc.finalViewText}</h1>
-      <div className='enlarge'>
+
+      <h1 className='text-medium mb-150 center'>{loc.finalViewText}</h1>
+      <div className='enlarge' >
         <FinalWidget widgetNumber={1}/>
       </div>
-
-      <div className='enlarge' style={{animationDelay: '0.5s'}}>
+      <div className='enlarge' style={{animationDelay: '0.7s'}}>
         <FinalWidget widgetNumber={2}/>
       </div>
-      <div className='enlarge' style={{animationDelay: '1s'}}>
+      <div className='enlarge' style={{animationDelay: '1.4s'}}>
         <FinalWidget widgetNumber={3}/>
       </div>
-      <div className='enlarge' style={{animationDelay: '1.5s'}}>
+      <div className='enlarge' style={{animationDelay: '2.1s'}}>
         <FinalWidget widgetNumber={4}/>
       </div>
-      <div className='mt-100'>
+      <div className='mt-100 center'>
         <CompleteButton onClick={() => navigate('/')} />
       </div>
       <BottomDesign />

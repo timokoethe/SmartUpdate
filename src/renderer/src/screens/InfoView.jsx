@@ -48,11 +48,14 @@ function InfoView({ navigateToSolution }) {
         <p className='text-small leading'>{loc.infoViewText02}</p>
       </div>
 
-      <AnswerOption optionNumber={1} clickable={true} onClick={() => handleOptionClick('A')}/>
-      <AnswerOption optionNumber={2} clickable={true} onClick={() => handleOptionClick('B')}/>
-      <AnswerOption optionNumber={3} clickable={true} onClick={() => handleOptionClick('C')}/>
-      <AnswerOption optionNumber={4} clickable={true} onClick={() => handleOptionClick('D')}/>
-      <AnswerOption optionNumber={5} clickable={true} onClick={() => handleOptionClick('E')}/>
+      <div>
+        <AnswerOption optionNumber={1} clickable={true} onClick={() => handleOptionClick('A')}/>
+        <AnswerOption optionNumber={2} clickable={true} onClick={() => handleOptionClick('B')}/>
+        <AnswerOption optionNumber={3} clickable={true} onClick={() => handleOptionClick('C')}/>
+        <AnswerOption optionNumber={4} clickable={true} onClick={() => handleOptionClick('D')}/>
+        <AnswerOption optionNumber={5} clickable={true} onClick={() => handleOptionClick('E')}/>
+      </div>
+
 
       <div className='continueButtonContainerBottom center'>
         <ContinueButton onClick={handleContinue} disabled={selectedOptions.length == 0}/>

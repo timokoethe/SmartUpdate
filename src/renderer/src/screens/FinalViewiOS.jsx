@@ -42,7 +42,7 @@ function FinalViewAndroid() {
       <div className='enlarge' style={{animationDelay: '1.5s'}}>
         <FinalWidget widgetNumber={4}/>
       </div>
-      <div className='mt-100'>
+      <div className='mt-100 center'>
         <CompleteButton onClick={() => navigate('/')} />
       </div>
       <BottomDesign />
