@@ -10,8 +10,7 @@ import InfoOverlay from '../../components/InfoOverlay'
 import BottomDesign from '../../components/BottomDesign'
 import BottomFont from '../../components/BottomFont'
 import inactivityTimer from '../../components/Timer'
-import iOS_DE_01 from '../../assets/phones/iOS_DE_01.mp4'
-import iOS_EN_01 from '../../assets/phones/iOS_EN_01.mp4'
+import qrcode from '../../assets/icons/iOS_qrcode.png'
 
 
 function iOS_Step01View() {
@@ -42,10 +41,9 @@ function iOS_Step01View() {
 
         <div className='topAlign spacer px-100'>
           <div style={{width: '44vw'}}>
-            <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0101  }} /> 
+            <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0101QRCode  }} /> 
           </div>
-          
-          <video ref={videoRef} className='phoneGraphic mt-100' src={loc.languageKey == 'de' ? iOS_DE_01 : iOS_EN_01} loop />
+          <img src={qrcode} alt='iPhone' className='my-100 stepImage'/>
 
           <InfoButton theme={'dark'} onClick={toggleOverlay}/>
         </div>
