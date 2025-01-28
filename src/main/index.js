@@ -180,8 +180,8 @@ app.whenReady().then(() => {
     })
   })
 
-  // IPC Save Timestamp for Android Picker Button
-  ipcMain.on('saveAndroidStamp', (_, timeStamp) => {
+  // IPC Save Timestamp for Android Option Picker Button
+  ipcMain.on('saveAndroidPickerStamp', (_, timeStamp) => {
     const documentPath = app.getPath('documents')
     const filePath = join(documentPath, 'timestamps.csv')
     
@@ -191,6 +191,34 @@ app.whenReady().then(() => {
         console.error('Error saving timestamp:', err)
       }
       console.log('Android Timestamp saved:', timeStamp)
+    })
+  })
+
+  // IPC Save Timestamp for Huawei Picker Button
+  ipcMain.on('saveHuaweiStamp', (_, timeStamp) => {
+    const documentPath = app.getPath('documents')
+    const filePath = join(documentPath, 'timestamps.csv')
+    
+    // Writes the timestamp to the file
+    fs.appendFile(filePath, `Huawei at: ${timeStamp};`, (err) => {
+      if (err) {
+        console.error('Error saving timestamp:', err)
+      }
+      console.log('Huawei Timestamp saved:', timeStamp)
+    })
+  })
+
+  // IPC Save Timestamp for Samsung Picker Button
+  ipcMain.on('saveSamsungStamp', (_, timeStamp) => {
+    const documentPath = app.getPath('documents')
+    const filePath = join(documentPath, 'timestamps.csv')
+    
+    // Writes the timestamp to the file
+    fs.appendFile(filePath, `Samsung at: ${timeStamp};`, (err) => {
+      if (err) {
+        console.error('Error saving timestamp:', err)
+      }
+      console.log('Samsung Timestamp saved:', timeStamp)
     })
   })
 
