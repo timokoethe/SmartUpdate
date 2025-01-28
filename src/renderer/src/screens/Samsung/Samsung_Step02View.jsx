@@ -26,14 +26,10 @@ function Samsung_Step02View() {
       videoRef.current.play()
     }
   }, [])
-
-  // Overlay State
-  const [overlayVisible, setOverlayVisible] = useState(false);
-  const toggleOverlay = () => setOverlayVisible(!overlayVisible);
+  
   return (
     <>
       <div className='fullWidth'>
-        <InfoOverlay overlayNumber={4} isVisible={overlayVisible} onClose={toggleOverlay}/>
         <ProgressBar progress={5}/>
         <div className='spacer px-100 mt-50' style={{alignItems: 'flex-start'}}>
           <BackButton onClick={() => navigate('/Samsung_Step01View')}/>
@@ -49,7 +45,7 @@ function Samsung_Step02View() {
 
           <video ref={videoRef} className='phoneGraphic mt-100' src={loc.languageKey == 'de' ? Samsung_DE_02 : Samsung_EN_02 } loop />
 
-          <InfoButton theme={'dark'} onClick={toggleOverlay}/>
+          <InfoButton theme={'light'}/>
         </div>
         <div className='center continueButtonContainer'>
           <ContinueButton onClick={() => navigate('/Samsung_Step03View')} />

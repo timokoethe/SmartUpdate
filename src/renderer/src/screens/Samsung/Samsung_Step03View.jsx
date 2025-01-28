@@ -31,7 +31,7 @@ function Samsung_Step03View() {
   return (
     <>
       <div className='fullWidth'>
-        <InfoOverlay overlayNumber={5} isVisible={overlayVisible} onClose={toggleOverlay}/>
+        <InfoOverlay overlayNumber={11} isVisible={overlayVisible} onClose={toggleOverlay}/>
         <ProgressBar progress={6}/>
         <div className='spacer px-100 mt-50' style={{alignItems: 'flex-start'}}>
           <BackButton onClick={() => navigate('/Samsung_Step02View')}/>
