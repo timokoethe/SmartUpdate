@@ -9,6 +9,19 @@ function AndroidPicker({ isVisible, onClose }) {
     window.electron.ipcRenderer.send('saveInfoCloseStamp', timeStamp)
     onClose()
   }
+
+  const handleSamsungClick = () => {
+    const timeStamp = new Date().toISOString()
+    window.electron.ipcRenderer.send('saveSamsungStamp', timeStamp)
+    onClose()
+  }
+
+  const handleHuaweiClick = () => {
+    const timeStamp = new Date().toISOString()
+    window.electron.ipcRenderer.send('saveHuaweiStamp', timeStamp)
+    onClose()
+  }
+
   if (!isVisible) return null
   return (
     <div className='fullBackgroundBlur'>
@@ -21,8 +34,8 @@ function AndroidPicker({ isVisible, onClose }) {
           <p className='text'>{loc.androidPickerText}</p>
         </div>
         <div className='androidPickerConatiner mt-100'>
-            <button className='brandButton' onClick={() => navigate('/Samsung_Step01View')}>Samsung</button>
-            <button className='brandButton' onClick={() => navigate('/Android_Step01View')}>Huawei</button>
+            <button className='brandButton' onClick={() => {handleSamsungClick(); navigate('/Samsung_Step01View')}}>Samsung</button>
+            <button className='brandButton' onClick={() => {handleHuaweiClick(); navigate('/Android_Step01View')}}>Huawei</button>
         </div>
       </div>
     </div>
