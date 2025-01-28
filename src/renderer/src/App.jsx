@@ -50,9 +50,9 @@ function App() {
             <Route path="/SolutionView" element={<SolutionView />} />
             <Route path="/QuizView" element={<QuizView />} />
             <Route path="/PickerView" element={<PickerView />} />
-            <Route path="/Android_Step01View" element={<Android_Step01View withQRCode={false}/>} />
-            <Route path="/Android_Step02View" element={<Android_Step02View withQRCode={false}/>} />
-            <Route path="/Android_Step03View" element={<Android_Step03View withQRCode={false}/>} />
+            <Route path="/Android_Step01View" element={<Android_Step01View />} />
+            <Route path="/Android_Step02View" element={<Android_Step02View />} />
+            <Route path="/Android_Step03View" element={<Android_Step03View />} />
             <Route path="/Android_Step04View" element={<Android_Step04View />} />
             <Route path="/Android_Step05View" element={<Android_Step05View />} />
             <Route path="/Android_WarningView" element={<Android_WarningView />} />
@@ -69,9 +69,9 @@ function App() {
             <Route path="/Samsung_Step07View" element={<Samsung_Step07View />} />
             <Route path="/Samsung_Step08View" element={<Samsung_Step08View />} />
 
-            <Route path="/IOS_Step01View" element={<IOS_Step01View withQRCode={true} />} />
-            <Route path="/IOS_Step02View" element={<IOS_Step02View withQRCode={true}/>} />
-            <Route path="/IOS_Step03View" element={<IOS_Step03View withQRCode={true}/>} />
+            <Route path="/IOS_Step01View" element={<IOS_Step01View />} />
+            <Route path="/IOS_Step02View" element={<IOS_Step02View />} />
+            <Route path="/IOS_Step03View" element={<IOS_Step03View />} />
             <Route path="/IOS_Step04View" element={<IOS_Step04View />} />
             <Route path="/IOS_Step05View" element={<IOS_Step05View />} />
             <Route path="/IOS_WarningView" element={<IOS_WarningView />} />

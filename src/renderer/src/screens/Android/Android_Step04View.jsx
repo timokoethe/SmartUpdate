@@ -1,5 +1,5 @@
 import { useLocalization } from '../../LanguageContext'
-import { useState, useEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import ContinueButton from '../../components/ContinueButton'
 import { useNavigate } from 'react-router-dom'
 import InfoButton from '../../components/InfoButton'
