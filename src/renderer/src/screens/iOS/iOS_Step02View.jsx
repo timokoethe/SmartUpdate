@@ -41,7 +41,7 @@ function iOS_Step02View({ withQRCode }) {
 
         <div className='topAlign spacer px-100 '>
           <div style={{width: '44vw'}}>
-            { withQRCode ? null : <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0101 }} /> }
+            <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0101 }} /> 
             <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0102iOS }} /> 
           </div>
 

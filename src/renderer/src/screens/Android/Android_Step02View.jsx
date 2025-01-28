@@ -14,7 +14,7 @@ import Android_DE_02 from '../../assets/phones/Android_DE_02.mp4'
 import Android_EN_02 from '../../assets/phones/Android_EN_02.mp4'
 
 
-function Android_Step02View({ withQRCode}) {
+function Android_Step02View() {
   const loc = useLocalization()
   inactivityTimer()
   const navigate = useNavigate()
@@ -43,7 +43,7 @@ function Android_Step02View({ withQRCode}) {
 
         <div className='topAlign spacer px-100 '>
           <div style={{width: '44vw'}}>
-          { withQRCode ? null : <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0101 }} /> }
+            <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0101 }} /> 
             <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0102Android }} />
           </div>
 

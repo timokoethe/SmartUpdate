@@ -6,7 +6,6 @@ import InfoButton from '../../components/InfoButton'
 import CancelButton from '../../components/CancelButton'
 import BackButton from '../../components/BackButton'
 import ProgressBar from '../../components/ProgressBar'
-import qrcode from '../../assets/icons/iOS_qrcode.png'
 import InfoOverlay from '../../components/InfoOverlay'
 import BottomDesign from '../../components/BottomDesign'
 import BottomFont from '../../components/BottomFont'
@@ -15,7 +14,7 @@ import iOS_DE_01 from '../../assets/phones/iOS_DE_01.mp4'
 import iOS_EN_01 from '../../assets/phones/iOS_EN_01.mp4'
 
 
-function iOS_Step01View({ withQRCode }) {
+function iOS_Step01View() {
   const loc = useLocalization()
   inactivityTimer()
   const navigate = useNavigate()
@@ -43,15 +42,10 @@ function iOS_Step01View({ withQRCode }) {
 
         <div className='topAlign spacer px-100'>
           <div style={{width: '44vw'}}>
-            <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: withQRCode ? loc.stepViewText0101QRCode : loc.stepViewText0101  }} /> 
+            <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0101  }} /> 
           </div>
-
-          {
-            withQRCode ? 
-            <img src={qrcode} alt='iPhone' className='my-100 stepImage'/>
-            :
-            <video ref={videoRef} className='phoneGraphic mt-100' src={loc.languageKey == 'de' ? iOS_DE_01 : iOS_EN_01} loop />
-          }
+          
+          <video ref={videoRef} className='phoneGraphic mt-100' src={loc.languageKey == 'de' ? iOS_DE_01 : iOS_EN_01} loop />
 
           <InfoButton theme={'dark'} onClick={toggleOverlay}/>
         </div>
