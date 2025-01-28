@@ -58,6 +58,7 @@ export const Localization = {
         infoOverlayText08: 'This is LEGAL (Licensed Application End User License Agreement). Sometimes you just have to accept it by clicking the button \'Accept\'.',
         infoOverlayText09: 'If you scroll to the top and swipe down a bit a search bar appears. Type in \'General\' and choose the first result.',
         infoOverlayText10: 'This option is always in second place in the list.',
+        infoOverlayText11: 'Next to the headline a search symbol is placed. Type in Software update and choose the first result.',
         /*Screens*/
         /*InfoView & SolutionView*/
         infoViewHeadline: 'Why are Software Updates so important?',
@@ -166,6 +167,7 @@ export const Localization = {
         infoOverlayText08: 'Das ist das LEGAL (Licensed Application End User License Agreement). Manchmal musst du es vor einem Update durch ein Klicken auf einen Button akzeptieren.',
         infoOverlayText09: 'Wenn du nach oben scrollst und ein wenig nach unten ziehst, erscheint eine Suchleiste. Tippe \'Allgemein\' ein und wähle das erste Ergebnis.',
         infoOverlayText10: 'Diese Option ist immer an zweiter Stelle in der Liste.',
+        infoOverlayText11: 'Neben der Überschrift ist eine Lupe platziert. Tippe dort Software-Update ein und wähle das erste Ergebnis.',
         /*Screens*/
         /*InfoView & SolutionView*/
         infoViewHeadline: 'Warum sind Softwareupdates so wichtig?',

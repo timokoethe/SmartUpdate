@@ -50,6 +50,10 @@ function InfoOverlay({overlayNumber, isVisible, onClose}) {
         return { headline: loc.infoOverlayHeadline10,
           text: loc.infoOverlayText10,
           position: 'right' }
+      case 11:
+        return { headline: loc.infoOverlayHeadline05,
+          text: loc.infoOverlayText11,
+          position: 'right' }
         }
   };
   const { headline, text, position } = getContentForNumber(overlayNumber);
