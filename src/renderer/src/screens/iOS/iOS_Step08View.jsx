@@ -30,14 +30,15 @@ function iOS_Step08View() {
   const toggleOverlay = () => setOverlayVisible(!overlayVisible);
   return (
     <>
-      <div className='fullWidth'>
-      <InfoOverlay overlayNumber={8} isVisible={overlayVisible} onClose={toggleOverlay}/>
-        <ProgressBar progress={11}/>
+            <ProgressBar progress={11}/>
         <div className='spacer px-100 mt-50' style={{alignItems: 'flex-start'}}>
           <BackButton onClick={() => navigate('/iOS_Step07View')}/>
           <h1 className='headline mb-150 mt-50'>{loc.stepViewHeadline03}</h1>
           <CancelButton  onClick={() => navigate('/')}/>
         </div>
+      <div className='fullWidth'>
+      <InfoOverlay overlayNumber={8} isVisible={overlayVisible} onClose={toggleOverlay}/>
+
 
         <div className='topAlign spacer px-100'>
           <div style={{width: '44vw'}}>
@@ -54,8 +55,9 @@ function iOS_Step08View() {
         <div className='center continueButtonContainer'>
           <ContinueButton onClick={() => navigate('/FinalViewiOS')} />
         </div>
-        <BottomDesign />
-        <BottomFont />
+        <BottomDesign design={true}/>
+        <BottomDesign design={false}/>
+        <BottomFont />  
       </div>
     </>
   )

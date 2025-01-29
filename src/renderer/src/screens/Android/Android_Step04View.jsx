@@ -34,7 +34,8 @@ function Android_Step04View() {
         <CancelButton  onClick={() => navigate('/')}/>
       </div>
 
-      <div className='topAlign spacer px-100'>
+      <div className='fullWidth'>
+        <div className='topAlign spacer px-100'>
         <div style={{width: '44vw'}}>
           <p className='text-medium pb-30'>{loc.stepViewText0201Android}</p>
         </div>
@@ -46,8 +47,10 @@ function Android_Step04View() {
       <div className='center continueButtonContainer'>
         <ContinueButton onClick={() => navigate('/Android_Step05View')} />
       </div>
-      <BottomDesign />
-      <BottomFont />
+      <BottomDesign design={true}/>
+        <BottomDesign design={false}/>
+        <BottomFont />  
+      </div>
     </>
   )
 }

@@ -42,56 +42,51 @@ function App() {
 
   return (
     <>
-        <div className='aspect-ratio-box'>
-          <div className='content-box'>
-            <LanguageProvider>
-              <HashRouter>
-                <Routes>
-                  <Route path="/" element={<EntryView />} />
-                  <Route path="/InfoView" element={<InfoView />} />
-                  <Route path="/SolutionView" element={<SolutionView />} />
-                  <Route path="/QuizView" element={<QuizView />} />
-                  <Route path="/PickerView" element={<PickerView />} />
-                  <Route path="/Android_Step01View" element={<Android_Step01View />} />
-                  <Route path="/Android_Step02View" element={<Android_Step02View />} />
-                  <Route path="/Android_Step03View" element={<Android_Step03View />} />
-                  <Route path="/Android_Step04View" element={<Android_Step04View />} />
-                  <Route path="/Android_Step05View" element={<Android_Step05View />} />
-                  <Route path="/Android_WarningView" element={<Android_WarningView />} />
-                  <Route path="/Android_Step06View" element={<Android_Step06View />} />
-                  <Route path="/Android_Step07View" element={<Android_Step07View />} />
-                  <Route path="/Android_Step08View" element={<Android_Step08View />} />
+      <LanguageProvider>
+        <HashRouter>
+          <Routes>
+            <Route path="/" element={<EntryView />} />
+            <Route path="/InfoView" element={<InfoView />} />
+            <Route path="/SolutionView" element={<SolutionView />} />
+            <Route path="/QuizView" element={<QuizView />} />
+            <Route path="/PickerView" element={<PickerView />} />
+            <Route path="/Android_Step01View" element={<Android_Step01View />} />
+            <Route path="/Android_Step02View" element={<Android_Step02View />} />
+            <Route path="/Android_Step03View" element={<Android_Step03View />} />
+            <Route path="/Android_Step04View" element={<Android_Step04View />} />
+            <Route path="/Android_Step05View" element={<Android_Step05View />} />
+            <Route path="/Android_WarningView" element={<Android_WarningView />} />
+            <Route path="/Android_Step06View" element={<Android_Step06View />} />
+            <Route path="/Android_Step07View" element={<Android_Step07View />} />
+            <Route path="/Android_Step08View" element={<Android_Step08View />} />
 
-                  <Route path="/Samsung_Step01View" element={<Samsung_Step01View />} />
-                  <Route path="/Samsung_Step02View" element={<Samsung_Step02View />} />
-                  <Route path="/Samsung_Step03View" element={<Samsung_Step03View />} />
-                  <Route path="/Samsung_Step04View" element={<Samsung_Step04View />} />
-                  <Route path="/Samsung_WarningView" element={<Samsung_WarningView />} />
-                  <Route path="/Samsung_Step06View" element={<Samsung_Step06View />} />
-                  <Route path="/Samsung_Step07View" element={<Samsung_Step07View />} />
-                  <Route path="/Samsung_Step08View" element={<Samsung_Step08View />} />
+            <Route path="/Samsung_Step01View" element={<Samsung_Step01View />} />
+            <Route path="/Samsung_Step02View" element={<Samsung_Step02View />} />
+            <Route path="/Samsung_Step03View" element={<Samsung_Step03View />} />
+            <Route path="/Samsung_Step04View" element={<Samsung_Step04View />} />
+            <Route path="/Samsung_WarningView" element={<Samsung_WarningView />} />
+            <Route path="/Samsung_Step06View" element={<Samsung_Step06View />} />
+            <Route path="/Samsung_Step07View" element={<Samsung_Step07View />} />
+            <Route path="/Samsung_Step08View" element={<Samsung_Step08View />} />
 
-                  <Route path="/IOS_Step01View" element={<IOS_Step01View />} />
-                  <Route path="/IOS_Step02View" element={<IOS_Step02View />} />
-                  <Route path="/IOS_Step03View" element={<IOS_Step03View />} />
-                  <Route path="/IOS_Step04View" element={<IOS_Step04View />} />
-                  <Route path="/IOS_Step05View" element={<IOS_Step05View />} />
-                  <Route path="/IOS_WarningView" element={<IOS_WarningView />} />
-                  <Route path="/IOS_Step06View" element={<IOS_Step06View />} />
-                  <Route path="/IOS_Step07View" element={<IOS_Step07View />} />
-                  <Route path="/IOS_Step08View" element={<IOS_Step08View />} />
+            <Route path="/IOS_Step01View" element={<IOS_Step01View />} />
+            <Route path="/IOS_Step02View" element={<IOS_Step02View />} />
+            <Route path="/IOS_Step03View" element={<IOS_Step03View />} />
+            <Route path="/IOS_Step04View" element={<IOS_Step04View />} />
+            <Route path="/IOS_Step05View" element={<IOS_Step05View />} />
+            <Route path="/IOS_WarningView" element={<IOS_WarningView />} />
+            <Route path="/IOS_Step06View" element={<IOS_Step06View />} />
+            <Route path="/IOS_Step07View" element={<IOS_Step07View />} />
+            <Route path="/IOS_Step08View" element={<IOS_Step08View />} />
 
-                  <Route path="/CelebViewAndroid" element={<CelebViewAndroid />} />
-                  <Route path="/CelebViewiOS" element={<CelebViewiOS />} />
-                  <Route path="/FinalViewAndroid" element={<FinalViewAndroid />} />
-                  <Route path="/FinalViewSamsung" element={<FinalViewSamsung />} />
-                  <Route path="/FinalViewiOS" element={<FinalViewiOS />} />
-                </Routes>
-              </HashRouter>
-            </LanguageProvider>
-          </div>
-        </div>
-
+            <Route path="/CelebViewAndroid" element={<CelebViewAndroid />} />
+            <Route path="/CelebViewiOS" element={<CelebViewiOS />} />
+            <Route path="/FinalViewAndroid" element={<FinalViewAndroid />} />
+            <Route path="/FinalViewSamsung" element={<FinalViewSamsung />} />
+            <Route path="/FinalViewiOS" element={<FinalViewiOS />} />
+          </Routes>
+        </HashRouter>
+      </LanguageProvider>
     </>
   )
 }

@@ -18,6 +18,10 @@
     /*box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);*/
 }
 
+.entry {
+    background-color: transparent;
+}
+
 @font-face {
     font-family: 'Ropa Sans';
     src: local('Ropa Sans'), url('./fonts/RopaSans-Regular.ttf') format('truetype');
@@ -25,15 +29,16 @@
 
 .startButton {
     font-family: 'Ropa Sans';
-    font-size: 3.375vh;
+    font-size: 3.3vh;
     height: 18vh;
     width: 18vh;
     background-color: rgb(0, 0, 0);
     color: #FF00D6;
-    border:0.394vh #FF00D6 solid;
+    border: 0.394vh #FF00D6 solid;
     border-radius: 100%;
     animation: endless-in infinite 2s ease-in-out;
     cursor: pointer;
+    margin-top: 8vh;
 }
   
 @keyframes endless-in {
@@ -109,6 +114,8 @@
     width: 2.6vh;
     background-repeat: no-repeat;
     cursor: pointer;
+    margin-left: 4vh;
+    margin-top: 2vh;
 }
 
 .backButton:active {
@@ -124,6 +131,8 @@
     width: 2.6vh;
     background-repeat: no-repeat;
     cursor: pointer;
+    margin-right: 4vh;
+    margin-top: 2vh;
 }
 
 .cancelButton:active {
@@ -146,6 +155,8 @@
     width: 2.6vh;
     background-repeat: no-repeat;
     cursor: pointer;
+    margin-left: 4vh;
+    margin-top: 2vh;
 }
 
 .infoButton:active {
@@ -155,7 +166,7 @@
 .solutionOptionWidget {
     font-family: 'Ropa Sans';
     height: 4.5vh;
-    width: 41.625vh;
+    width: 50vh;
     color: white;
     background-color: #828282;
     border: 0.26vh #828282 solid;
@@ -237,7 +248,7 @@
     align-items: center;
     font-family: 'Ropa Sans';
     height: 4.5vh;
-    width: 41.625vh;
+    width: 50vh;
     color: white;
     background-color: #828282;
     border: 0.26vh #828282 solid;
@@ -304,7 +315,8 @@
 }
 
 .progressContainer {
-    width: 56.25vh;
+    /*width: 56.25vh;*/
+    width: 100vw;
     height: 1.3vh;
     background-color: white;
     box-shadow: 0vh 0.104vh 0.104vh #00000024;
@@ -320,11 +332,11 @@
     display: flex;
     background-image: linear-gradient(to bottom, #A9008E, #5F00AA);
     border-radius: 1.125vh; 
-    width: 43.313vh;
-    height: 20vh;
+    width: 60vh;
+    height: 25vh;
     font-family: 'Ropa Sans';
-    padding: 1.302vh 1.302vh 0vh 1.302vh; /*25px 50px 0px 50px*/
-    margin-top: 5.625vh;
+    padding: 1.5vh 1.5vh 0vh 1.5vh; /*25px 50px 0px 50px*/
+    margin-top: 4vh;
 }
 
 .infoWidgetContainer {
@@ -333,20 +345,20 @@
 }
 
 .infoWidgetHeadline {
-    font-size: 2.604vh; /*100px*/
+    font-size: 3vh; /*100px*/
     color: white;
     margin-bottom: 0.781vh;
 }
 
 .infoWidgetText {
-    font-size: 1.823vh; /*70px*/
+    font-size: 2.3vh; /*70px*/
     color: white;
     margin-bottom: 0.781vh; /*30px*/
     margin-right: 1.042vh; /*40px*/
 }
 
 .infoWidgetSubText {
-    font-size: 1.823vh; /*70px*/
+    font-size: 2.5vh; /*70px*/
     color: white;
     margin-top: auto;
     margin-bottom: 0.781vh; /*30px*/
@@ -355,15 +367,15 @@
 .infoWidgetIcon {
     background-color: transparent;
     background-size: contain;
-    height: 16.313vh;
+    height: 19vh;
     background-repeat: no-repeat;
     margin-left: 0.281vh;
 }
 
 .wifiWarningView {
-    width: 56.25vh;
+    position: absolute;
+    width: 100vw;
     height: 100vh;
-    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -444,7 +456,7 @@
 
 .widgetContainer {
     position: relative;
-    width: 56.25vh;
+    width: 100vw;
     height: 45vh;
     display: flex;
     justify-content: center;
@@ -454,32 +466,32 @@
 }
 
 .leftWidget {
-    width: 56.25vh;
+    width: 60vh;
     display: flex;
     justify-content: center;
-    transform: translateX(-13.219vh);
+    transform: translateX(-70vh);
 }
 
 .middleWidget {
-    width: 56.25vh;
+    width: 60vh;
     display: flex;
     justify-content: center;
     transform: translateX(0vh);
 }
 
 .rightWidget {
-    width: 56.25vh;
+    width: 60vh;
     display: flex;
     justify-content: center;
-    transform: translateX(13.219vh);
+    transform: translateX(70vh);
 }
 
 @keyframes slideIn {
     0% {
-        transform: translateX(-56.25vh);
+        transform: translateX(-130vh);
     }
     29.66% {
-        transform: translateX(-56.25vh);
+        transform: translateX(-130vh);
     }
     33.36% {
         transform: translateX(0vh);
@@ -488,13 +500,13 @@
         transform: translateX(0vh);
     }
     66.72% {
-        transform: translateX(56.25vh);
+        transform: translateX(130vh);
     }
     96.38% {
-        transform: translateX(56.25vh);
+        transform: translateX(130vh);
     }
     100% {
-        transform: translateX(-56.25vh);
+        transform: translateX(-130vh);
     }
 }
 
@@ -506,7 +518,7 @@
     }
     to {
         opacity: 1;
-        backdrop-filter: blur(20px);
+        backdrop-filter: blur(200px);
         background-color: #00000099;
     }
 }
@@ -582,7 +594,13 @@
 }
 
 .infoOverlayRight {
-    right: 0;
+    top: 1.8vh;
+    right: 64.3vh;
+}
+
+.infoOverlayLeft {
+    left: 3.5vh;
+    top: 2.5vh;
 }
 
 /* Languange toggle switch */
@@ -893,18 +911,28 @@ input.check-toggle-round-flat:checked + label:after {
 
 .bottomDesign {
     position: absolute;
-    bottom: -10vh;
-    left: -0.563vh;
-    width: 73.125vh;
-    height: 20vh;
+    bottom: -12vh;
+    left: -45vh;
+    width: 180vh;
+    height: 21vh;
     background-image: linear-gradient(to top, #8F00FF, #FF00D6);
+    border-radius: 50%;
+}
+
+.bottomDesign2 {
+    position: absolute;
+    bottom: -40vh;
+    right: -50vh;
+    width: 100vh;
+    height: 70vh;
+    background-image: linear-gradient(to top, #c16fff, #740061);
     border-radius: 50%;
 }
 
 .bottomFont {
     position: absolute;
     bottom: 0.2vh;
-    right: 0.563vh;
+    left: 0.563vh;
     font-family: 'Ropa Sans';
     font-size: 1.563vh;
     color: white;
@@ -938,6 +966,8 @@ input.check-toggle-round-flat:checked + label:after {
     background-color: black;
     padding: 0;
     margin: 0;
+    margin-right: 4vh;
+    margin-top: 2vh;
 }
 
 .languageToggleContainer {
@@ -966,9 +996,8 @@ input.check-toggle-round-flat:checked + label:after {
     width: 14.167vh;
     height: 29.167vh;
     object-fit: cover;
+    margin-left: 1vh;
 }
-
-
 
 .androidPickerCloseButton {
     background-image: url("./icons/CancelButtonDark.png");
@@ -999,7 +1028,8 @@ input.check-toggle-round-flat:checked + label:after {
     position: absolute;
     top: 0;
     left: 0;
-    width: 56.25vh;
+    /*width: 56.25vh;*/
+    width: 100vw;
     height: 110vh;
     z-index: 500;
     animation-name: infoOverlayAppear;

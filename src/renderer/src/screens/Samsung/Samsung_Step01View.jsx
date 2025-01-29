@@ -31,14 +31,14 @@ function Samsung_Step01View() {
   const toggleOverlay = () => setOverlayVisible(!overlayVisible);
   return (
     <>
+      <ProgressBar progress={4}/>
+      <div className='spacer px-100 mt-50' style={{alignItems: 'flex-start'}}>
+        <BackButton onClick={() => navigate('/PickerView')}/>
+        <h1 className='headline mb-150 mt-50'>{loc.stepViewHeadline01}</h1>
+        <CancelButton  onClick={() => navigate('/')}/>
+      </div>
       <div className='fullWidth'>
         <InfoOverlay overlayNumber={3} isVisible={overlayVisible} onClose={toggleOverlay}/>
-        <ProgressBar progress={4}/>
-        <div className='spacer px-100 mt-50' style={{alignItems: 'flex-start'}}>
-          <BackButton onClick={() => navigate('/PickerView')}/>
-          <h1 className='headline mb-150 mt-50'>{loc.stepViewHeadline01}</h1>
-          <CancelButton  onClick={() => navigate('/')}/>
-        </div>
         <div className='topAlign spacer px-100'>
           <div style={{width: '44vw'}}>
             <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0101_Samsung }} />
@@ -49,7 +49,8 @@ function Samsung_Step01View() {
         <div className='center continueButtonContainer'>
           <ContinueButton onClick={() => navigate('/Samsung_Step02View')} />
         </div>
-        <BottomDesign />
+        <BottomDesign design={true}/>
+        <BottomDesign design={false}/>
         <BottomFont />
       </div>
     </>

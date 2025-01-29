@@ -60,7 +60,8 @@ function InfoView({ navigateToSolution }) {
       <div className='continueButtonContainerBottom center'>
         <ContinueButton onClick={handleContinue} disabled={selectedOptions.length == 0}/>
       </div>
-      <BottomDesign />
+      <BottomDesign design={true}/>
+      <BottomDesign design={false}/>
       <BottomFont />
     </>
   )

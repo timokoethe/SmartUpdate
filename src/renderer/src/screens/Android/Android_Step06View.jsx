@@ -35,15 +35,15 @@ function Android_Step06View() {
   const toggleWarning = () => setWarningVisible(!warningVisible);
   return (
     <>
-      <div className='fullWidth'>
-        <InfoOverlay overlayNumber={6} isVisible={overlayVisible} onClose={toggleOverlay}/>
-        <UpdateWarning onClick={() => navigate('/Android_Step07View')} isVisible={warningVisible}/>
-        <ProgressBar progress={9}/>
+            <ProgressBar progress={9}/>
         <div className='spacer px-100 mt-50' style={{alignItems: 'flex-start'}}>
           <BackButton onClick={() => navigate('/Android_Step05View')}/>
           <h1 className='headline mb-150 mt-50'>{loc.stepViewHeadline03}</h1>
           <CancelButton  onClick={() => navigate('/')}/>
         </div>
+      <div className='fullWidth'>
+        <InfoOverlay overlayNumber={6} isVisible={overlayVisible} onClose={toggleOverlay}/>
+        <UpdateWarning onClick={() => navigate('/Android_Step07View')} isVisible={warningVisible}/>
 
         <div className='topAlign spacer px-100'>
           <div style={{width: '44vw'}}>
@@ -57,8 +57,9 @@ function Android_Step06View() {
         <div className='center continueButtonContainer'>
           <ContinueButton onClick={toggleWarning} />
         </div>
-        <BottomDesign />
-        <BottomFont />
+        <BottomDesign design={true}/>
+        <BottomDesign design={false}/>
+        <BottomFont />  
       </div>
     </>
   )

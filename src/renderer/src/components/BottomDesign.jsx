@@ -1,9 +1,7 @@
-import { useState } from 'react'
-
-function BottomDesign() {
+function BottomDesign({ design }) {
   return (
-      <div className='bottomDesign'>
-      </div>
+    <div className={design ? `bottomDesign` : `bottomDesign2`}>
+    </div>
   )
 }
 

@@ -8,9 +8,12 @@ function IOS_WarningView() {
   const navigate = useNavigate()
   return (
     <>
+      <div className='fullBackgroundBlur'>
       <div className='wifiWarningView'>
         <WifiWarning onClick={() => navigate('/iOS_Step06View')} />
       </div>
+      </div>
+
     </>
   )
 }

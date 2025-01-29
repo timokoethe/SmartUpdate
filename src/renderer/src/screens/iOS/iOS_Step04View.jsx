@@ -34,6 +34,8 @@ function iOS_Step04View() {
         <CancelButton  onClick={() => navigate('/')}/>
       </div>
 
+      <div className='fullWidth'>
+
       <div className='topAlign spacer px-100'>
         <div style={{width: '44vw'}}>
           <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0201iOS }} />
@@ -46,8 +48,10 @@ function iOS_Step04View() {
       <div className='center continueButtonContainer'>
         <ContinueButton onClick={() => navigate('/iOS_Step05View')} />
       </div>
-      <BottomDesign />
-      <BottomFont />
+      <BottomDesign design={true}/>
+        <BottomDesign design={false}/>
+        <BottomFont />    
+      </div>
     </>
   )
 }

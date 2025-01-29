@@ -7,9 +7,12 @@ function Samsung_WarningView() {
   const navigate = useNavigate()
   return (
     <>
-      <div className='wifiWarningView'>
+    <div className='fullBackgroundBlur'>
+    <div className='wifiWarningView'>
         <WifiWarning onClick={() => navigate('/Samsung_Step06View')} />
       </div>
+    </div>
+
     </>
   )
 }

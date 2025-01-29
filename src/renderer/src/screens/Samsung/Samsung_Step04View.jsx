@@ -34,20 +34,24 @@ function Samsung_Step04View() {
         <CancelButton  onClick={() => navigate('/')}/>
       </div>
 
-      <div className='topAlign spacer px-100'>
-        <div style={{width: '44vw'}}>
-          <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0201_Samsung }} />
+      <div className='fullWidth'>
+
+        <div className='topAlign spacer px-100'>
+          <div style={{width: '44vw'}}>
+            <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0201_Samsung }} />
+          </div>
+
+          <video ref={videoRef} className='phoneGraphic mt-100' src={loc.languageKey == 'de' ? Samsung_DE_04 : Samsung_EN_04 } loop />
+
+          <InfoButton theme={'light'}/>
         </div>
-
-        <video ref={videoRef} className='phoneGraphic mt-100' src={loc.languageKey == 'de' ? Samsung_DE_04 : Samsung_EN_04 } loop />
-
-        <InfoButton theme={'light'}/>
+        <div className='center continueButtonContainer'>
+          <ContinueButton onClick={() => navigate('/Samsung_WarningView')} />
+        </div>
+        <BottomDesign design={true}/>
+        <BottomDesign design={false}/>
+        <BottomFont />
       </div>
-      <div className='center continueButtonContainer'>
-        <ContinueButton onClick={() => navigate('/Samsung_WarningView')} />
-      </div>
-      <BottomDesign />
-      <BottomFont />
     </>
   )
 }

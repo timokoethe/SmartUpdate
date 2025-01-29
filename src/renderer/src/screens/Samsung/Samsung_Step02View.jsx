@@ -29,14 +29,13 @@ function Samsung_Step02View() {
   
   return (
     <>
+      <ProgressBar progress={5}/>
+      <div className='spacer px-100 mt-50' style={{alignItems: 'flex-start'}}>
+        <BackButton onClick={() => navigate('/Samsung_Step01View')}/>
+        <h1 className='headline mb-150 mt-50'>{loc.stepViewHeadline01}</h1>
+        <CancelButton  onClick={() => navigate('/')}/>
+      </div>
       <div className='fullWidth'>
-        <ProgressBar progress={5}/>
-        <div className='spacer px-100 mt-50' style={{alignItems: 'flex-start'}}>
-          <BackButton onClick={() => navigate('/Samsung_Step01View')}/>
-          <h1 className='headline mb-150 mt-50'>{loc.stepViewHeadline01}</h1>
-          <CancelButton  onClick={() => navigate('/')}/>
-        </div>
-
         <div className='topAlign spacer px-100 '>
           <div style={{width: '44vw'}}>
             <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0101_Samsung }} /> 
@@ -50,7 +49,8 @@ function Samsung_Step02View() {
         <div className='center continueButtonContainer'>
           <ContinueButton onClick={() => navigate('/Samsung_Step03View')} />
         </div>
-        <BottomDesign />
+        <BottomDesign design={true}/>
+        <BottomDesign design={false}/>
         <BottomFont />
       </div>
     </>

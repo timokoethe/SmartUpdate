@@ -35,16 +35,15 @@ function Samsung_Step06View() {
   const toggleWarning = () => setWarningVisible(!warningVisible);
   return (
     <>
-      <div className='fullWidth'>
-        <InfoOverlay overlayNumber={6} isVisible={overlayVisible} onClose={toggleOverlay}/>
-        <UpdateWarning onClick={() => navigate('/Samsung_Step07View')} isVisible={warningVisible}/>
-        <ProgressBar progress={9}/>
-        <div className='spacer px-100 mt-50' style={{alignItems: 'flex-start'}}>
+      <ProgressBar progress={9}/>
+      <div className='spacer px-100 mt-50' style={{alignItems: 'flex-start'}}>
           <BackButton onClick={() => navigate('/Samsung_Step04View')}/>
           <h1 className='headline mb-150 mt-50'>{loc.stepViewHeadline03}</h1>
           <CancelButton  onClick={() => navigate('/')}/>
-        </div>
-
+      </div>
+      <div className='fullWidth'>
+        <InfoOverlay overlayNumber={6} isVisible={overlayVisible} onClose={toggleOverlay}/>
+        <UpdateWarning onClick={() => navigate('/Samsung_Step07View')} isVisible={warningVisible}/>
         <div className='topAlign spacer px-100'>
           <div style={{width: '44vw'}}>
             <p className='text-medium pb-30' dangerouslySetInnerHTML={{ __html: loc.stepViewText0301_Samsung }} />
@@ -57,7 +56,8 @@ function Samsung_Step06View() {
         <div className='center continueButtonContainer'>
           <ContinueButton onClick={toggleWarning} />
         </div>
-        <BottomDesign />
+        <BottomDesign design={true}/>
+        <BottomDesign design={false}/>
         <BottomFont />
       </div>
     </>

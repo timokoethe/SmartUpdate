@@ -8,8 +8,10 @@ function Android_WarningView() {
   const navigate = useNavigate()
   return (
     <>
+      <div className='fullBackgroundBlur'>
       <div className='wifiWarningView'>
         <WifiWarning onClick={() => navigate('/Android_Step06View')} />
+      </div>
       </div>
     </>
   )

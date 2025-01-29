@@ -41,7 +41,8 @@ function SolutionView({ selectedOptions, navigateBack }) {
       <div className='continueButtonContainerBottom center' >
         <ContinueButton onClick={() => navigate('/PickerView')} />
       </div>
-      <BottomDesign />
+      <BottomDesign design={true}/>
+      <BottomDesign design={false}/>
       <BottomFont />
     </>
   )

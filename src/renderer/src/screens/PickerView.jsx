@@ -25,25 +25,27 @@ function PickerView() {
   
   return (
     <>
-      <div className='fullWidth'>
-        <InfoOverlay overlayNumber={2} isVisible={overlayVisible} onClose={toggleOverlay}/>
-        <AndroidPicker isVisible={androidPickerVisible} onClose={toggleAndroidPicker}/>
-        <ProgressBar progress={3}/>
-        <div className='spacer px-100 mt-50' style={{alignItems: 'flex-start'}}>
-          <InfoButton theme={'dark'} onClick={toggleOverlay}/>
+      <ProgressBar progress={3}/>
+      <div className='spacer px-100 mt-50' style={{alignItems: 'flex-start'}}>
+          <InfoButton theme={'dark'} onClick={toggleOverlay} />
           <h1 className='headline mb-150 mt-50'>{loc.pickerViewHeadline}</h1>
           <CancelButton  onClick={() => navigate('/')}/>
         </div>
+
+      <div className='fullWidth'>
+        <InfoOverlay overlayNumber={2} isVisible={overlayVisible} onClose={toggleOverlay}/>
+        <AndroidPicker isVisible={androidPickerVisible} onClose={toggleAndroidPicker}/>
         <div>
-          <p className='text mx-80 leading mb-150 break'>{loc.pickerViewText01}</p>
-          <p className='text mx-80 leading my-100'>{loc.pickerViewText02}</p>
+          <p className='text mx-60 leading mb-150 break'>{loc.pickerViewText01}</p>
+          <p className='text mx-60 leading my-100'>{loc.pickerViewText02}</p>
           <p className='text center mt-300'>{loc.pickerViewText03WithoutQRCode}</p>
         </div>
-        <div className='spacer mt-100 px-200'>
+        <div className='spacer mt-200 px-200'>
           <Picker withQRCode={false} onClick={toggleAndroidPicker} os={'Android'}/>
           <Picker withQRCode={false} onClick={() => navigate('/IOS_Step01View')} os={'iOS'}/>
         </div>
-        <BottomDesign />
+        <BottomDesign design={true}/>
+        <BottomDesign design={false}/>
         <BottomFont />
       </div> 
     </>
