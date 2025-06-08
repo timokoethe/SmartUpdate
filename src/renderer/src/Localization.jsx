@@ -1,3 +1,4 @@
+// Contains all localized keys for the whole application in german and english
 export const Localization = {
     en: {
         languageKey: 'en',

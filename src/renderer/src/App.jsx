@@ -37,6 +37,7 @@ import CelebViewiOS from './screens/CelebViewiOS'
 import { LanguageProvider } from './LanguageContext'
 import QuizView from './screens/QuizView'
 
+// Provides the whole views of the application including the correct routing
 function App() {
   const ipcHandle = () => window.electron.ipcRenderer.send('ping')
 
