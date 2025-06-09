@@ -45,11 +45,11 @@ function createWindow() {
   const targetAspectRatio = 16 / 9
 
   if (Math.abs(width / height - targetAspectRatio) <= marginError) {
-    console.log('The aspect ratio of the screen is 9:16.')
+    console.log('The aspect ratio of the screen is 16:9.')
     // Dialog Window
     dialog.showMessageBox(mainWindow,{
       type: 'question',
-      message: 'The aspect ratio of the screen is 9:16.',
+      message: 'The aspect ratio of the screen is 16:9.',
       detail: 'Do you want to switch to full screen mode?',
       buttons: ['Yes', 'No']
     }).then((response) => {
